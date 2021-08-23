@@ -47647,3 +47647,4 @@ c	zz	net/minecraft/item/ItemLead	net/minecraft/item/ItemLead
 		c	
 	m	(Lzx;Lwn;Ladm;Lcj;Lcq;FFF)Z	a	func_180614_a	onItemUse
 		c	Called when a Block is right-clicked with this Item
+c	com/google/common/base/Objects	com/google/common/base/MoreObjects	com/google/common/base/MoreObjects
