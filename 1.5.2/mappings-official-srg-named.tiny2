@@ -32302,3 +32302,65 @@ c	zw	net/minecraft/src/Explosion	net/minecraft/world/Explosion
 		c	
 	f	D	d	field_77285_c	explosionY
 		c	
+	f	D	e	field_77282_d	explosionZ
+		c	
+	f	Lmp;	f	field_77283_e	exploder
+		c	
+	f	F	g	field_77280_f	explosionSize
+		c	
+	f	Ljava/util/List;	h	field_77281_g	affectedBlockPositions
+		c	A list of ChunkPositions of blocks affected by this explosion
+	f	Ljava/util/Map;	l	field_77288_k	field_77288_k
+	m	()V	a	func_77278_a	doExplosionA
+		c	Does the first part of the explosion (destroy blocks)
+	m	(Z)V	a	func_77279_a	doExplosionB
+		c	Does the second part of the explosion (sound, particles, drop spawn)
+	m	()Ljava/util/Map;	b	func_77277_b	func_77277_b
+	m	()Lng;	c	func_94613_c	func_94613_c
+c	zx	net/minecraft/src/ColorizerFoliage	net/minecraft/world/ColorizerFoliage
+	f	[I	a	field_77471_a	foliageBuffer
+		c	Color buffer for foliage
+	m	()I	a	func_77466_a	getFoliageColorPine
+		c	Gets the foliage color for pine type (metadata 1) trees
+	m	(DD)I	a	func_77470_a	getFoliageColor
+		c	Gets foliage color from temperature and humidity. Args: temperature, humidity
+	m	([I)V	a	func_77467_a	setFoliageBiomeColorizer
+		c	
+	m	()I	b	func_77469_b	getFoliageColorBirch
+		c	Gets the foliage color for birch type (metadata 2) trees
+	m	()I	c	func_77468_c	getFoliageColorBasic
+		c	
+c	zy	net/minecraft/src/GameRules	net/minecraft/world/GameRules
+	f	Ljava/util/TreeMap;	a	field_82771_a	theGameRules
+		c	
+	m	()Lbs;	a	func_82770_a	writeGameRulesToNBT
+		c	Return the defined game rules as NBT.
+	m	(Lbs;)V	a	func_82768_a	readGameRulesFromNBT
+		c	Set defined game rules from NBT.
+	m	(Ljava/lang/String;)Ljava/lang/String;	a	func_82767_a	getGameRuleStringValue
+		c	Gets the string Game Rule value.
+	m	(Ljava/lang/String;Ljava/lang/String;)V	a	func_82769_a	addGameRule
+		c	Define a game rule and its default value.
+	m	()[Ljava/lang/String;	b	func_82763_b	getRules
+		c	Return the defined game rules.
+	m	(Ljava/lang/String;)Z	b	func_82766_b	getGameRuleBooleanValue
+		c	Gets the boolean Game Rule value.
+	m	(Ljava/lang/String;Ljava/lang/String;)V	b	func_82764_b	setOrCreateGameRule
+		c	
+	m	(Ljava/lang/String;)Z	e	func_82765_e	hasRule
+		c	Return whether the specified game rule is defined.
+c	zz	net/minecraft/src/GameRuleValue	net/minecraft/GameRuleValue
+	f	Ljava/lang/String;	a	field_82762_a	valueString
+		c	
+	f	Z	b	field_82760_b	valueBoolean
+		c	
+	f	I	c	field_82761_c	valueInteger
+		c	
+	f	D	d	field_82759_d	valueDouble
+		c	
+	m	()Ljava/lang/String;	a	func_82756_a	getGameRuleStringValue
+		c	Gets the GameRule's value as String.
+	m	(Ljava/lang/String;)V	a	func_82757_a	setValue
+		c	Set this game rule value.
+	m	()Z	b	func_82758_b	getGameRuleBooleanValue
+		c	Gets the GameRule's value as boolean.

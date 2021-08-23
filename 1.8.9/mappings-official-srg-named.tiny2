@@ -47370,4 +47370,280 @@ c	zy	net/minecraft/init/Items	net/minecraft/init/Items
 		c	
 	f	Lyj;	Z	field_151030_Z	iron_chestplate
 		c	
-	f	Lyj;	aa	field_151165
+	f	Lyj;	aa	field_151165_aa	iron_leggings
+		c	
+	f	Lyj;	ab	field_151167_ab	iron_boots
+		c	
+	f	Lyj;	ac	field_151161_ac	diamond_helmet
+		c	
+	f	Lyj;	ad	field_151163_ad	diamond_chestplate
+		c	
+	f	Lyj;	ae	field_151173_ae	diamond_leggings
+		c	
+	f	Lyj;	af	field_151175_af	diamond_boots
+		c	
+	f	Lyj;	ag	field_151169_ag	golden_helmet
+		c	
+	f	Lyj;	ah	field_151171_ah	golden_chestplate
+		c	
+	f	Lyj;	ai	field_151149_ai	golden_leggings
+		c	
+	f	Lyj;	aj	field_151151_aj	golden_boots
+		c	
+	f	Lzw;	ak	field_151145_ak	flint
+		c	
+	f	Lzw;	al	field_151147_al	porkchop
+		c	
+	f	Lzw;	am	field_151157_am	cooked_porkchop
+		c	
+	f	Lzw;	an	field_151159_an	painting
+		c	
+	f	Lzw;	ao	field_151153_ao	golden_apple
+		c	
+	f	Lzw;	ap	field_151155_ap	sign
+		c	
+	f	Lzw;	aq	field_179570_aq	oak_door
+		c	
+	f	Lzw;	ar	field_179569_ar	spruce_door
+		c	
+	f	Lzw;	as	field_179568_as	birch_door
+		c	
+	f	Lzw;	at	field_179567_at	jungle_door
+		c	
+	f	Lzw;	au	field_179572_au	acacia_door
+		c	
+	f	Lzw;	av	field_179571_av	dark_oak_door
+		c	
+	f	Lzw;	aw	field_151133_ar	bucket
+		c	
+	f	Lzw;	ax	field_151131_as	water_bucket
+		c	
+	f	Lzw;	ay	field_151129_at	lava_bucket
+		c	
+	f	Lzw;	az	field_151143_au	minecart
+		c	
+	f	Lzw;	aA	field_151141_av	saddle
+		c	
+	f	Lzw;	aB	field_151139_aw	iron_door
+		c	
+	f	Lzw;	aC	field_151137_ax	redstone
+		c	
+	f	Lzw;	aD	field_151126_ay	snowball
+		c	
+	f	Lzw;	aE	field_151124_az	boat
+		c	
+	f	Lzw;	aF	field_151116_aA	leather
+		c	
+	f	Lzw;	aG	field_151117_aB	milk_bucket
+		c	
+	f	Lzw;	aH	field_151118_aC	brick
+		c	
+	f	Lzw;	aI	field_151119_aD	clay_ball
+		c	
+	f	Lzw;	aJ	field_151120_aE	reeds
+		c	
+	f	Lzw;	aK	field_151121_aF	paper
+		c	
+	f	Lzw;	aL	field_151122_aG	book
+		c	
+	f	Lzw;	aM	field_151123_aH	slime_ball
+		c	
+	f	Lzw;	aN	field_151108_aI	chest_minecart
+		c	
+	f	Lzw;	aO	field_151109_aJ	furnace_minecart
+		c	
+	f	Lzw;	aP	field_151110_aK	egg
+		c	
+	f	Lzw;	aQ	field_151111_aL	compass
+		c	
+	f	Lzq;	aR	field_151112_aM	fishing_rod
+		c	
+	f	Lzw;	aS	field_151113_aN	clock
+		c	
+	f	Lzw;	aT	field_151114_aO	glowstone_dust
+		c	
+	f	Lzw;	aU	field_151115_aP	fish
+		c	
+	f	Lzw;	aV	field_179566_aV	cooked_fish
+		c	
+	f	Lzw;	aW	field_151100_aR	dye
+		c	
+	f	Lzw;	aX	field_151103_aS	bone
+		c	
+	f	Lzw;	aY	field_151102_aT	sugar
+		c	
+	f	Lzw;	aZ	field_151105_aU	cake
+		c	
+	f	Lzw;	ba	field_151104_aV	bed
+		c	
+	f	Lzw;	bb	field_151107_aW	repeater
+		c	
+	f	Lzw;	bc	field_151106_aX	cookie
+		c	
+	f	Laab;	bd	field_151098_aY	filled_map
+		c	
+	f	Laap;	be	field_151097_aZ	shears
+		c	
+	f	Lzw;	bf	field_151127_ba	melon
+		c	
+	f	Lzw;	bg	field_151080_bb	pumpkin_seeds
+		c	
+	f	Lzw;	bh	field_151081_bc	melon_seeds
+		c	
+	f	Lzw;	bi	field_151082_bd	beef
+		c	
+	f	Lzw;	bj	field_151083_be	cooked_beef
+		c	
+	f	Lzw;	bk	field_151076_bf	chicken
+		c	
+	f	Lzw;	bl	field_151077_bg	cooked_chicken
+		c	
+	f	Lzw;	bm	field_179561_bm	mutton
+		c	
+	f	Lzw;	bn	field_179557_bn	cooked_mutton
+		c	
+	f	Lzw;	bo	field_179558_bo	rabbit
+		c	
+	f	Lzw;	bp	field_179559_bp	cooked_rabbit
+		c	
+	f	Lzw;	bq	field_179560_bq	rabbit_stew
+		c	
+	f	Lzw;	br	field_179556_br	rabbit_foot
+		c	
+	f	Lzw;	bs	field_179555_bs	rabbit_hide
+		c	
+	f	Lzw;	bt	field_151078_bh	rotten_flesh
+		c	
+	f	Lzw;	bu	field_151079_bi	ender_pearl
+		c	
+	f	Lzw;	bv	field_151072_bj	blaze_rod
+		c	
+	f	Lzw;	bw	field_151073_bk	ghast_tear
+		c	
+	f	Lzw;	bx	field_151074_bl	gold_nugget
+		c	
+	f	Lzw;	by	field_151075_bm	nether_wart
+		c	
+	f	Laai;	bz	field_151068_bn	potionitem
+		c	
+	f	Lzw;	bA	field_151069_bo	glass_bottle
+		c	
+	f	Lzw;	bB	field_151070_bp	spider_eye
+		c	
+	f	Lzw;	bC	field_151071_bq	fermented_spider_eye
+		c	
+	f	Lzw;	bD	field_151065_br	blaze_powder
+		c	
+	f	Lzw;	bE	field_151064_bs	magma_cream
+		c	
+	f	Lzw;	bF	field_151067_bt	brewing_stand
+		c	
+	f	Lzw;	bG	field_151066_bu	cauldron
+		c	
+	f	Lzw;	bH	field_151061_bv	ender_eye
+		c	
+	f	Lzw;	bI	field_151060_bw	speckled_melon
+		c	
+	f	Lzw;	bJ	field_151063_bx	spawn_egg
+		c	
+	f	Lzw;	bK	field_151062_by	experience_bottle
+		c	
+	f	Lzw;	bL	field_151059_bz	fire_charge
+		c	
+	f	Lzw;	bM	field_151099_bA	writable_book
+		c	
+	f	Lzw;	bN	field_151164_bB	written_book
+		c	
+	f	Lzw;	bO	field_151166_bC	emerald
+		c	
+	f	Lzw;	bP	field_151160_bD	item_frame
+		c	
+	f	Lzw;	bQ	field_151162_bE	flower_pot
+		c	
+	f	Lzw;	bR	field_151172_bF	carrot
+		c	
+	f	Lzw;	bS	field_151174_bG	potato
+		c	
+	f	Lzw;	bT	field_151168_bH	baked_potato
+		c	
+	f	Lzw;	bU	field_151170_bI	poisonous_potato
+		c	
+	f	Lzh;	bV	field_151148_bJ	map
+		c	
+	f	Lzw;	bW	field_151150_bK	golden_carrot
+		c	
+	f	Lzw;	bX	field_151144_bL	skull
+		c	
+	f	Lzw;	bY	field_151146_bM	carrot_on_a_stick
+		c	
+	f	Lzw;	bZ	field_151156_bN	nether_star
+		c	
+	f	Lzw;	ca	field_151158_bO	pumpkin_pie
+		c	
+	f	Lzw;	cb	field_151152_bP	fireworks
+		c	
+	f	Lzw;	cc	field_151154_bQ	firework_charge
+		c	
+	f	Lzi;	cd	field_151134_bR	enchanted_book
+		c	
+	f	Lzw;	ce	field_151132_bS	comparator
+		c	
+	f	Lzw;	cf	field_151130_bT	netherbrick
+		c	
+	f	Lzw;	cg	field_151128_bU	quartz
+		c	
+	f	Lzw;	ch	field_151142_bV	tnt_minecart
+		c	
+	f	Lzw;	ci	field_151140_bW	hopper_minecart
+		c	
+	f	Lyk;	cj	field_179565_cj	armor_stand
+		c	
+	f	Lzw;	ck	field_151138_bX	iron_horse_armor
+		c	
+	f	Lzw;	cl	field_151136_bY	golden_horse_armor
+		c	
+	f	Lzw;	cm	field_151125_bZ	diamond_horse_armor
+		c	
+	f	Lzw;	cn	field_151058_ca	lead
+		c	
+	f	Lzw;	co	field_151057_cb	name_tag
+		c	
+	f	Lzw;	cp	field_151095_cc	command_block_minecart
+		c	
+	f	Lzw;	cq	field_151096_cd	record_13
+		c	
+	f	Lzw;	cr	field_151093_ce	record_cat
+		c	
+	f	Lzw;	cs	field_151094_cf	record_blocks
+		c	
+	f	Lzw;	ct	field_151091_cg	record_chirp
+		c	
+	f	Lzw;	cu	field_151092_ch	record_far
+		c	
+	f	Lzw;	cv	field_151089_ci	record_mall
+		c	
+	f	Lzw;	cw	field_151090_cj	record_mellohi
+		c	
+	f	Lzw;	cx	field_151087_ck	record_stal
+		c	
+	f	Lzw;	cy	field_151088_cl	record_strad
+		c	
+	f	Lzw;	cz	field_151085_cm	record_ward
+		c	
+	f	Lzw;	cA	field_151086_cn	record_11
+		c	
+	f	Lzw;	cB	field_151084_co	record_wait
+		c	
+	f	Lzw;	cC	field_179562_cC	prismarine_shard
+		c	
+	f	Lzw;	cD	field_179563_cD	prismarine_crystals
+		c	
+	f	Lzw;	cE	field_179564_cE	banner
+		c	
+	m	(Ljava/lang/String;)Lzw;	a	func_179554_a	getRegisteredItem
+		c	
+c	zz	net/minecraft/item/ItemLead	net/minecraft/item/ItemLead
+	m	(Lwn;Ladm;Lcj;)Z	a	func_180618_a	attachToFence
+		c	
+	m	(Lzx;Lwn;Ladm;Lcj;Lcq;FFF)Z	a	func_180614_a	onItemUse
+		c	Called when a Block is right-clicked with this Item
