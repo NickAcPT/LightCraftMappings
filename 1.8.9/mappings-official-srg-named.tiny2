@@ -9763,7 +9763,8 @@ c	amk	net/minecraft/block/properties/PropertyBool	net/minecraft/block/properties
 		c	
 	m	(Ljava/lang/Boolean;)Ljava/lang/String;	a	func_177702_a	getName
 		c	Get the name for the given value.
-	m	(Ljava/lang/Comparable;)Ljava/lang/String;	a	func_177702_a	func_177702_a
+	m	(Ljava/lang/Comparable;)Ljava/lang/String;	a	func_177702_a	getName
+		c	Get the name for the given value.
 	m	(Ljava/lang/String;)Lamk;	a	func_177716_a	create
 		c	
 	m	()Ljava/util/Collection;	c	func_177700_c	getAllowedValues
@@ -9782,7 +9783,8 @@ c	amm	net/minecraft/block/properties/PropertyEnum	net/minecraft/block/properties
 		c	Map of names to Enum values
 	m	(Ljava/lang/Comparable;)Ljava/lang/String;	a	func_177702_a	getName
 		c	Get the name for the given value.
-	m	(Ljava/lang/Enum;)Ljava/lang/String;	a	func_177702_a	func_177702_a
+	m	(Ljava/lang/Enum;)Ljava/lang/String;	a	func_177702_a	getName
+		c	Get the name for the given value.
 	m	(Ljava/lang/String;Ljava/lang/Class;)Lamm;	a	func_177709_a	create
 		c	Create a new PropertyEnum with all Enum constants of the given class.
 	m	(Ljava/lang/String;Ljava/lang/Class;Lcom/google/common/base/Predicate;)Lamm;	a	func_177708_a	create
@@ -9798,7 +9800,8 @@ c	amn	net/minecraft/block/properties/PropertyInteger	net/minecraft/block/propert
 		c	
 	m	(Ljava/lang/Comparable;)Ljava/lang/String;	a	func_177702_a	getName
 		c	Get the name for the given value.
-	m	(Ljava/lang/Integer;)Ljava/lang/String;	a	func_177702_a	func_177702_a
+	m	(Ljava/lang/Integer;)Ljava/lang/String;	a	func_177702_a	getName
+		c	Get the name for the given value.
 	m	(Ljava/lang/String;II)Lamn;	a	func_177719_a	create
 		c	
 	m	()Ljava/util/Collection;	c	func_177700_c	getAllowedValues
@@ -16306,7 +16309,8 @@ c	awf	net/minecraft/client/gui/GuiOptionsRowList	net/minecraft/client/gui/GuiOpt
 		c	Gets the IGuiListEntry object for the given index
 	m	()I	c	func_148139_c	getListWidth
 		c	Gets the width of the list
-	m	(I)Lawf$a;	c	func_148180_b	func_148180_b
+	m	(I)Lawf$a;	c	func_148180_b	getListEntry
+		c	Gets the IGuiListEntry object for the given index
 	m	()I	d	func_148137_d	getScrollBarX
 		c	
 c	awf$a	net/minecraft/client/gui/GuiOptionsRowList$Row	net/minecraft/client/gui/GuiOptionsRowList$Row
@@ -16350,7 +16354,8 @@ c	awg	net/minecraft/client/gui/GuiPageButtonList	net/minecraft/client/gui/GuiPag
 		c	
 	m	(I)Lavp;	d	func_178061_c	func_178061_c
 	m	()I	e	func_178059_e	func_178059_e
-	m	(I)Lawg$d;	e	func_148180_b	func_148180_b
+	m	(I)Lawg$d;	e	func_148180_b	getListEntry
+		c	Gets the IGuiListEntry object for the given index
 	m	(II)V	e	func_178060_e	func_178060_e
 	m	()I	f	func_178057_f	func_178057_f
 	m	()Lavp;	g	func_178056_g	func_178056_g
@@ -19076,7 +19081,8 @@ c	azu	net/minecraft/client/gui/GuiResourcePackList	net/minecraft/client/gui/GuiR
 		c	Gets the IGuiListEntry object for the given index
 	m	()I	c	func_148139_c	getListWidth
 		c	Gets the width of the list
-	m	(I)Lazp;	c	func_148180_b	func_148180_b
+	m	(I)Lazp;	c	func_148180_b	getListEntry
+		c	Gets the IGuiListEntry object for the given index
 	m	()I	d	func_148137_d	getScrollBarX
 		c	
 	m	()Ljava/lang/String;	e	func_148202_k	getListHeader
@@ -23688,7 +23694,8 @@ c	bha	net/minecraft/client/renderer/tileentity/TileEntityBannerRenderer	net/mine
 	m	(Laku;)Ljy;	a	func_178463_a	func_178463_a
 	m	(Laku;DDDFI)V	a	func_180535_a	renderTileEntityAt
 		c	
-	m	(Lakw;DDDFI)V	a	func_180535_a	func_180535_a
+	m	(Lakw;DDDFI)V	a	func_180535_a	renderTileEntityAt
+		c	
 c	bha$1	net/minecraft/client/renderer/tileentity/TileEntityBannerRenderer$1	net/minecraft/client/renderer/tileentity/TileEntityBannerRenderer$1
 c	bha$a	net/minecraft/client/renderer/tileentity/TileEntityBannerRenderer$TimedBannerTexture	net/minecraft/client/renderer/tileentity/TileEntityBannerRenderer$TimedBannerTexture
 	f	J	a	field_178472_a	systemTime
@@ -23702,7 +23709,8 @@ c	bhb	net/minecraft/client/renderer/tileentity/TileEntityBeaconRenderer	net/mine
 		c	If true the {@link TileEntitySpecialRenderer} will always be rendered while the player is in the render bounding box {@link TileEntity#getRenderBoundingBox()} and his squared distance with the {@link TileEntity} is smaller than {@link TileEntity#getMaxRenderDistanceSquared()}.
 	m	(Lakv;DDDFI)V	a	func_180535_a	renderTileEntityAt
 		c	
-	m	(Lakw;DDDFI)V	a	func_180535_a	func_180535_a
+	m	(Lakw;DDDFI)V	a	func_180535_a	renderTileEntityAt
+		c	
 c	bhc	net/minecraft/client/renderer/tileentity/TileEntityRendererDispatcher	net/minecraft/client/renderer/tileentity/TileEntityRendererDispatcher
 	f	Ljava/util/Map;	m	field_147559_m	mapSpecialRenderers
 		c	
@@ -23786,33 +23794,38 @@ c	bhe	net/minecraft/client/renderer/tileentity/TileEntityChestRenderer	net/minec
 		c	
 	m	(Lakw;DDDFI)V	a	func_180535_a	renderTileEntityAt
 		c	
-	m	(Laky;DDDFI)V	a	func_180535_a	func_180535_a
+	m	(Laky;DDDFI)V	a	func_180535_a	renderTileEntityAt
+		c	
 c	bhf	net/minecraft/client/renderer/tileentity/TileEntityEnchantmentTableRenderer	net/minecraft/client/renderer/tileentity/TileEntityEnchantmentTableRenderer
 	f	Ljy;	c	field_147540_b	TEXTURE_BOOK
 		c	The texture for the book above the enchantment table.
 	f	Lbay;	d	field_147541_c	field_147541_c
 	m	(Lakw;DDDFI)V	a	func_180535_a	renderTileEntityAt
 		c	
-	m	(Lale;DDDFI)V	a	func_180535_a	func_180535_a
+	m	(Lale;DDDFI)V	a	func_180535_a	renderTileEntityAt
+		c	
 c	bhg	net/minecraft/client/renderer/tileentity/TileEntityEnderChestRenderer	net/minecraft/client/renderer/tileentity/TileEntityEnderChestRenderer
 	f	Ljy;	c	field_147520_b	ENDER_CHEST_TEXTURE
 		c	
 	f	Lbaz;	d	field_147521_c	field_147521_c
 	m	(Lakw;DDDFI)V	a	func_180535_a	renderTileEntityAt
 		c	
-	m	(Lalf;DDDFI)V	a	func_180535_a	func_180535_a
+	m	(Lalf;DDDFI)V	a	func_180535_a	renderTileEntityAt
+		c	
 c	bhh	net/minecraft/client/renderer/tileentity/TileEntityMobSpawnerRenderer	net/minecraft/client/renderer/tileentity/TileEntityMobSpawnerRenderer
 	m	(Ladd;DDDF)V	a	func_147517_a	renderMob
 		c	Render the mob inside the mob spawner.
 	m	(Lakw;DDDFI)V	a	func_180535_a	renderTileEntityAt
 		c	
-	m	(Lall;DDDFI)V	a	func_180535_a	func_180535_a
+	m	(Lall;DDDFI)V	a	func_180535_a	renderTileEntityAt
+		c	
 c	bhi	net/minecraft/client/renderer/tileentity/TileEntityPistonRenderer	net/minecraft/client/renderer/tileentity/TileEntityPistonRenderer
 	f	Lbgd;	c	field_178462_c	blockRenderer
 		c	
 	m	(Lakw;DDDFI)V	a	func_180535_a	renderTileEntityAt
 		c	
-	m	(Lalu;DDDFI)V	a	func_180535_a	func_180535_a
+	m	(Lalu;DDDFI)V	a	func_180535_a	renderTileEntityAt
+		c	
 c	bhj	net/minecraft/client/renderer/tileentity/TileEntitySignRenderer	net/minecraft/client/renderer/tileentity/TileEntitySignRenderer
 	f	Ljy;	c	field_147513_b	SIGN_TEXTURE
 		c	
@@ -23820,7 +23833,8 @@ c	bhj	net/minecraft/client/renderer/tileentity/TileEntitySignRenderer	net/minecr
 		c	The ModelSign instance for use in this renderer
 	m	(Lakw;DDDFI)V	a	func_180535_a	renderTileEntityAt
 		c	
-	m	(Laln;DDDFI)V	a	func_180535_a	func_180535_a
+	m	(Laln;DDDFI)V	a	func_180535_a	renderTileEntityAt
+		c	
 c	bhk	net/minecraft/client/renderer/tileentity/TileEntitySkullRenderer	net/minecraft/client/renderer/tileentity/TileEntitySkullRenderer
 	f	Ljy;	d	field_147537_c	SKELETON_TEXTURES
 		c	
@@ -23840,7 +23854,8 @@ c	bhk	net/minecraft/client/renderer/tileentity/TileEntitySkullRenderer	net/minec
 		c	
 	m	(Lakw;DDDFI)V	a	func_180535_a	renderTileEntityAt
 		c	
-	m	(Lalo;DDDFI)V	a	func_180535_a	func_180535_a
+	m	(Lalo;DDDFI)V	a	func_180535_a	renderTileEntityAt
+		c	
 	m	(Lbhc;)V	a	func_147497_a	setRendererDispatcher
 		c	
 c	bhk$1	net/minecraft/client/renderer/tileentity/TileEntitySkullRenderer$1	net/minecraft/client/renderer/tileentity/TileEntitySkullRenderer$1
@@ -23855,7 +23870,8 @@ c	bhl	net/minecraft/client/renderer/tileentity/TileEntityEndPortalRenderer	net/m
 	m	(FFFF)Ljava/nio/FloatBuffer;	a	func_147525_a	func_147525_a
 	m	(Lakw;DDDFI)V	a	func_180535_a	renderTileEntityAt
 		c	
-	m	(Lalp;DDDFI)V	a	func_180535_a	func_180535_a
+	m	(Lalp;DDDFI)V	a	func_180535_a	renderTileEntityAt
+		c	
 c	bhn	net/minecraft/client/renderer/chunk/ChunkCompileTaskGenerator	net/minecraft/client/renderer/chunk/ChunkCompileTaskGenerator
 	f	Lbht;	a	field_178553_a	renderChunk
 		c	
@@ -24235,11 +24251,16 @@ c	big	net/minecraft/client/renderer/entity/ArmorStandRenderer	net/minecraft/clie
 		c	
 	m	(Lpr;FFF)V	a	func_77043_a	rotateCorpse
 		c	
-	m	(Lum;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lum;FFF)V	a	func_77043_a	func_77043_a
-	m	()Lbbo;	b	func_177087_b	func_177087_b
-	m	(Lpk;)Z	b	func_177070_b	func_177070_b
-	m	(Lum;)Z	b	func_177070_b	func_177070_b
+	m	(Lum;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lum;FFF)V	a	func_77043_a	rotateCorpse
+		c	
+	m	()Lbbo;	b	func_177087_b	getMainModel
+		c	
+	m	(Lpk;)Z	b	func_177070_b	canRenderName
+		c	
+	m	(Lum;)Z	b	func_177070_b	canRenderName
+		c	
 c	big$1	net/minecraft/client/renderer/entity/ArmorStandRenderer$1	net/minecraft/client/renderer/entity/ArmorStandRenderer$1
 	f	Lbig;	a	field_177196_a	field_177196_a
 	m	()V	a	func_177177_a	initArmor
@@ -24251,8 +24272,10 @@ c	bih	net/minecraft/client/renderer/entity/RenderArrow	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lwq;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lwq;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lwq;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lwq;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 c	bii	net/minecraft/client/renderer/entity/RenderBat	net/minecraft/client/renderer/entity/RenderBat
 	f	Ljy;	a	field_110835_a	batTextures
 		c	
@@ -24262,15 +24285,19 @@ c	bii	net/minecraft/client/renderer/entity/RenderBat	net/minecraft/client/render
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 	m	(Lpr;FFF)V	a	func_77043_a	rotateCorpse
 		c	
-	m	(Ltk;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Ltk;F)V	a	func_77041_b	func_77041_b
-	m	(Ltk;FFF)V	a	func_77043_a	func_77043_a
+	m	(Ltk;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Ltk;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
+	m	(Ltk;FFF)V	a	func_77043_a	rotateCorpse
+		c	
 c	bij	net/minecraft/client/renderer/entity/RenderBlaze	net/minecraft/client/renderer/entity/RenderBlaze
 	f	Ljy;	a	field_110837_a	blazeTextures
 		c	
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
-	m	(Lvl;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Lvl;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 c	bik	net/minecraft/client/renderer/entity/RenderBoat	net/minecraft/client/renderer/entity/RenderBoat
 	f	Ljy;	e	field_110782_f	boatTextures
 		c	
@@ -24280,8 +24307,10 @@ c	bik	net/minecraft/client/renderer/entity/RenderBoat	net/minecraft/client/rende
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lux;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lux;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lux;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lux;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 c	bil	net/minecraft/client/renderer/entity/RenderCaveSpider	net/minecraft/client/renderer/entity/RenderCaveSpider
 	f	Ljy;	a	field_110893_a	caveSpiderTextures
 		c	
@@ -24289,24 +24318,30 @@ c	bil	net/minecraft/client/renderer/entity/RenderCaveSpider	net/minecraft/client
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-	m	(Lvm;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lvm;F)V	a	func_77041_b	func_77041_b
-	m	(Lwc;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Lvm;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lvm;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
+	m	(Lwc;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 c	bim	net/minecraft/client/renderer/entity/RenderChicken	net/minecraft/client/renderer/entity/RenderChicken
 	f	Ljy;	a	field_110920_a	chickenTextures
 		c	
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
-	m	(Ltn;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Ltn;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Ltn;F)F	a	func_77044_a	handleRotationFloat
 		c	Defines what float the third param in setRotationAngles of ModelBase is
-	m	(Lpr;F)F	b	func_77044_a	func_77044_a
+	m	(Lpr;F)F	b	func_77044_a	handleRotationFloat
+		c	Defines what float the third param in setRotationAngles of ModelBase is
 c	bin	net/minecraft/client/renderer/entity/RenderCow	net/minecraft/client/renderer/entity/RenderCow
 	f	Ljy;	a	field_110833_a	cowTextures
 		c	
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
-	m	(Lto;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Lto;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 c	bio	net/minecraft/client/renderer/entity/RenderCreeper	net/minecraft/client/renderer/entity/RenderCreeper
 	f	Ljy;	a	field_110830_f	creeperTextures
 		c	
@@ -24316,9 +24351,12 @@ c	bio	net/minecraft/client/renderer/entity/RenderCreeper	net/minecraft/client/re
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 	m	(Lpr;FF)I	a	func_77030_a	getColorMultiplier
 		c	Returns an ARGB int color back. Args: entityLiving, lightBrightness, partialTickTime
-	m	(Lvn;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lvn;F)V	a	func_77041_b	func_77041_b
-	m	(Lvn;FF)I	a	func_77030_a	func_77030_a
+	m	(Lvn;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lvn;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
+	m	(Lvn;FF)I	a	func_77030_a	getColorMultiplier
+		c	Returns an ARGB int color back. Args: entityLiving, lightBrightness, partialTickTime
 c	bip	net/minecraft/client/renderer/entity/RenderEntity	net/minecraft/client/renderer/entity/RenderEntity
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
@@ -24333,8 +24371,10 @@ c	biq	net/minecraft/client/renderer/tileentity/RenderEnderCrystal	net/minecraft/
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Luf;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Luf;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Luf;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Luf;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 c	bir	net/minecraft/client/renderer/entity/RenderDragon	net/minecraft/client/renderer/entity/RenderDragon
 	f	Ljy;	e	field_110843_g	enderDragonCrystalBeamTextures
 		c	
@@ -24348,18 +24388,24 @@ c	bir	net/minecraft/client/renderer/entity/RenderDragon	net/minecraft/client/ren
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lpr;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lpr;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;FFF)V	a	func_77043_a	rotateCorpse
 		c	
 	m	(Lpr;FFFFFF)V	a	func_77036_a	renderModel
 		c	Renders the model in RenderLiving
-	m	(Lps;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lug;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Lps;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lug;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lug;DDDF)V	a	func_180574_a	drawRechargeRay
 		c	Draws the ray from the dragon to it's crystal
-	m	(Lug;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lug;FFF)V	a	func_77043_a	func_77043_a
-	m	(Lug;FFFFFF)V	a	func_77036_a	func_77036_a
+	m	(Lug;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lug;FFF)V	a	func_77043_a	rotateCorpse
+		c	
+	m	(Lug;FFFFFF)V	a	func_77036_a	renderModel
+		c	Renders the model in RenderLiving
 c	bis	net/minecraft/client/renderer/entity/RenderEnderman	net/minecraft/client/renderer/entity/RenderEnderman
 	f	Ljy;	a	field_110839_f	endermanTextures
 		c	
@@ -24371,10 +24417,14 @@ c	bis	net/minecraft/client/renderer/entity/RenderEnderman	net/minecraft/client/r
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lpr;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lps;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lvo;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lvo;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lpr;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lps;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lvo;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lvo;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 c	bit	net/minecraft/client/renderer/entity/RenderEndermite	net/minecraft/client/renderer/entity/RenderEndermite
 	f	Ljy;	a	field_177108_a	ENDERMITE_TEXTURES
 		c	
@@ -24382,8 +24432,10 @@ c	bit	net/minecraft/client/renderer/entity/RenderEndermite	net/minecraft/client/
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lvp;)F	a	func_77037_a	getDeathMaxRotation
 		c	
-	m	(Lpr;)F	b	func_77037_a	func_77037_a
-	m	(Lvp;)Ljy;	b	func_110775_a	func_110775_a
+	m	(Lpr;)F	b	func_77037_a	getDeathMaxRotation
+		c	
+	m	(Lvp;)Ljy;	b	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 c	biu	net/minecraft/client/renderer/entity/RenderManager	net/minecraft/client/renderer/entity/RenderManager
 	f	Ljava/util/Map;	k	field_78729_o	entityRenderMap
 		c	A map of entity classes and the associated renderer.
@@ -24515,15 +24567,19 @@ c	biw	net/minecraft/client/renderer/entity/RenderXPOrb	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lpp;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lpp;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lpp;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lpp;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 c	bix	net/minecraft/client/renderer/entity/RenderFallingBlock	net/minecraft/client/renderer/entity/RenderFallingBlock
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Luy;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Luy;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Luy;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Luy;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 c	biy	net/minecraft/client/renderer/entity/RenderFireball	net/minecraft/client/renderer/entity/RenderFireball
 	f	F	a	field_77002_a	scale
 		c	
@@ -24531,8 +24587,10 @@ c	biy	net/minecraft/client/renderer/entity/RenderFireball	net/minecraft/client/r
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lws;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lws;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lws;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lws;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 c	biz	net/minecraft/client/renderer/entity/RenderFish	net/minecraft/client/renderer/entity/RenderFish
 	f	Ljy;	a	field_110792_a	FISH_PARTICLES
 		c	
@@ -24540,8 +24598,10 @@ c	biz	net/minecraft/client/renderer/entity/RenderFish	net/minecraft/client/rende
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lur;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lur;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lur;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lur;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 c	bj	net/minecraft/command/CommandSpreadPlayers	net/minecraft/command/CommandSpreadPlayers
 	m	()I	a	func_82362_a	getRequiredPermissionLevel
 		c	Return the required permission level for this command.
@@ -24578,8 +24638,10 @@ c	bja	net/minecraft/client/renderer/entity/RenderGhast	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-	m	(Lvr;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lvr;F)V	a	func_77041_b	func_77041_b
+	m	(Lvr;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lvr;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 c	bjb	net/minecraft/client/renderer/entity/RenderGiantZombie	net/minecraft/client/renderer/entity/RenderGiantZombie
 	f	Ljy;	a	field_110871_a	zombieTextures
 		c	
@@ -24591,8 +24653,10 @@ c	bjb	net/minecraft/client/renderer/entity/RenderGiantZombie	net/minecraft/clien
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-	m	(Lvs;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lvs;F)V	a	func_77041_b	func_77041_b
+	m	(Lvs;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lvs;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 c	bjb$1	net/minecraft/client/renderer/entity/RenderGiantZombie$1	net/minecraft/client/renderer/entity/RenderGiantZombie$1
 	f	Lbjb;	a	field_177197_a	field_177197_a
 	m	()V	a	func_177177_a	initArmor
@@ -24611,16 +24675,23 @@ c	bjc	net/minecraft/client/renderer/entity/RenderGuardian	net/minecraft/client/r
 		c	Renders the desired {@code T} type Entity.
 	m	(Lpk;Lbia;DDD)Z	a	func_177071_a	shouldRender
 		c	
-	m	(Lpr;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lpr;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;DF)Laui;	a	func_177110_a	func_177110_a
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-	m	(Lps;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lps;Lbia;DDD)Z	a	func_177071_a	func_177071_a
-	m	(Lvt;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lvt;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lvt;F)V	a	func_77041_b	func_77041_b
-	m	(Lvt;Lbia;DDD)Z	a	func_177071_a	func_177071_a
+	m	(Lps;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lps;Lbia;DDD)Z	a	func_177071_a	shouldRender
+		c	
+	m	(Lvt;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lvt;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lvt;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
+	m	(Lvt;Lbia;DDD)Z	a	func_177071_a	shouldRender
+		c	
 c	bjd	net/minecraft/client/renderer/entity/RenderHorse	net/minecraft/client/renderer/entity/RenderHorse
 	f	Ljava/util/Map;	a	field_110852_a	field_110852_a
 	f	Ljy;	e	field_110850_f	whiteHorseTextures
@@ -24637,8 +24708,10 @@ c	bjd	net/minecraft/client/renderer/entity/RenderHorse	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-	m	(Ltp;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Ltp;F)V	a	func_77041_b	func_77041_b
+	m	(Ltp;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Ltp;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 	m	(Ltp;)Ljy;	b	func_110848_b	func_110848_b
 c	bje	net/minecraft/client/renderer/entity/RenderBiped	net/minecraft/client/renderer/entity/RenderBiped
 	f	Ljy;	j	field_177118_j	DEFAULT_RES_LOC
@@ -24650,7 +24723,8 @@ c	bje	net/minecraft/client/renderer/entity/RenderBiped	net/minecraft/client/rend
 		c	
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
-	m	(Lps;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Lps;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 c	bjf	net/minecraft/client/renderer/entity/RenderEntityItem	net/minecraft/client/renderer/entity/RenderEntityItem
 	f	Lbjh;	a	field_177080_a	itemRenderer
 		c	
@@ -24659,8 +24733,10 @@ c	bjf	net/minecraft/client/renderer/entity/RenderEntityItem	net/minecraft/client
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Luz;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Luz;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Luz;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Luz;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 	m	(Luz;DDDFLboq;)I	a	func_177077_a	func_177077_a
 	m	(Lzx;)I	a	func_177078_a	func_177078_a
 c	bjg	net/minecraft/client/renderer/tileentity/RenderItemFrame	net/minecraft/client/renderer/tileentity/RenderItemFrame
@@ -24680,9 +24756,12 @@ c	bjg	net/minecraft/client/renderer/tileentity/RenderItemFrame	net/minecraft/cli
 		c	
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Luo;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Luo;DDD)V	a	func_177067_a	func_177067_a
-	m	(Luo;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Luo;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Luo;DDD)V	a	func_177067_a	renderName
+		c	
+	m	(Luo;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 	m	(Luo;)V	b	func_82402_b	renderItem
 		c	
 c	bjh	net/minecraft/client/renderer/entity/RenderItem	net/minecraft/client/renderer/entity/RenderItem
@@ -24799,8 +24878,10 @@ c	bji	net/minecraft/client/renderer/entity/RenderMagmaCube	net/minecraft/client/
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-	m	(Lvu;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lvu;F)V	a	func_77041_b	func_77041_b
+	m	(Lvu;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lvu;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 c	bjj	net/minecraft/client/renderer/entity/RenderLeashKnot	net/minecraft/client/renderer/entity/RenderLeashKnot
 	f	Ljy;	a	field_110802_a	leashKnotTextures
 		c	
@@ -24810,15 +24891,19 @@ c	bjj	net/minecraft/client/renderer/entity/RenderLeashKnot	net/minecraft/client/
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lup;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lup;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lup;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lup;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 c	bjk	net/minecraft/client/renderer/entity/RenderLightningBolt	net/minecraft/client/renderer/entity/RenderLightningBolt
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Luv;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Luv;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Luv;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Luv;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 c	bjl	net/minecraft/client/renderer/entity/RendererLivingEntity	net/minecraft/client/renderer/entity/RendererLivingEntity
 	f	Lorg/apache/logging/log4j/Logger;	a	field_147923_a	logger
 		c	
@@ -24846,7 +24931,8 @@ c	bjl	net/minecraft/client/renderer/entity/RendererLivingEntity	net/minecraft/cl
 		c	
 	m	(Lpr;DDD)V	a	func_77039_a	renderLivingAt
 		c	Sets a simple glTranslate on a LivingEntity.
-	m	(Lpr;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lpr;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 	m	(Lpr;FF)I	a	func_77030_a	getColorMultiplier
@@ -24865,10 +24951,12 @@ c	bjl	net/minecraft/client/renderer/entity/RendererLivingEntity	net/minecraft/cl
 		c	
 	m	(Lblb;)Z	b	func_177089_b	removeLayer
 		c	
-	m	(Lpk;)Z	b	func_177070_b	func_177070_b
+	m	(Lpk;)Z	b	func_177070_b	canRenderName
+		c	
 	m	(Lpr;)F	b	func_77037_a	getDeathMaxRotation
 		c	
-	m	(Lpr;DDD)V	b	func_177067_a	func_177067_a
+	m	(Lpr;DDD)V	b	func_177067_a	renderName
+		c	
 	m	(Lpr;F)F	b	func_77044_a	handleRotationFloat
 		c	Defines what float the third param in setRotationAngles of ModelBase is
 	m	(Lpr;)Z	c	func_177088_c	setScoreTeamColor
@@ -24892,8 +24980,10 @@ c	bjm	net/minecraft/client/renderer/entity/RenderMinecart	net/minecraft/client/r
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lva;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lva;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lva;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lva;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 	m	(Lva;FLalz;)V	a	func_180560_a	func_180560_a
 c	bjn	net/minecraft/client/renderer/entity/RenderMinecartMobSpawner	net/minecraft/client/renderer/entity/RenderMinecartMobSpawner
 	m	(Lva;FLalz;)V	a	func_180560_a	func_180560_a
@@ -24907,13 +24997,18 @@ c	bjo	net/minecraft/client/renderer/entity/RenderLiving	net/minecraft/client/ren
 		c	
 	m	(Lpr;)Z	a	func_177070_b	canRenderName
 		c	
-	m	(Lpr;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lps;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lpr;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lps;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 	m	(Lps;F)V	a	func_177105_a	setLightmap
 		c	
-	m	(Lps;Lbia;DDD)Z	a	func_177071_a	func_177071_a
-	m	(Lpk;)Z	b	func_177070_b	func_177070_b
-	m	(Lps;)Z	b	func_177070_b	func_177070_b
+	m	(Lps;Lbia;DDD)Z	a	func_177071_a	shouldRender
+		c	
+	m	(Lpk;)Z	b	func_177070_b	canRenderName
+		c	
+	m	(Lps;)Z	b	func_177070_b	canRenderName
+		c	
 	m	(Lps;DDDFF)V	b	func_110827_b	renderLeash
 		c	
 c	bjp	net/minecraft/client/renderer/entity/RenderMooshroom	net/minecraft/client/renderer/entity/RenderMooshroom
@@ -24921,7 +25016,8 @@ c	bjp	net/minecraft/client/renderer/entity/RenderMooshroom	net/minecraft/client/
 		c	
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
-	m	(Ltr;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Ltr;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 c	bjq	net/minecraft/client/renderer/entity/RenderOcelot	net/minecraft/client/renderer/entity/RenderOcelot
 	f	Ljy;	a	field_110877_a	blackOcelotTextures
 		c	
@@ -24935,8 +25031,10 @@ c	bjq	net/minecraft/client/renderer/entity/RenderOcelot	net/minecraft/client/ren
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-	m	(Lts;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lts;F)V	a	func_77041_b	func_77041_b
+	m	(Lts;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lts;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 c	bjr	net/minecraft/client/renderer/entity/RenderPainting	net/minecraft/client/renderer/entity/RenderPainting
 	f	Ljy;	a	field_110807_a	KRISTOFFER_PAINTING_TEXTURE
 		c	
@@ -24944,8 +25042,10 @@ c	bjr	net/minecraft/client/renderer/entity/RenderPainting	net/minecraft/client/r
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Luq;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Luq;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Luq;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Luq;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 	m	(Luq;FF)V	a	func_77008_a	setLightmap
 		c	
 	m	(Luq;IIII)V	a	func_77010_a	renderPainting
@@ -24955,14 +25055,17 @@ c	bjs	net/minecraft/client/renderer/entity/RenderPig	net/minecraft/client/render
 		c	
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
-	m	(Ltt;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Ltt;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 c	bjt	net/minecraft/client/renderer/entity/RenderPigZombie	net/minecraft/client/renderer/entity/RenderPigZombie
 	f	Ljy;	j	field_177120_j	ZOMBIE_PIGMAN_TEXTURE
 		c	
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
-	m	(Lps;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lvw;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Lps;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lvw;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 c	bjt$1	net/minecraft/client/renderer/entity/RenderPigZombie$1	net/minecraft/client/renderer/entity/RenderPigZombie$1
 	f	Lbjt;	a	field_177198_a	field_177198_a
 	m	()V	a	func_177177_a	initArmor
@@ -24986,13 +25089,15 @@ c	bju	net/minecraft/client/renderer/entity/RenderRabbit	net/minecraft/client/ren
 		c	
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
-	m	(Ltu;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Ltu;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 c	bjv	net/minecraft/client/renderer/entity/RenderSheep	net/minecraft/client/renderer/entity/RenderSheep
 	f	Ljy;	a	field_110884_f	shearedSheepTextures
 		c	
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
-	m	(Ltv;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Ltv;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 c	bjw	net/minecraft/client/renderer/entity/RenderSilverfish	net/minecraft/client/renderer/entity/RenderSilverfish
 	f	Ljy;	a	field_110882_a	silverfishTextures
 		c	
@@ -25000,8 +25105,10 @@ c	bjw	net/minecraft/client/renderer/entity/RenderSilverfish	net/minecraft/client
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lvz;)F	a	func_77037_a	getDeathMaxRotation
 		c	
-	m	(Lpr;)F	b	func_77037_a	func_77037_a
-	m	(Lvz;)Ljy;	b	func_110775_a	func_110775_a
+	m	(Lpr;)F	b	func_77037_a	getDeathMaxRotation
+		c	
+	m	(Lvz;)Ljy;	b	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 c	bjx	net/minecraft/client/renderer/entity/RenderSkeleton	net/minecraft/client/renderer/entity/RenderSkeleton
 	f	Ljy;	j	field_110862_k	skeletonTextures
 		c	
@@ -25013,9 +25120,12 @@ c	bjx	net/minecraft/client/renderer/entity/RenderSkeleton	net/minecraft/client/r
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-	m	(Lps;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lwa;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lwa;F)V	a	func_77041_b	func_77041_b
+	m	(Lps;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lwa;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lwa;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 c	bjx$1	net/minecraft/client/renderer/entity/RenderSkeleton$1	net/minecraft/client/renderer/entity/RenderSkeleton$1
 	f	Lbjx;	a	field_177199_a	field_177199_a
 	m	()V	a	func_177177_a	initArmor
@@ -25027,22 +25137,29 @@ c	bjy	net/minecraft/client/renderer/entity/RenderSlime	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lpr;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lpr;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-	m	(Lps;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lwb;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lwb;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lwb;F)V	a	func_77041_b	func_77041_b
+	m	(Lps;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lwb;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lwb;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lwb;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 c	bjz	net/minecraft/client/renderer/entity/RenderSnowMan	net/minecraft/client/renderer/entity/RenderSnowMan
 	f	Ljy;	a	field_110895_a	snowManTextures
 		c	
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
-	m	(Ltw;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Ltw;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	()Lbbo;	b	func_177087_b	getMainModel
 		c	
-	m	()Lbcd;	g	func_177087_b	func_177087_b
+	m	()Lbcd;	g	func_177087_b	getMainModel
+		c	
 c	bk	net/minecraft/command/CommandStats	net/minecraft/command/CommandStats
 	m	()I	a	func_82362_a	getRequiredPermissionLevel
 		c	Return the required permission level for this command.
@@ -25063,10 +25180,12 @@ c	bka	net/minecraft/client/renderer/entity/RenderSpider	net/minecraft/client/ren
 		c	
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
-	m	(Lwc;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Lwc;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;)F	b	func_77037_a	getDeathMaxRotation
 		c	
-	m	(Lwc;)F	b	func_77037_a	func_77037_a
+	m	(Lwc;)F	b	func_77037_a	getDeathMaxRotation
+		c	
 c	bkb	net/minecraft/client/renderer/entity/RenderSquid	net/minecraft/client/renderer/entity/RenderSquid
 	f	Ljy;	a	field_110901_a	squidTextures
 		c	
@@ -25074,11 +25193,14 @@ c	bkb	net/minecraft/client/renderer/entity/RenderSquid	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;FFF)V	a	func_77043_a	rotateCorpse
 		c	
-	m	(Ltx;)Ljy;	a	func_110775_a	func_110775_a
+	m	(Ltx;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Ltx;F)F	a	func_77044_a	handleRotationFloat
 		c	Defines what float the third param in setRotationAngles of ModelBase is
-	m	(Ltx;FFF)V	a	func_77043_a	func_77043_a
-	m	(Lpr;F)F	b	func_77044_a	func_77044_a
+	m	(Ltx;FFF)V	a	func_77043_a	rotateCorpse
+		c	
+	m	(Lpr;F)F	b	func_77044_a	handleRotationFloat
+		c	Defines what float the third param in setRotationAngles of ModelBase is
 c	bkc	net/minecraft/client/renderer/entity/RenderSnowball	net/minecraft/client/renderer/entity/RenderSnowball
 	f	Lzw;	a	field_177084_a	field_177084_a
 	f	Lbjh;	e	field_177083_e	field_177083_e
@@ -25098,8 +25220,10 @@ c	bkf	net/minecraft/client/renderer/entity/RenderTNTPrimed	net/minecraft/client/
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lvj;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lvj;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lvj;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lvj;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 c	bkg	net/minecraft/client/renderer/entity/RenderIronGolem	net/minecraft/client/renderer/entity/RenderIronGolem
 	f	Ljy;	a	field_110899_a	ironGolemTextures
 		c	
@@ -25107,8 +25231,10 @@ c	bkg	net/minecraft/client/renderer/entity/RenderIronGolem	net/minecraft/client/
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;FFF)V	a	func_77043_a	rotateCorpse
 		c	
-	m	(Lty;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lty;FFF)V	a	func_77043_a	func_77043_a
+	m	(Lty;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lty;FFF)V	a	func_77043_a	rotateCorpse
+		c	
 c	bkh	net/minecraft/client/renderer/entity/RenderVillager	net/minecraft/client/renderer/entity/RenderVillager
 	f	Ljy;	a	field_110903_f	villagerTextures
 		c	
@@ -25126,11 +25252,14 @@ c	bkh	net/minecraft/client/renderer/entity/RenderVillager	net/minecraft/client/r
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-	m	(Lwi;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lwi;F)V	a	func_77041_b	func_77041_b
+	m	(Lwi;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lwi;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 	m	()Lbbo;	b	func_177087_b	getMainModel
 		c	
-	m	()Lbci;	g	func_177087_b	func_177087_b
+	m	()Lbci;	g	func_177087_b	getMainModel
+		c	
 c	bki	net/minecraft/client/renderer/entity/RenderWitch	net/minecraft/client/renderer/entity/RenderWitch
 	f	Ljy;	a	field_110910_a	witchTextures
 		c	
@@ -25140,13 +25269,18 @@ c	bki	net/minecraft/client/renderer/entity/RenderWitch	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lpr;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lpr;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-	m	(Lps;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lwd;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lwd;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lwd;F)V	a	func_77041_b	func_77041_b
+	m	(Lps;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lwd;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lwd;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lwd;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 c	bkj	net/minecraft/client/renderer/entity/RenderWither	net/minecraft/client/renderer/entity/RenderWither
 	f	Ljy;	a	field_110913_a	invulnerableWitherTextures
 		c	
@@ -25156,13 +25290,18 @@ c	bkj	net/minecraft/client/renderer/entity/RenderWither	net/minecraft/client/ren
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lpr;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lpr;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-	m	(Lps;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Luk;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Luk;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Luk;F)V	a	func_77041_b	func_77041_b
+	m	(Lps;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Luk;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Luk;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Luk;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 c	bkk	net/minecraft/client/renderer/tileentity/RenderWitherSkull	net/minecraft/client/renderer/tileentity/RenderWitherSkull
 	f	Ljy;	a	field_110811_a	invulnerableWitherTextures
 		c	
@@ -25175,8 +25314,10 @@ c	bkk	net/minecraft/client/renderer/tileentity/RenderWitherSkull	net/minecraft/c
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lxd;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lxd;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lxd;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lxd;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 c	bkl	net/minecraft/client/renderer/entity/RenderWolf	net/minecraft/client/renderer/entity/RenderWolf
 	f	Ljy;	a	field_110917_a	wolfTextures
 		c	
@@ -25188,13 +25329,18 @@ c	bkl	net/minecraft/client/renderer/entity/RenderWolf	net/minecraft/client/rende
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lpr;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lps;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lua;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lua;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lpr;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lps;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lua;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lua;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 	m	(Lua;F)F	a	func_77044_a	handleRotationFloat
 		c	Defines what float the third param in setRotationAngles of ModelBase is
-	m	(Lpr;F)F	b	func_77044_a	func_77044_a
+	m	(Lpr;F)F	b	func_77044_a	handleRotationFloat
+		c	Defines what float the third param in setRotationAngles of ModelBase is
 c	bkm	net/minecraft/client/renderer/entity/RenderZombie	net/minecraft/client/renderer/entity/RenderZombie
 	f	Ljy;	j	field_110865_p	zombieTextures
 		c	
@@ -25209,14 +25355,20 @@ c	bkm	net/minecraft/client/renderer/entity/RenderZombie	net/minecraft/client/ren
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lpr;DDDFF)V	a	func_76986_a	func_76986_a
+	m	(Lpr;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;FFF)V	a	func_77043_a	rotateCorpse
 		c	
-	m	(Lps;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lps;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lwe;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lwe;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lwe;FFF)V	a	func_77043_a	func_77043_a
+	m	(Lps;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lps;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lwe;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lwe;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lwe;FFF)V	a	func_77043_a	rotateCorpse
+		c	
 	m	(Lwe;)V	b	func_82427_a	func_82427_a
 c	bkm$1	net/minecraft/client/renderer/entity/RenderZombie$1	net/minecraft/client/renderer/entity/RenderZombie$1
 	f	Lbkm;	a	field_177200_a	field_177200_a
@@ -25278,7 +25430,8 @@ c	bkp	net/minecraft/client/renderer/entity/layers/LayerCape	net/minecraft/client
 		c	
 	m	(Lbet;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Lpr;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	bkq	net/minecraft/client/renderer/entity/layers/LayerHeldBlock	net/minecraft/client/renderer/entity/layers/LayerHeldBlock
@@ -25286,7 +25439,8 @@ c	bkq	net/minecraft/client/renderer/entity/layers/LayerHeldBlock	net/minecraft/c
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Lvo;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Lvo;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	bkr	net/minecraft/client/renderer/entity/layers/LayerCreeperCharge	net/minecraft/client/renderer/entity/layers/LayerCreeperCharge
@@ -25298,7 +25452,8 @@ c	bkr	net/minecraft/client/renderer/entity/layers/LayerCreeperCharge	net/minecra
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Lvn;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Lvn;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	bks	net/minecraft/client/renderer/entity/layers/LayerCustomHead	net/minecraft/client/renderer/entity/layers/LayerCustomHead
@@ -25312,13 +25467,15 @@ c	bkt	net/minecraft/client/renderer/entity/layers/LayerDeadmau5Head	net/minecraf
 		c	
 	m	(Lbet;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Lpr;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	bku	net/minecraft/client/renderer/entity/layers/LayerEnderDragonDeath	net/minecraft/client/renderer/entity/layers/LayerEnderDragonDeath
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Lug;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Lug;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	bkv	net/minecraft/client/renderer/entity/layers/LayerEnderDragonEyes	net/minecraft/client/renderer/entity/layers/LayerEnderDragonEyes
@@ -25328,7 +25485,8 @@ c	bkv	net/minecraft/client/renderer/entity/layers/LayerEnderDragonEyes	net/minec
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Lug;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Lug;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	bkw	net/minecraft/client/renderer/entity/layers/LayerEndermanEyes	net/minecraft/client/renderer/entity/layers/LayerEndermanEyes
@@ -25338,7 +25496,8 @@ c	bkw	net/minecraft/client/renderer/entity/layers/LayerEndermanEyes	net/minecraf
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Lvo;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Lvo;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	bkx	net/minecraft/client/renderer/entity/layers/LayerBipedArmor	net/minecraft/client/renderer/entity/layers/LayerBipedArmor
@@ -25348,7 +25507,8 @@ c	bkx	net/minecraft/client/renderer/entity/layers/LayerBipedArmor	net/minecraft/
 		c	
 	m	(Lbbj;I)V	a	func_177179_a	setModelPartVisible
 		c	
-	m	(Lbbo;I)V	a	func_177179_a	func_177179_a
+	m	(Lbbo;I)V	a	func_177179_a	setModelPartVisible
+		c	
 c	bky	net/minecraft/client/renderer/entity/layers/LayerHeldItem	net/minecraft/client/renderer/entity/layers/LayerHeldItem
 	f	Lbjl;	a	field_177206_a	livingEntityRenderer
 		c	
@@ -25361,7 +25521,8 @@ c	bkz	net/minecraft/client/renderer/entity/layers/LayerMooshroomMushroom	net/min
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Ltr;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Ltr;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	bl	net/minecraft/command/server/CommandStop	net/minecraft/command/server/CommandStop
@@ -25380,7 +25541,8 @@ c	bla	net/minecraft/client/renderer/entity/layers/LayerSaddle	net/minecraft/clie
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Ltt;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Ltt;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	blb	net/minecraft/client/renderer/entity/layers/LayerRenderer	net/minecraft/client/renderer/entity/layers/LayerRenderer
@@ -25397,7 +25559,8 @@ c	blc	net/minecraft/client/renderer/entity/layers/LayerSheepWool	net/minecraft/c
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Ltv;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Ltv;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	bld	net/minecraft/client/renderer/entity/layers/LayerSlimeGel	net/minecraft/client/renderer/entity/layers/LayerSlimeGel
@@ -25407,7 +25570,8 @@ c	bld	net/minecraft/client/renderer/entity/layers/LayerSlimeGel	net/minecraft/cl
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Lwb;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Lwb;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	ble	net/minecraft/client/renderer/entity/layers/LayerSnowmanHead	net/minecraft/client/renderer/entity/layers/LayerSnowmanHead
@@ -25415,7 +25579,8 @@ c	ble	net/minecraft/client/renderer/entity/layers/LayerSnowmanHead	net/minecraft
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Ltw;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Ltw;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	blf	net/minecraft/client/renderer/entity/layers/LayerSpiderEyes	net/minecraft/client/renderer/entity/layers/LayerSpiderEyes
@@ -25425,7 +25590,8 @@ c	blf	net/minecraft/client/renderer/entity/layers/LayerSpiderEyes	net/minecraft/
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Lwc;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Lwc;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	blg	net/minecraft/client/renderer/entity/layers/LayerVillagerArmor	net/minecraft/client/renderer/entity/layers/LayerVillagerArmor
@@ -25436,7 +25602,8 @@ c	blh	net/minecraft/client/renderer/entity/layers/LayerIronGolemFlower	net/minec
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Lty;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Lty;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	bli	net/minecraft/client/renderer/entity/layers/LayerHeldItemWitch	net/minecraft/client/renderer/entity/layers/LayerHeldItemWitch
@@ -25444,7 +25611,8 @@ c	bli	net/minecraft/client/renderer/entity/layers/LayerHeldItemWitch	net/minecra
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Lwd;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Lwd;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	blj	net/minecraft/client/renderer/entity/layers/LayerWitherAura	net/minecraft/client/renderer/entity/layers/LayerWitherAura
@@ -25456,7 +25624,8 @@ c	blj	net/minecraft/client/renderer/entity/layers/LayerWitherAura	net/minecraft/
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Luk;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Luk;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	blk	net/minecraft/client/renderer/entity/layers/LayerWolfCollar	net/minecraft/client/renderer/entity/layers/LayerWolfCollar
@@ -25466,7 +25635,8 @@ c	blk	net/minecraft/client/renderer/entity/layers/LayerWolfCollar	net/minecraft/
 		c	
 	m	(Lpr;FFFFFFF)V	a	func_177141_a	doRenderLayer
 		c	
-	m	(Lua;FFFFFFF)V	a	func_177141_a	func_177141_a
+	m	(Lua;FFFFFFF)V	a	func_177141_a	doRenderLayer
+		c	
 	m	()Z	b	func_177142_b	shouldCombineTextures
 		c	
 c	bln	net/minecraft/client/renderer/entity/RenderPlayer	net/minecraft/client/renderer/entity/RenderPlayer
@@ -25486,13 +25656,20 @@ c	bln	net/minecraft/client/renderer/entity/RenderPlayer	net/minecraft/client/ren
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 	m	(Lbet;FFF)V	a	func_77043_a	rotateCorpse
 		c	
-	m	(Lpk;)Ljy;	a	func_110775_a	func_110775_a
-	m	(Lpk;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lpk;DDDLjava/lang/String;FD)V	a	func_177069_a	func_177069_a
-	m	(Lpr;DDD)V	a	func_77039_a	func_77039_a
-	m	(Lpr;DDDFF)V	a	func_76986_a	func_76986_a
-	m	(Lpr;F)V	a	func_77041_b	func_77041_b
-	m	(Lpr;FFF)V	a	func_77043_a	func_77043_a
+	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
+		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
+	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lpk;DDDLjava/lang/String;FD)V	a	func_177069_a	renderOffsetLivingLabel
+		c	
+	m	(Lpr;DDD)V	a	func_77039_a	renderLivingAt
+		c	Sets a simple glTranslate on a LivingEntity.
+	m	(Lpr;DDDFF)V	a	func_76986_a	doRender
+		c	Renders the desired {@code T} type Entity.
+	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
+		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
+	m	(Lpr;FFF)V	a	func_77043_a	rotateCorpse
+		c	
 	m	()Lbbo;	b	func_177087_b	getMainModel
 		c	
 	m	(Lbet;)V	b	func_177138_b	renderRightArm
@@ -25501,7 +25678,8 @@ c	bln	net/minecraft/client/renderer/entity/RenderPlayer	net/minecraft/client/ren
 		c	
 	m	(Lbet;)V	d	func_177137_d	setModelVisibilities
 		c	
-	m	()Lbbr;	g	func_177087_b	func_177087_b
+	m	()Lbbr;	g	func_177087_b	getMainModel
+		c	
 c	blo	net/minecraft/client/util/JsonBlendingMode	net/minecraft/client/util/JsonBlendingMode
 	f	Lblo;	a	field_148118_a	field_148118_a
 	f	I	b	field_148116_b	field_148116_b
@@ -27527,7 +27705,8 @@ c	bpn	net/minecraft/server/integrated/IntegratedPlayerList	net/minecraft/server/
 		c	
 	m	(Llf;)V	b	func_72391_b	writePlayerData
 		c	also stores the NBTTags if this is an intergratedPlayerList
-	m	()Lnet/minecraft/server/MinecraftServer;	c	func_72365_p	func_72365_p
+	m	()Lnet/minecraft/server/MinecraftServer;	c	func_72365_p	getServerInstance
+		c	
 	m	()Ldn;	t	func_72378_q	getHostPlayerData
 		c	On integrated servers, returns the host's player data to be written to level.dat.
 c	bpo	net/minecraft/server/integrated/IntegratedServer	net/minecraft/server/integrated/IntegratedServer
@@ -27832,7 +28011,8 @@ c	bpy	net/minecraft/client/audio/SoundEventAccessorComposite	net/minecraft/clien
 		c	
 	m	()Lbpg;	d	func_148728_d	getSoundCategory
 		c	
-	m	()Ljava/lang/Object;	g	func_148720_g	func_148720_g
+	m	()Ljava/lang/Object;	g	func_148720_g	cloneEntry
+		c	
 c	bpz	net/minecraft/client/audio/SoundHandler	net/minecraft/client/audio/SoundHandler
 	f	Lorg/apache/logging/log4j/Logger;	b	field_147698_b	logger
 		c	
@@ -27894,7 +28074,8 @@ c	bpz$2	net/minecraft/client/audio/SoundHandler$2	net/minecraft/client/audio/Sou
 		c	
 	m	()Lbpw;	b	func_148720_g	cloneEntry
 		c	
-	m	()Ljava/lang/Object;	g	func_148720_g	func_148720_g
+	m	()Ljava/lang/Object;	g	func_148720_g	cloneEntry
+		c	
 c	bpz$3	net/minecraft/client/audio/SoundHandler$3	net/minecraft/client/audio/SoundHandler$3
 	f	[I	a	field_148765_a	field_148765_a
 c	bq	net/minecraft/command/server/CommandTestFor	net/minecraft/command/server/CommandTestFor
@@ -27933,7 +28114,8 @@ c	bqc	net/minecraft/client/audio/SoundEventAccessor	net/minecraft/client/audio/S
 		c	
 	m	()Lbpw;	b	func_148720_g	cloneEntry
 		c	
-	m	()Ljava/lang/Object;	g	func_148720_g	func_148720_g
+	m	()Ljava/lang/Object;	g	func_148720_g	cloneEntry
+		c	
 c	bqe	net/minecraft/client/stream/MetadataAchievement	net/minecraft/client/stream/MetadataAchievement
 c	bqf	net/minecraft/client/stream/MetadataCombat	net/minecraft/client/stream/MetadataCombat
 c	bqg	net/minecraft/client/stream/MetadataPlayerDeath	net/minecraft/client/stream/MetadataPlayerDeath
@@ -28952,7 +29134,8 @@ c	cj	net/minecraft/util/BlockPos	net/minecraft/util/BlockPos
 		c	Offset this BlockPos 1 block in southern direction
 	m	(I)Lcj;	d	func_177964_d	north
 		c	Offset this BlockPos n blocks in northern direction
-	m	(Ldf;)Ldf;	d	func_177955_d	func_177955_d
+	m	(Ldf;)Ldf;	d	func_177955_d	crossProduct
+		c	Calculate the cross product of this and the given Vector
 	m	()Lcj;	e	func_177976_e	west
 		c	Offset this BlockPos 1 block in western direction
 	m	(I)Lcj;	e	func_177970_e	south
@@ -30087,15 +30270,18 @@ c	ek	net/minecraft/network/NetworkManager	net/minecraft/network/NetworkManager
 c	ek$1	net/minecraft/network/NetworkManager$1	net/minecraft/network/NetworkManager$1
 	m	()Lio/netty/channel/nio/NioEventLoopGroup;	a	func_179280_b	load
 		c	
-	m	()Ljava/lang/Object;	b	func_179280_b	func_179280_b
+	m	()Ljava/lang/Object;	b	func_179280_b	load
+		c	
 c	ek$2	net/minecraft/network/NetworkManager$2	net/minecraft/network/NetworkManager$2
 	m	()Lio/netty/channel/epoll/EpollEventLoopGroup;	a	func_179280_b	load
 		c	
-	m	()Ljava/lang/Object;	b	func_179280_b	func_179280_b
+	m	()Ljava/lang/Object;	b	func_179280_b	load
+		c	
 c	ek$3	net/minecraft/network/NetworkManager$3	net/minecraft/network/NetworkManager$3
 	m	()Lio/netty/channel/local/LocalEventLoopGroup;	a	func_179280_b	load
 		c	
-	m	()Ljava/lang/Object;	b	func_179280_b	func_179280_b
+	m	()Ljava/lang/Object;	b	func_179280_b	load
+		c	
 c	ek$4	net/minecraft/network/NetworkManager$4	net/minecraft/network/NetworkManager$4
 	f	Lel;	a	field_181130_a	field_181130_a
 	f	Lel;	b	field_181131_b	field_181131_b
@@ -30515,7 +30701,8 @@ c	ex	net/minecraft/util/ChatComponentScore	net/minecraft/util/ChatComponentScore
 		c	
 	m	()Ljava/lang/String;	h	func_179994_h	getObjective
 		c	
-	m	()Lex;	i	func_150259_f	func_150259_f
+	m	()Lex;	i	func_150259_f	createCopy
+		c	Creates a copy of this component.  Almost a deep copy, except the style is shallow-copied.
 	m	()Ljava/lang/String;	toString	toString	toString
 c	ey	net/minecraft/util/ChatComponentSelector	net/minecraft/util/ChatComponentSelector
 	f	Ljava/lang/String;	b	field_179993_b	selector
@@ -30527,7 +30714,8 @@ c	ey	net/minecraft/util/ChatComponentSelector	net/minecraft/util/ChatComponentSe
 		c	Creates a copy of this component.  Almost a deep copy, except the style is shallow-copied.
 	m	()Ljava/lang/String;	g	func_179992_g	getSelector
 		c	Gets the selector of this component, in plain text.
-	m	()Ley;	h	func_150259_f	func_150259_f
+	m	()Ley;	h	func_150259_f	createCopy
+		c	Creates a copy of this component.  Almost a deep copy, except the style is shallow-copied.
 	m	()Ljava/lang/String;	toString	toString	toString
 c	ez	net/minecraft/util/ChatStyle	net/minecraft/util/ChatStyle
 	f	Lez;	a	field_150249_a	parentStyle
@@ -30687,7 +30875,8 @@ c	fa	net/minecraft/util/ChatComponentText	net/minecraft/util/ChatComponentText
 		c	Creates a copy of this component.  Almost a deep copy, except the style is shallow-copied.
 	m	()Ljava/lang/String;	g	func_150265_g	getChatComponentText_TextValue
 		c	Gets the text value of this ChatComponentText.  TODO: what are getUnformattedText and getUnformattedTextForChat missing that made someone decide to create a third equivalent method that only ChatComponentText can implement?
-	m	()Lfa;	h	func_150259_f	func_150259_f
+	m	()Lfa;	h	func_150259_f	createCopy
+		c	Creates a copy of this component.  Almost a deep copy, except the style is shallow-copied.
 	m	()Ljava/lang/String;	toString	toString	toString
 c	fb	net/minecraft/util/ChatComponentTranslation	net/minecraft/util/ChatComponentTranslation
 	f	Ljava/lang/String;	d	field_150276_d	key
@@ -30715,7 +30904,8 @@ c	fb	net/minecraft/util/ChatComponentTranslation	net/minecraft/util/ChatComponen
 		c	Creates a copy of this component.  Almost a deep copy, except the style is shallow-copied.
 	m	()V	g	func_150270_g	ensureInitialized
 		c	ensures that our children are initialized from the most recent string translation mapping.
-	m	()Lfb;	h	func_150259_f	func_150259_f
+	m	()Lfb;	h	func_150259_f	createCopy
+		c	Creates a copy of this component.  Almost a deep copy, except the style is shallow-copied.
 	m	()I	hashCode	hashCode	hashCode
 	m	()Ljava/lang/String;	i	func_150268_i	getKey
 		c	
@@ -30761,7 +30951,8 @@ c	fi	net/minecraft/network/play/server/S08PacketPlayerPosLook	net/minecraft/netw
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()D	b	func_148928_d	getY
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -30959,7 +31150,8 @@ c	fk	net/minecraft/network/play/server/S0EPacketSpawnObject	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_148997_d	getX
 		c	
 	m	(I)V	b	func_148995_b	setY
@@ -31009,7 +31201,8 @@ c	fl	net/minecraft/network/play/server/S11PacketSpawnExperienceOrb	net/minecraft
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_148984_d	getX
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31036,7 +31229,8 @@ c	fm	net/minecraft/network/play/server/S2CPacketSpawnGlobalEntity	net/minecraft/
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149051_d	func_149051_d
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
@@ -31074,7 +31268,8 @@ c	fn	net/minecraft/network/play/server/S0FPacketSpawnMob	net/minecraft/network/p
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149024_d	getEntityID
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31114,7 +31309,8 @@ c	fo	net/minecraft/network/play/server/S10PacketSpawnPainting	net/minecraft/netw
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Lcj;	b	func_179837_b	getPosition
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31148,7 +31344,8 @@ c	fp	net/minecraft/network/play/server/S0CPacketSpawnPlayer	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_148943_d	getEntityID
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31178,7 +31375,8 @@ c	fq	net/minecraft/network/play/server/S0BPacketAnimation	net/minecraft/network/
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_148977_d	getAnimationType
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31190,7 +31388,8 @@ c	fr	net/minecraft/network/play/server/S37PacketStatistics	net/minecraft/network
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	fs	net/minecraft/network/play/server/S25PacketBlockBreakAnim	net/minecraft/network/play/server/S25PacketBlockBreakAnim
@@ -31206,7 +31405,8 @@ c	fs	net/minecraft/network/play/server/S25PacketBlockBreakAnim	net/minecraft/net
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Lcj;	b	func_179821_b	getPosition
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31226,7 +31426,8 @@ c	ft	net/minecraft/network/play/server/S35PacketUpdateTileEntity	net/minecraft/n
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_148853_f	getTileEntityType
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31248,7 +31449,8 @@ c	fu	net/minecraft/network/play/server/S24PacketBlockAction	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_148869_g	getData1
 		c	instrument data for noteblocks
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31268,7 +31470,8 @@ c	fv	net/minecraft/network/play/server/S23PacketBlockChange	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Lcj;	b	func_179827_b	getBlockPosition
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31284,7 +31487,8 @@ c	fw	net/minecraft/network/play/server/S41PacketServerDifficulty	net/minecraft/n
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Loj;	b	func_179831_b	getDifficulty
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31297,7 +31501,8 @@ c	fx	net/minecraft/network/play/server/S3APacketTabComplete	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	fy	net/minecraft/network/play/server/S02PacketChat	net/minecraft/network/play/server/S02PacketChat
@@ -31311,7 +31516,8 @@ c	fy	net/minecraft/network/play/server/S02PacketChat	net/minecraft/network/play/
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Z	b	func_148916_d	isChat
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31329,7 +31535,8 @@ c	fz	net/minecraft/network/play/server/S22PacketMultiBlockChange	net/minecraft/n
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lfz;)Ladg;	a	access$000	access$000
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
@@ -31369,7 +31576,8 @@ c	ga	net/minecraft/network/play/server/S32PacketConfirmTransaction	net/minecraft
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()S	b	func_148890_d	getActionNumber
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31382,7 +31590,8 @@ c	gb	net/minecraft/network/play/server/S2EPacketCloseWindow	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	gc	net/minecraft/network/play/server/S2DPacketOpenWindow	net/minecraft/network/play/server/S2DPacketOpenWindow
@@ -31402,7 +31611,8 @@ c	gc	net/minecraft/network/play/server/S2DPacketOpenWindow	net/minecraft/network
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Ljava/lang/String;	b	func_148902_e	getGuiId
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31425,7 +31635,8 @@ c	gd	net/minecraft/network/play/server/S30PacketWindowItems	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()[Lzx;	b	func_148910_d	getItemStacks
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31443,7 +31654,8 @@ c	ge	net/minecraft/network/play/server/S31PacketWindowProperty	net/minecraft/net
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149181_d	getVarIndex
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31462,7 +31674,8 @@ c	gf	net/minecraft/network/play/server/S2FPacketSetSlot	net/minecraft/network/pl
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149173_d	func_149173_d
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
@@ -31478,7 +31691,8 @@ c	gg	net/minecraft/network/play/server/S3FPacketCustomPayload	net/minecraft/netw
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Lem;	b	func_180735_b	getBufferData
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31492,7 +31706,8 @@ c	gh	net/minecraft/network/play/server/S40PacketDisconnect	net/minecraft/network
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	gi	net/minecraft/network/play/server/S19PacketEntityStatus	net/minecraft/network/play/server/S19PacketEntityStatus
@@ -31508,7 +31723,8 @@ c	gi	net/minecraft/network/play/server/S19PacketEntityStatus	net/minecraft/netwo
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	gj	net/minecraft/network/play/server/S49PacketUpdateEntityNBT	net/minecraft/network/play/server/S49PacketUpdateEntityNBT
@@ -31524,7 +31740,8 @@ c	gj	net/minecraft/network/play/server/S49PacketUpdateEntityNBT	net/minecraft/ne
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	gk	net/minecraft/network/play/server/S27PacketExplosion	net/minecraft/network/play/server/S27PacketExplosion
@@ -31546,7 +31763,8 @@ c	gk	net/minecraft/network/play/server/S27PacketExplosion	net/minecraft/network/
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()F	b	func_149144_d	func_149144_d
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
@@ -31570,7 +31788,8 @@ c	gl	net/minecraft/network/play/server/S46PacketSetCompressionLevel	net/minecraf
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	gm	net/minecraft/network/play/server/S2BPacketChangeGameState	net/minecraft/network/play/server/S2BPacketChangeGameState
@@ -31585,7 +31804,8 @@ c	gm	net/minecraft/network/play/server/S2BPacketChangeGameState	net/minecraft/ne
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()F	b	func_149137_d	func_149137_d
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
@@ -31597,7 +31817,8 @@ c	gn	net/minecraft/network/play/server/S00PacketKeepAlive	net/minecraft/network/
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	go	net/minecraft/network/play/server/S21PacketChunkData	net/minecraft/network/play/server/S21PacketChunkData
@@ -31617,7 +31838,8 @@ c	go	net/minecraft/network/play/server/S21PacketChunkData	net/minecraft/network/
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	([B[BI)I	a	func_179757_a	func_179757_a
 	m	()I	b	func_149273_e	getChunkX
 		c	
@@ -31650,7 +31872,8 @@ c	gp	net/minecraft/network/play/server/S26PacketMapChunkBulk	net/minecraft/netwo
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(I)I	b	func_149253_b	getChunkZ
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31674,7 +31897,8 @@ c	gq	net/minecraft/network/play/server/S28PacketEffect	net/minecraft/network/pla
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149242_d	getSoundType
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31712,7 +31936,8 @@ c	gr	net/minecraft/network/play/server/S2APacketParticles	net/minecraft/network/
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Z	b	func_179750_b	isLongDistance
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31754,7 +31979,8 @@ c	gs	net/minecraft/network/play/server/S29PacketSoundEffect	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()D	b	func_149207_d	getX
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31790,7 +32016,8 @@ c	gt	net/minecraft/network/play/server/S01PacketJoinGame	net/minecraft/network/p
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Z	b	func_149195_d	isHardcoreMode
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -31832,7 +32059,8 @@ c	gu	net/minecraft/network/play/server/S34PacketMaps	net/minecraft/network/play/
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	gv	net/minecraft/network/play/server/S14PacketEntity	net/minecraft/network/play/server/S14PacketEntity
@@ -31858,7 +32086,8 @@ c	gv	net/minecraft/network/play/server/S14PacketEntity	net/minecraft/network/pla
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()B	b	func_149061_d	func_149061_d
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
@@ -31899,7 +32128,8 @@ c	gw	net/minecraft/network/play/server/S36PacketSignEditorOpen	net/minecraft/net
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	gx	net/minecraft/network/play/server/S39PacketPlayerAbilities	net/minecraft/network/play/server/S39PacketPlayerAbilities
@@ -31923,7 +32153,8 @@ c	gx	net/minecraft/network/play/server/S39PacketPlayerAbilities	net/minecraft/ne
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Z)V	a	func_149108_a	setInvulnerable
 		c	
 	m	()Z	b	func_149106_d	isFlying
@@ -31958,7 +32189,8 @@ c	gy	net/minecraft/network/play/server/S42PacketCombatEvent	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	gy$1	net/minecraft/network/play/server/S42PacketCombatEvent$1	net/minecraft/network/play/server/S42PacketCombatEvent$1
@@ -31980,7 +32212,8 @@ c	gz	net/minecraft/network/play/server/S38PacketPlayerListItem	net/minecraft/net
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Lgz$a;	b	func_179768_b	getAction
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32031,7 +32264,8 @@ c	ha	net/minecraft/network/play/server/S0APacketUseBed	net/minecraft/network/pla
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	hb	net/minecraft/network/play/server/S13PacketDestroyEntities	net/minecraft/network/play/server/S13PacketDestroyEntities
@@ -32043,7 +32277,8 @@ c	hb	net/minecraft/network/play/server/S13PacketDestroyEntities	net/minecraft/ne
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	hc	net/minecraft/network/play/server/S1EPacketRemoveEntityEffect	net/minecraft/network/play/server/S1EPacketRemoveEntityEffect
@@ -32057,7 +32292,8 @@ c	hc	net/minecraft/network/play/server/S1EPacketRemoveEntityEffect	net/minecraft
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149075_d	getEffectId
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32073,7 +32309,8 @@ c	hd	net/minecraft/network/play/server/S48PacketResourcePackSend	net/minecraft/n
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Ljava/lang/String;	b	func_179784_b	getHash
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32093,7 +32330,8 @@ c	he	net/minecraft/network/play/server/S07PacketRespawn	net/minecraft/network/pl
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Loj;	b	func_149081_d	getDifficulty
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32115,7 +32353,8 @@ c	hf	net/minecraft/network/play/server/S19PacketEntityHeadLook	net/minecraft/net
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	hg	net/minecraft/network/play/server/S44PacketWorldBorder	net/minecraft/network/play/server/S44PacketWorldBorder
@@ -32142,7 +32381,8 @@ c	hg	net/minecraft/network/play/server/S44PacketWorldBorder	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	hg$1	net/minecraft/network/play/server/S44PacketWorldBorder$1	net/minecraft/network/play/server/S44PacketWorldBorder$1
@@ -32165,7 +32405,8 @@ c	hh	net/minecraft/network/play/server/S43PacketCamera	net/minecraft/network/pla
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	hi	net/minecraft/network/play/server/S09PacketHeldItemChange	net/minecraft/network/play/server/S09PacketHeldItemChange
@@ -32177,7 +32418,8 @@ c	hi	net/minecraft/network/play/server/S09PacketHeldItemChange	net/minecraft/net
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	hj	net/minecraft/network/play/server/S3DPacketDisplayScoreboard	net/minecraft/network/play/server/S3DPacketDisplayScoreboard
@@ -32190,7 +32432,8 @@ c	hj	net/minecraft/network/play/server/S3DPacketDisplayScoreboard	net/minecraft/
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Ljava/lang/String;	b	func_149370_d	func_149370_d
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
@@ -32203,7 +32446,8 @@ c	hk	net/minecraft/network/play/server/S1CPacketEntityMetadata	net/minecraft/net
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149375_d	getEntityId
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32221,7 +32465,8 @@ c	hl	net/minecraft/network/play/server/S1BPacketEntityAttach	net/minecraft/netwo
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149403_d	getEntityId
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32243,7 +32488,8 @@ c	hm	net/minecraft/network/play/server/S12PacketEntityVelocity	net/minecraft/net
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149411_d	getMotionX
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32265,7 +32511,8 @@ c	hn	net/minecraft/network/play/server/S04PacketEntityEquipment	net/minecraft/ne
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149389_d	getEntityID
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32283,7 +32530,8 @@ c	ho	net/minecraft/network/play/server/S1FPacketSetExperience	net/minecraft/netw
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149396_d	getTotalExperience
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32303,7 +32551,8 @@ c	hp	net/minecraft/network/play/server/S06PacketUpdateHealth	net/minecraft/netwo
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149330_d	getFoodLevel
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32323,7 +32572,8 @@ c	hq	net/minecraft/network/play/server/S3BPacketScoreboardObjective	net/minecraf
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Ljava/lang/String;	b	func_149337_d	func_149337_d
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
@@ -32354,7 +32604,8 @@ c	hr	net/minecraft/network/play/server/S3EPacketTeams	net/minecraft/network/play
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Ljava/lang/String;	b	func_149306_d	getDisplayName
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32388,7 +32639,8 @@ c	hs	net/minecraft/network/play/server/S3CPacketUpdateScore	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Ljava/lang/String;	b	func_149321_d	getObjectiveName
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32411,7 +32663,8 @@ c	ht	net/minecraft/network/play/server/S05PacketSpawnPosition	net/minecraft/netw
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	hu	net/minecraft/network/play/server/S03PacketTimeUpdate	net/minecraft/network/play/server/S03PacketTimeUpdate
@@ -32425,7 +32678,8 @@ c	hu	net/minecraft/network/play/server/S03PacketTimeUpdate	net/minecraft/network
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()J	b	func_149365_d	getWorldTime
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32447,7 +32701,8 @@ c	hv	net/minecraft/network/play/server/S45PacketTitle	net/minecraft/network/play
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Leu;	b	func_179805_b	getMessage
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32483,7 +32738,8 @@ c	hw	net/minecraft/network/play/server/S33PacketUpdateSign	net/minecraft/network
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()[Leu;	b	func_180753_b	getLines
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32499,7 +32755,8 @@ c	hx	net/minecraft/network/play/server/S47PacketPlayerListHeaderFooter	net/minec
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Leu;	b	func_179701_b	getFooter
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32515,7 +32772,8 @@ c	hy	net/minecraft/network/play/server/S0DPacketCollectItem	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149353_d	getEntityID
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32541,7 +32799,8 @@ c	hz	net/minecraft/network/play/server/S18PacketEntityTeleport	net/minecraft/net
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149449_d	getX
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32659,7 +32918,8 @@ c	ia	net/minecraft/network/play/server/S20PacketEntityProperties	net/minecraft/n
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Ljava/util/List;	b	func_149441_d	func_149441_d
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
@@ -32687,7 +32947,8 @@ c	ib	net/minecraft/network/play/server/S1DPacketEntityEffect	net/minecraft/netwo
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lfj;)V	a	func_148833_a	func_148833_a
+	m	(Lfj;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149426_d	getEntityId
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32757,7 +33018,8 @@ c	id	net/minecraft/network/play/client/C14PacketTabComplete	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Lcj;	b	func_179709_b	getTargetBlock
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32771,7 +33033,8 @@ c	ie	net/minecraft/network/play/client/C01PacketChatMessage	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	ig	net/minecraft/network/play/client/C16PacketClientStatus	net/minecraft/network/play/client/C16PacketClientStatus
@@ -32783,7 +33046,8 @@ c	ig	net/minecraft/network/play/client/C16PacketClientStatus	net/minecraft/netwo
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	ig$a	net/minecraft/network/play/client/C16PacketClientStatus$EnumState	net/minecraft/network/play/client/C16PacketClientStatus$EnumState
@@ -32809,7 +33073,8 @@ c	ih	net/minecraft/network/play/client/C15PacketClientSettings	net/minecraft/net
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 	m	()Lwn$b;	c	func_149523_e	getChatVisibility
@@ -32831,7 +33096,8 @@ c	ii	net/minecraft/network/play/client/C0FPacketConfirmTransaction	net/minecraft
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()S	b	func_149533_d	getUid
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32847,7 +33113,8 @@ c	ij	net/minecraft/network/play/client/C11PacketEnchantItem	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149537_d	getButton
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32871,7 +33138,8 @@ c	ik	net/minecraft/network/play/client/C0EPacketClickWindow	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149544_d	getSlotId
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32891,7 +33159,8 @@ c	il	net/minecraft/network/play/client/C0DPacketCloseWindow	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	im	net/minecraft/network/play/client/C17PacketCustomPayload	net/minecraft/network/play/client/C17PacketCustomPayload
@@ -32905,7 +33174,8 @@ c	im	net/minecraft/network/play/client/C17PacketCustomPayload	net/minecraft/netw
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Lem;	b	func_180760_b	getBufferData
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32925,7 +33195,8 @@ c	in	net/minecraft/network/play/client/C02PacketUseEntity	net/minecraft/network/
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Laui;	b	func_179712_b	getHitVec
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -32945,7 +33216,8 @@ c	io	net/minecraft/network/play/client/C00PacketKeepAlive	net/minecraft/network/
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	ip	net/minecraft/network/play/client/C03PacketPlayer	net/minecraft/network/play/client/C03PacketPlayer
@@ -32971,7 +33243,8 @@ c	ip	net/minecraft/network/play/client/C03PacketPlayer	net/minecraft/network/pla
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Z)V	a	func_149469_a	setMoving
 		c	
 	m	()D	b	func_149467_d	getPositionY
@@ -33032,7 +33305,8 @@ c	iq	net/minecraft/network/play/client/C13PacketPlayerAbilities	net/minecraft/ne
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Z)V	a	func_149490_a	setInvulnerable
 		c	
 	m	()Z	b	func_149488_d	isFlying
@@ -33064,7 +33338,8 @@ c	ir	net/minecraft/network/play/client/C07PacketPlayerDigging	net/minecraft/netw
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Lcq;	b	func_179714_b	getFacing
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -33091,7 +33366,8 @@ c	is	net/minecraft/network/play/client/C0BPacketEntityAction	net/minecraft/netwo
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Lis$a;	b	func_180764_b	getAction
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -33123,7 +33399,8 @@ c	it	net/minecraft/network/play/client/C0CPacketInput	net/minecraft/network/play
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()F	b	func_149616_d	getForwardSpeed
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -33141,7 +33418,8 @@ c	iu	net/minecraft/network/play/client/C19PacketResourcePackStatus	net/minecraft
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	iu$a	net/minecraft/network/play/client/C19PacketResourcePackStatus$Action	net/minecraft/network/play/client/C19PacketResourcePackStatus$Action
@@ -33160,7 +33438,8 @@ c	iv	net/minecraft/network/play/client/C09PacketHeldItemChange	net/minecraft/net
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	iw	net/minecraft/network/play/client/C10PacketCreativeInventoryAction	net/minecraft/network/play/client/C10PacketCreativeInventoryAction
@@ -33174,7 +33453,8 @@ c	iw	net/minecraft/network/play/client/C10PacketCreativeInventoryAction	net/mine
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Lzx;	b	func_149625_d	getStack
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -33190,7 +33470,8 @@ c	ix	net/minecraft/network/play/client/C12PacketUpdateSign	net/minecraft/network
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()[Leu;	b	func_180768_b	getLines
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -33200,7 +33481,8 @@ c	iy	net/minecraft/network/play/client/C0APacketAnimation	net/minecraft/network/
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	iz	net/minecraft/network/play/client/C18PacketSpectate	net/minecraft/network/play/client/C18PacketSpectate
@@ -33210,7 +33492,8 @@ c	iz	net/minecraft/network/play/client/C18PacketSpectate	net/minecraft/network/p
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lle;)Lpk;	a	func_179727_a	getEntity
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -33258,7 +33541,8 @@ c	ja	net/minecraft/network/play/client/C08PacketPlayerBlockPlacement	net/minecra
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Lic;)V	a	func_148833_a	func_148833_a
+	m	(Lic;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149568_f	getPlacedBlockDirection
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -33286,7 +33570,8 @@ c	jc	net/minecraft/network/handshake/client/C00Handshake	net/minecraft/network/h
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Ljd;)V	a	func_148833_a	func_148833_a
+	m	(Ljd;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()I	b	func_149595_d	getProtocolVersion
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -33312,7 +33597,8 @@ c	jg	net/minecraft/network/login/server/S02PacketLoginSuccess	net/minecraft/netw
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Ljf;)V	a	func_148833_a	func_148833_a
+	m	(Ljf;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	jh	net/minecraft/network/login/server/S01PacketEncryptionRequest	net/minecraft/network/login/server/S01PacketEncryptionRequest
@@ -33328,7 +33614,8 @@ c	jh	net/minecraft/network/login/server/S01PacketEncryptionRequest	net/minecraft
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Ljf;)V	a	func_148833_a	func_148833_a
+	m	(Ljf;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	()Ljava/security/PublicKey;	b	func_149608_d	getPublicKey
 		c	
 	m	(Lem;)V	b	func_148840_b	writePacketData
@@ -33344,7 +33631,8 @@ c	ji	net/minecraft/network/login/server/S03PacketEnableCompression	net/minecraft
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Ljf;)V	a	func_148833_a	func_148833_a
+	m	(Ljf;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	jj	net/minecraft/network/login/server/S00PacketDisconnect	net/minecraft/network/login/server/S00PacketDisconnect
@@ -33355,7 +33643,8 @@ c	jj	net/minecraft/network/login/server/S00PacketDisconnect	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Ljf;)V	a	func_148833_a	func_148833_a
+	m	(Ljf;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	jk	net/minecraft/network/login/INetHandlerLoginServer	net/minecraft/network/login/INetHandlerLoginServer
@@ -33372,7 +33661,8 @@ c	jl	net/minecraft/network/login/client/C00PacketLoginStart	net/minecraft/networ
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Ljk;)V	a	func_148833_a	func_148833_a
+	m	(Ljk;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	jm	net/minecraft/network/login/client/C01PacketEncryptionResponse	net/minecraft/network/login/client/C01PacketEncryptionResponse
@@ -33386,7 +33676,8 @@ c	jm	net/minecraft/network/login/client/C01PacketEncryptionResponse	net/minecraf
 		c	Passes this Packet on to the NetHandler for processing.
 	m	(Ljava/security/PrivateKey;)Ljavax/crypto/SecretKey;	a	func_149300_a	getSecretKey
 		c	
-	m	(Ljk;)V	a	func_148833_a	func_148833_a
+	m	(Ljk;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 	m	(Ljava/security/PrivateKey;)[B	b	func_149299_b	getVerifyToken
@@ -33403,7 +33694,8 @@ c	jq	net/minecraft/network/status/server/S01PacketPong	net/minecraft/network/sta
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Ljp;)V	a	func_148833_a	func_148833_a
+	m	(Ljp;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	jr	net/minecraft/network/status/server/S00PacketServerInfo	net/minecraft/network/status/server/S00PacketServerInfo
@@ -33417,7 +33709,8 @@ c	jr	net/minecraft/network/status/server/S00PacketServerInfo	net/minecraft/netwo
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Ljp;)V	a	func_148833_a	func_148833_a
+	m	(Ljp;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	js	net/minecraft/network/ServerStatusResponse	net/minecraft/network/ServerStatusResponse
@@ -33498,7 +33791,8 @@ c	ju	net/minecraft/network/status/client/C01PacketPing	net/minecraft/network/sta
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Ljt;)V	a	func_148833_a	func_148833_a
+	m	(Ljt;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	jv	net/minecraft/network/status/client/C00PacketServerQuery	net/minecraft/network/status/client/C00PacketServerQuery
@@ -33506,7 +33800,8 @@ c	jv	net/minecraft/network/status/client/C00PacketServerQuery	net/minecraft/netw
 		c	Reads the raw packet data from the data stream.
 	m	(Lep;)V	a	func_148833_a	processPacket
 		c	Passes this Packet on to the NetHandler for processing.
-	m	(Ljt;)V	a	func_148833_a	func_148833_a
+	m	(Ljt;)V	a	func_148833_a	processPacket
+		c	Passes this Packet on to the NetHandler for processing.
 	m	(Lem;)V	b	func_148840_b	writePacketData
 		c	Writes the raw packet data to the data stream.
 c	jy	net/minecraft/util/ResourceLocation	net/minecraft/util/ResourceLocation
@@ -33796,7 +34091,8 @@ c	kn	net/minecraft/server/dedicated/DedicatedPlayerList	net/minecraft/server/ded
 		c	
 	m	(Lcom/mojang/authlib/GameProfile;)V	b	func_152610_b	removeOp
 		c	
-	m	()Lnet/minecraft/server/MinecraftServer;	c	func_72365_p	func_72365_p
+	m	()Lnet/minecraft/server/MinecraftServer;	c	func_72365_p	getServerInstance
+		c	
 	m	(Lcom/mojang/authlib/GameProfile;)V	c	func_152597_c	removePlayerFromWhitelist
 		c	
 	m	(Lcom/mojang/authlib/GameProfile;)V	d	func_152601_d	addWhitelistedPlayer
@@ -33871,7 +34167,8 @@ c	ko	net/minecraft/server/dedicated/DedicatedServer	net/minecraft/server/dedicat
 		c	Get if native transport should be used. Native transport means linux server performance improvements and optimized packet sending/receiving on linux
 	m	()Z	al	func_82356_Z	isCommandBlockEnabled
 		c	Return whether command blocks are enabled.
-	m	()Llx;	ap	func_71203_ab	func_71203_ab
+	m	()Llx;	ap	func_71203_ab	getConfigurationManager
+		c	
 	m	()Z	as	func_71279_ae	getGuiEnabled
 		c	
 	m	()I	aw	func_82357_ak	getSpawnProtectionSize
@@ -34746,15 +35043,18 @@ c	ll	net/minecraft/network/NetworkSystem	net/minecraft/network/NetworkSystem
 c	ll$1	net/minecraft/network/NetworkSystem$1	net/minecraft/network/NetworkSystem$1
 	m	()Lio/netty/channel/nio/NioEventLoopGroup;	a	func_179280_b	load
 		c	
-	m	()Ljava/lang/Object;	b	func_179280_b	func_179280_b
+	m	()Ljava/lang/Object;	b	func_179280_b	load
+		c	
 c	ll$2	net/minecraft/network/NetworkSystem$2	net/minecraft/network/NetworkSystem$2
 	m	()Lio/netty/channel/epoll/EpollEventLoopGroup;	a	func_179280_b	load
 		c	
-	m	()Ljava/lang/Object;	b	func_179280_b	func_179280_b
+	m	()Ljava/lang/Object;	b	func_179280_b	load
+		c	
 c	ll$3	net/minecraft/network/NetworkSystem$3	net/minecraft/network/NetworkSystem$3
 	m	()Lio/netty/channel/local/LocalEventLoopGroup;	a	func_179280_b	load
 		c	
-	m	()Ljava/lang/Object;	b	func_179280_b	func_179280_b
+	m	()Ljava/lang/Object;	b	func_179280_b	load
+		c	
 c	ll$4	net/minecraft/network/NetworkSystem$4	net/minecraft/network/NetworkSystem$4
 	f	Lll;	a	field_151283_c	field_151283_c
 	m	(Lio/netty/channel/Channel;)V	initChannel	initChannel	initChannel
@@ -35330,7 +35630,8 @@ c	ly	net/minecraft/server/management/UserListOps	net/minecraft/server/management
 		c	Gets the GameProfile of based on the provided username.
 	m	(Lcom/mojang/authlib/GameProfile;)Z	b	func_183026_b	bypassesPlayerLimit
 		c	
-	m	(Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;	c	func_152681_a	func_152681_a
+	m	(Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;	c	func_152681_a	getObjectKey
+		c	Gets the key value for the given object
 c	lz	net/minecraft/server/management/UserListOpsEntry	net/minecraft/server/management/UserListOpsEntry
 	f	I	a	field_152645_a	permissionLevel
 		c	
@@ -35438,7 +35739,8 @@ c	mc	net/minecraft/server/management/UserListBans	net/minecraft/server/managemen
 		c	Gets the key value for the given object
 	m	(Ljava/lang/String;)Lcom/mojang/authlib/GameProfile;	a	func_152703_a	isUsernameBanned
 		c	
-	m	(Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;	b	func_152681_a	func_152681_a
+	m	(Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;	b	func_152681_a	getObjectKey
+		c	Gets the key value for the given object
 c	md	net/minecraft/server/management/UserListBansEntry	net/minecraft/server/management/UserListBansEntry
 	m	(Lcom/google/gson/JsonObject;)V	a	func_152641_a	onSerialization
 		c	
@@ -35455,7 +35757,8 @@ c	me	net/minecraft/server/management/UserListWhitelist	net/minecraft/server/mana
 		c	Gets the key value for the given object
 	m	(Ljava/lang/String;)Lcom/mojang/authlib/GameProfile;	a	func_152706_a	getBannedProfile
 		c	Gets the GameProfile for the UserListBanEntry with the specified username, if present
-	m	(Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;	b	func_152681_a	func_152681_a
+	m	(Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;	b	func_152681_a	getObjectKey
+		c	Gets the key value for the given object
 c	mf	net/minecraft/server/management/UserListWhitelistEntry	net/minecraft/server/management/UserListWhitelistEntry
 	m	(Lcom/google/gson/JsonObject;)V	a	func_152641_a	onSerialization
 		c	
@@ -35625,8 +35928,10 @@ c	mq	net/minecraft/stats/Achievement	net/minecraft/stats/Achievement
 		c	Returns the fully description of the achievement - ready to be displayed on screen.
 	m	()Z	g	func_75984_f	getSpecial
 		c	Special achievements have a 'spiked' (on normal texture pack) frame, special achievements are the hardest ones to achieve.
-	m	()Lmw;	h	func_75971_g	func_75971_g
-	m	()Lmw;	i	func_75966_h	func_75966_h
+	m	()Lmw;	h	func_75971_g	registerStat
+		c	Register the stat into StatList.
+	m	()Lmw;	i	func_75966_h	initIndependentStat
+		c	Initializes the current stat as independent (i.e., lacking prerequisites for being updated) and returns the current instance.
 c	mr	net/minecraft/stats/AchievementList	net/minecraft/stats/AchievementList
 	f	I	a	field_76010_a	minDisplayColumn
 		c	Is the smallest column used to display a achievement on the GUI.
@@ -39574,7 +39879,8 @@ c	qa	net/minecraft/entity/passive/EntityTameable	net/minecraft/entity/passive/En
 		c	Play the taming effect, will either be hearts or smoke depending on status
 	m	(Z)V	m	func_70903_f	setTamed
 		c	
-	m	()Lpk;	m_	func_70902_q	func_70902_q
+	m	()Lpk;	m_	func_70902_q	getOwner
+		c	
 	m	(Z)V	n	func_70904_g	setSitting
 		c	
 c	qb	net/minecraft/entity/ai/attributes/IAttribute	net/minecraft/entity/ai/attributes/IAttribute
@@ -39729,13 +40035,15 @@ c	qi	net/minecraft/entity/ai/attributes/ServersideAttributeMap	net/minecraft/ent
 	m	(Lqc;)V	a	func_180794_a	func_180794_a
 	m	()Ljava/util/Set;	b	func_111161_b	getAttributeInstanceSet
 		c	
-	m	(Ljava/lang/String;)Lqh;	b	func_111152_a	func_111152_a
+	m	(Ljava/lang/String;)Lqh;	b	func_111152_a	getAttributeInstanceByName
+		c	
 	m	(Lqb;)Lqc;	b	func_111150_b	registerAttribute
 		c	Registers an attribute with this AttributeMap, returns a modifiable AttributeInstance associated with this map
 	m	()Ljava/util/Collection;	c	func_111160_c	getWatchedAttributes
 		c	
 	m	(Lqb;)Lqc;	c	func_180376_c	func_180376_c
-	m	(Lqb;)Lqh;	e	func_111151_a	func_111151_a
+	m	(Lqb;)Lqh;	e	func_111151_a	getAttributeInstance
+		c	
 c	qj	net/minecraft/entity/ai/attributes/RangedAttribute	net/minecraft/entity/ai/attributes/RangedAttribute
 	f	D	a	field_111120_a	minimumValue
 		c	
@@ -41335,7 +41643,8 @@ c	tn	net/minecraft/entity/passive/EntityChicken	net/minecraft/entity/passive/Ent
 		c	
 	m	(Ldn;)V	b	func_70014_b	writeEntityToNBT
 		c	(abstract) Protected helper method to write subclass entity data to NBT.
-	m	(Lph;)Ltn;	b	func_90011_a	func_90011_a
+	m	(Lph;)Ltn;	b	func_90011_a	createChild
+		c	
 	m	(Lwn;)I	b	func_70693_a	getExperiencePoints
 		c	Get the experience points the entity currently has.
 	m	(ZI)V	b	func_70628_a	dropFewItems
@@ -41369,7 +41678,8 @@ c	to	net/minecraft/entity/passive/EntityCow	net/minecraft/entity/passive/EntityC
 		c	
 	m	()V	aX	func_110147_ax	applyEntityAttributes
 		c	
-	m	(Lph;)Lto;	b	func_90011_a	func_90011_a
+	m	(Lph;)Lto;	b	func_90011_a	createChild
+		c	
 	m	(ZI)V	b	func_70628_a	dropFewItems
 		c	Drop 0-2 items of this living's type\\n \\n@param wasRecentlyHit true if this this entity was recently hit by appropriate entity (generally only if player or tameable)\\n@param lootingModifier level of enchanment to be applied to this drop
 	m	()F	bB	func_70599_aP	getSoundVolume
@@ -41677,8 +41987,10 @@ c	tr	net/minecraft/entity/passive/EntityMooshroom	net/minecraft/entity/passive/E
 		c	
 	m	(Lwn;)Z	a	func_70085_c	interact
 		c	Called when a player interacts with a mob. e.g. gets milk from a cow, gets into the saddle on a pig.
-	m	(Lph;)Lto;	b	func_90011_a	func_90011_a
-	m	(Lph;)Ltr;	c	func_90011_a	func_90011_a
+	m	(Lph;)Lto;	b	func_90011_a	createChild
+		c	
+	m	(Lph;)Ltr;	c	func_90011_a	createChild
+		c	
 c	ts	net/minecraft/entity/passive/EntityOcelot	net/minecraft/entity/passive/EntityOcelot
 	f	Lqs;	bo	field_175545_bm	avoidEntity
 		c	
@@ -41706,7 +42018,8 @@ c	ts	net/minecraft/entity/passive/EntityOcelot	net/minecraft/entity/passive/Enti
 		c	
 	m	(Ldn;)V	b	func_70014_b	writeEntityToNBT
 		c	(abstract) Protected helper method to write subclass entity data to NBT.
-	m	(Lph;)Lts;	b	func_90011_a	func_90011_a
+	m	(Lph;)Lts;	b	func_90011_a	createChild
+		c	
 	m	(ZI)V	b	func_70628_a	dropFewItems
 		c	Drop 0-2 items of this living's type\\n \\n@param wasRecentlyHit true if this this entity was recently hit by appropriate entity (generally only if player or tameable)\\n@param lootingModifier level of enchanment to be applied to this drop
 	m	()F	bB	func_70599_aP	getSoundVolume
@@ -41758,7 +42071,8 @@ c	tt	net/minecraft/entity/passive/EntityPig	net/minecraft/entity/passive/EntityP
 		c	
 	m	(Ldn;)V	b	func_70014_b	writeEntityToNBT
 		c	(abstract) Protected helper method to write subclass entity data to NBT.
-	m	(Lph;)Ltt;	b	func_90011_a	func_90011_a
+	m	(Lph;)Ltt;	b	func_90011_a	createChild
+		c	
 	m	(ZI)V	b	func_70628_a	dropFewItems
 		c	Drop 0-2 items of this living's type\\n \\n@param wasRecentlyHit true if this this entity was recently hit by appropriate entity (generally only if player or tameable)\\n@param lootingModifier level of enchanment to be applied to this drop
 	m	()Z	bW	func_82171_bF	canBeSteered
@@ -41824,7 +42138,8 @@ c	tu	net/minecraft/entity/passive/EntityRabbit	net/minecraft/entity/passive/Enti
 		c	
 	m	(Ldn;)V	b	func_70014_b	writeEntityToNBT
 		c	(abstract) Protected helper method to write subclass entity data to NBT.
-	m	(Lph;)Ltu;	b	func_90011_a	func_90011_a
+	m	(Lph;)Ltu;	b	func_90011_a	createChild
+		c	
 	m	(Ltu$b;)V	b	func_175524_b	doMovementAction
 		c	
 	m	(ZI)V	b	func_70628_a	dropFewItems
@@ -41973,7 +42288,8 @@ c	tv	net/minecraft/entity/passive/EntitySheep	net/minecraft/entity/passive/Entit
 		c	
 	m	(Ldn;)V	b	func_70014_b	writeEntityToNBT
 		c	(abstract) Protected helper method to write subclass entity data to NBT.
-	m	(Lph;)Ltv;	b	func_90011_a	func_90011_a
+	m	(Lph;)Ltv;	b	func_90011_a	createChild
+		c	
 	m	(Lzd;)V	b	func_175512_b	setFleeceColor
 		c	Sets the wool color of this sheep
 	m	(ZI)V	b	func_70628_a	dropFewItems
@@ -42223,7 +42539,8 @@ c	ua	net/minecraft/entity/passive/EntityWolf	net/minecraft/entity/passive/Entity
 		c	
 	m	(Ldn;)V	b	func_70014_b	writeEntityToNBT
 		c	(abstract) Protected helper method to write subclass entity data to NBT.
-	m	(Lph;)Lua;	b	func_90011_a	func_90011_a
+	m	(Lph;)Lua;	b	func_90011_a	createChild
+		c	
 	m	()F	bB	func_70599_aP	getSoundVolume
 		c	Returns the volume for the sounds this mob makes.
 	m	()I	bQ	func_70646_bf	getVerticalFaceSpeed
@@ -44640,7 +44957,8 @@ c	wi	net/minecraft/entity/passive/EntityVillager	net/minecraft/entity/passive/En
 		c	Notifies the merchant of a possible merchantrecipe being fulfilled or not. Usually, this is just a sound byte being played depending if the suggested itemstack is not null.
 	m	(Ldn;)V	b	func_70014_b	writeEntityToNBT
 		c	(abstract) Protected helper method to write subclass entity data to NBT.
-	m	(Lph;)Lwi;	b	func_90011_a	func_90011_a
+	m	(Lph;)Lwi;	b	func_90011_a	createChild
+		c	
 	m	(Lpr;)V	b	func_70604_c	setRevengeTarget
 		c	
 	m	(Lwn;)Lada;	b_	func_70934_b	getRecipes
@@ -46385,7 +46703,8 @@ c	yo	net/minecraft/item/ItemBlock	net/minecraft/item/ItemBlock
 		c	Sets the unlocalized name of this item to the string passed as the parameter, prefixed by "item."
 	m	()Lyz;	c	func_77640_w	getCreativeTab
 		c	gets the CreativeTab this item is displayed on
-	m	(Ljava/lang/String;)Lzw;	c	func_77655_b	func_77655_b
+	m	(Ljava/lang/String;)Lzw;	c	func_77655_b	setUnlocalizedName
+		c	Sets the unlocalized name of this item to the string passed as the parameter, prefixed by "item."
 	m	()Lafh;	d	func_179223_d	getBlock
 		c	
 	m	(Lzx;)Ljava/lang/String;	e_	func_77667_c	getUnlocalizedName
