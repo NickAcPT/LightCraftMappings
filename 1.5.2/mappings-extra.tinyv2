@@ -1,4 +1,4 @@
-tiny	2	0	srg	named
+tiny	2	0	named	named
 c	net/minecraft/client/gui/GuiMainMenu	net/minecraft/client/gui/GuiMainMenu
 	f	Z	field_96140_r	hasTriedConnectingToRealms
 	f	Z	field_96141_q	shouldTryToConnectToRealms
