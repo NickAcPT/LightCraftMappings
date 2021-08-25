@@ -1,0 +1,8 @@
+tiny	2	0	srg	named
+c	net/minecraft/client/gui/GuiMainMenu	net/minecraft/client/gui/GuiMainMenu
+	f	Z	field_96140_r	hasTriedConnectingToRealms
+	f	Z	field_96141_q	shouldTryToConnectToRealms
+	m	(Lnet/minecraft/util/StringTranslate;II)V	func_98060_b	addRealmsButton
+	f	Z	field_96139_s	isConnectedToRealms
+c	net/minecraft/util/HttpUtil	net/minecraft/util/HttpUtil
+	m	(Ljava/net/URL;)Ljava/lang/String;	func_104145_a	fetchUrlAsString
