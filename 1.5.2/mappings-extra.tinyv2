@@ -6,3 +6,5 @@ c	net/minecraft/client/gui/GuiMainMenu	net/minecraft/client/gui/GuiMainMenu
 	f	Z	field_96139_s	isConnectedToRealms
 c	net/minecraft/util/HttpUtil	net/minecraft/util/HttpUtil
 	m	(Ljava/net/URL;)Ljava/lang/String;	func_104145_a	fetchUrlAsString
+c	net/minecraft/client/Minecraft	net/minecraft/client/Minecraft
+	m	()I	func_90020_K	getFpsLmit
