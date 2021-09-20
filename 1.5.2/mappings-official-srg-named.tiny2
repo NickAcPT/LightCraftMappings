@@ -32364,3 +32364,47 @@ c	zz	net/minecraft/src/GameRuleValue	net/minecraft/GameRuleValue
 		c	Set this game rule value.
 	m	()Z	b	func_82758_b	getGameRuleBooleanValue
 		c	Gets the GameRule's value as boolean.
+c	CompactArrayList	net/optifine/CompactArrayList	net/optifine/CompactArrayList
+c	Config$1	net/optifine/Config$1	net/optifine/Config$1
+c	Config	net/optifine/Config	net/optifine/Config
+c	ConnectedProperties	net/optifine/ConnectedProperties	net/optifine/ConnectedProperties
+c	ConnectedTextures	net/optifine/ConnectedTextures	net/optifine/ConnectedTextures
+c	CustomAnimationFrame	net/optifine/CustomAnimationFrame	net/optifine/CustomAnimationFrame
+c	CustomColorizer	net/optifine/CustomColorizer	net/optifine/CustomColorizer
+c	CustomSky	net/optifine/CustomSky	net/optifine/CustomSky
+c	CustomSkyLayer	net/optifine/CustomSkyLayer	net/optifine/CustomSkyLayer
+c	GuiAnimationSettingsOF	net/optifine/GuiAnimationSettingsOF	net/optifine/GuiAnimationSettingsOF
+c	GuiDetailSettingsOF	net/optifine/GuiDetailSettingsOF	net/optifine/GuiDetailSettingsOF
+c	GuiOtherSettingsOF	net/optifine/GuiOtherSettingsOF	net/optifine/GuiOtherSettingsOF
+c	GuiPerformanceSettingsOF	net/optifine/GuiPerformanceSettingsOF	net/optifine/GuiPerformanceSettingsOF
+c	GuiQualitySettingsOF	net/optifine/GuiQualitySettingsOF	net/optifine/GuiQualitySettingsOF
+c	IWrUpdateControl	net/optifine/IWrUpdateControl	net/optifine/IWrUpdateControl
+c	IWrUpdateListener	net/optifine/IWrUpdateListener	net/optifine/IWrUpdateListener
+c	IWrUpdater	net/optifine/IWrUpdater	net/optifine/IWrUpdater
+c	NaturalProperties	net/optifine/NaturalProperties	net/optifine/NaturalProperties
+c	NaturalTextures	net/optifine/NaturalTextures	net/optifine/NaturalTextures
+c	NextTickHashSet	net/optifine/NextTickHashSet	net/optifine/NextTickHashSet
+c	RandomMobs	net/optifine/RandomMobs	net/optifine/RandomMobs
+c	Reflector	net/optifine/Reflector	net/optifine/Reflector
+c	ReflectorClass	net/optifine/ReflectorClass	net/optifine/ReflectorClass
+c	ReflectorConstructor	net/optifine/ReflectorConstructor	net/optifine/ReflectorConstructor
+c	ReflectorField	net/optifine/ReflectorField	net/optifine/ReflectorField
+c	ReflectorMethod	net/optifine/ReflectorMethod	net/optifine/ReflectorMethod
+c	TextureAnimation	net/optifine/TextureAnimation	net/optifine/TextureAnimation
+c	TextureAnimations	net/optifine/TextureAnimations	net/optifine/TextureAnimations
+c	TextureUtils	net/optifine/TextureUtils	net/optifine/TextureUtils
+c	VersionCheckThread	net/optifine/VersionCheckThread	net/optifine/VersionCheckThread
+c	VertexData	net/optifine/VertexData	net/optifine/VertexData
+c	WorldRendererSmooth	net/optifine/WorldRendererSmooth	net/optifine/WorldRendererSmooth
+c	WorldRendererThreaded	net/optifine/WorldRendererThreaded	net/optifine/WorldRendererThreaded
+c	WorldServerOF	net/optifine/WorldServerOF	net/optifine/WorldServerOF
+c	WrUpdateControl	net/optifine/WrUpdateControl	net/optifine/WrUpdateControl
+c	WrUpdaterSmooth	net/optifine/WrUpdaterSmooth	net/optifine/WrUpdaterSmooth
+c	WrUpdaterThreaded	net/optifine/WrUpdaterThreaded	net/optifine/WrUpdaterThreaded
+c	WrUpdates	net/optifine/WrUpdates	net/optifine/WrUpdates
+c	WrUpdateState	net/optifine/WrUpdateState	net/optifine/WrUpdateState
+c	WrUpdateThread$1	net/optifine/WrUpdateThread$1	net/optifine/WrUpdateThread$1
+c	WrUpdateThread$ThreadUpdateControl	net/optifine/WrUpdateThread$ThreadUpdateControl	net/optifine/WrUpdateThread$ThreadUpdateControl
+c	WrUpdateThread$ThreadUpdateListener	net/optifine/WrUpdateThread$ThreadUpdateListener	net/optifine/WrUpdateThread$ThreadUpdateListener
+c	WrUpdateThread	net/optifine/WrUpdateThread	net/optifine/WrUpdateThread
+
