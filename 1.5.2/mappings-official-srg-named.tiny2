@@ -7603,7 +7603,7 @@ c	aoz	net/minecraft/src/BlockPane	net/minecraft/block/BlockPane
 		c	The type of render function that is called for this block
 	m	(I)Z	d	func_72161_e	canThisPaneConnectToThisBlockID
 		c	Gets passed in the blockID of the block adjacent and supposed to return true if its allowed to connect to the type of blockID passed in. Args: blockID
-		p	0	arg0	blockID	blockID
+		p	1	arg0	blockID	blockID
 	m	()V	g	func_71919_f	setBlockBoundsForItemRender
 		c	Sets the block's bounds for rendering it as an item
 	m	()Llx;	q	func_72162_n	getSideTextureIndex
@@ -8296,7 +8296,7 @@ c	apa	net/minecraft/src/Block	net/minecraft/block/Block
 		p	3	arg2	z	z
 	m	(I)Llx;	m	func_71851_a	getBlockTextureFromSide
 		c	Returns the block texture based on the side being looked at.  Args: side
-		p	0	arg0	side	side
+		p	1	arg0	side	side
 	m	()I	n	func_71856_s_	getRenderBlockPass
 		c	Returns which pass should this block be rendered on. 0 for solids and 1 for alpha
 	m	()I	o	func_71933_m	getBlockColor
@@ -17016,8 +17016,8 @@ c	bgo	net/minecraft/src/RenderBat	net/minecraft/client/render/RenderBat
 	m	(Lng;DDDFF)V	a	func_77031_a	doRenderLiving
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lng;FFF)V	a	func_77043_a	rotateCorpse
 	m	(Lqg;DDD)V	a	func_82445_a	func_82445_a
 	m	(Lqg;DDDFF)V	a	func_82443_a	func_82443_a
@@ -17054,13 +17054,13 @@ c	bgt	net/minecraft/src/RenderCreeper	net/minecraft/client/render/RenderCreeper
 		c	The creeper model.
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lng;FF)I	a	func_77030_a	getColorMultiplier
 		c	Returns an ARGB int color back. Args: entityLiving, lightBrightness, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	lightBrightness	lightBrightness
-		p	2	arg2	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	lightBrightness	lightBrightness
+		p	3	arg2	partialTickTime	partialTickTime
 	m	(Lng;IF)I	a	func_77032_a	shouldRenderPass
 		c	Queries whether should render the specified pass or not.
 	m	(Lru;F)V	a	func_77060_a	updateCreeperScale
@@ -17277,8 +17277,8 @@ c	bhd	net/minecraft/src/RenderFish	net/minecraft/client/render/RenderFish
 c	bhe	net/minecraft/src/RenderGhast	net/minecraft/client/render/RenderGhast
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lry;F)V	a	func_77069_a	preRenderGhast
 		c	Pre-Renders the Ghast.
 c	bhf	net/minecraft/src/RenderGiantZombie	net/minecraft/client/render/RenderGiantZombie
@@ -17286,8 +17286,8 @@ c	bhf	net/minecraft/src/RenderGiantZombie	net/minecraft/client/render/RenderGian
 		c	Scale of the model to use
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lrz;F)V	a	func_77072_a	preRenderScale
 		c	Applies the scale to the transform matrix
 c	bhg	net/minecraft/src/RenderBiped	net/minecraft/client/render/RenderBiped
@@ -17366,8 +17366,8 @@ c	bhk	net/minecraft/src/RenderMagmaCube	net/minecraft/client/render/RenderMagmaC
 	m	(Lng;DDDFF)V	a	func_77031_a	doRenderLiving
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lsa;DDDFF)V	a	func_77119_a	renderMagmaCube
 	m	(Lsa;F)V	a	func_77118_a	scaleMagmaCube
 c	bhl	net/minecraft/src/RenderLightningBolt	net/minecraft/client/render/RenderLightningBolt
@@ -17446,8 +17446,8 @@ c	bhq	net/minecraft/src/RenderOcelot	net/minecraft/client/render/RenderOcelot
 	m	(Lng;DDDFF)V	a	func_77031_a	doRenderLiving
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lqm;DDDFF)V	a	func_77117_a	renderLivingOcelot
 	m	(Lqm;F)V	a	func_77116_a	preRenderOcelot
 		c	Pre-Renders the Ocelot.
@@ -17483,8 +17483,8 @@ c	bht	net/minecraft/src/RenderPlayer	net/minecraft/client/render/RenderPlayer
 	m	(Lng;DDDLjava/lang/String;FD)V	a	func_96449_a	func_96449_a
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lng;FFF)V	a	func_77043_a	rotateCorpse
 	m	(Lng;IF)I	a	func_77032_a	shouldRenderPass
 		c	Queries whether should render the specified pass or not.
@@ -17527,8 +17527,8 @@ c	bhv	net/minecraft/src/RenderSilverfish	net/minecraft/client/render/RenderSilve
 c	bhw	net/minecraft/src/RenderSkeleton	net/minecraft/client/render/RenderSkeleton
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lsf;F)V	a	func_82438_a	func_82438_a
 	m	()V	c	func_82422_c	func_82422_c
 c	bhx	net/minecraft/src/RenderSlime	net/minecraft/client/render/RenderSlime
@@ -17536,8 +17536,8 @@ c	bhx	net/minecraft/src/RenderSlime	net/minecraft/client/render/RenderSlime
 		c	
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lng;IF)I	a	func_77032_a	shouldRenderPass
 		c	Queries whether should render the specified pass or not.
 	m	(Lsg;F)V	a	func_77091_a	scaleSlime
@@ -17553,8 +17553,8 @@ c	bhy	net/minecraft/src/RenderSnowMan	net/minecraft/client/render/RenderSnowMan
 c	bhz	net/minecraft/src/RenderSpider	net/minecraft/client/render/RenderSpider
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lng;IF)I	a	func_77032_a	shouldRenderPass
 		c	Queries whether should render the specified pass or not.
 	m	(Lsh;)F	a	func_77095_a	setSpiderDeathMaxRotation
@@ -17610,8 +17610,8 @@ c	bie	net/minecraft/src/RenderVillager	net/minecraft/client/render/RenderVillage
 	m	(Lng;DDDFF)V	a	func_77031_a	doRenderLiving
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lng;IF)I	a	func_77032_a	shouldRenderPass
 		c	Queries whether should render the specified pass or not.
 	m	(Lsm;DDDFF)V	a	func_77054_a	renderVillager
@@ -17628,8 +17628,8 @@ c	bif	net/minecraft/src/RenderWitch	net/minecraft/client/render/RenderWitch
 	m	(Lng;DDDFF)V	a	func_77031_a	doRenderLiving
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lsi;DDDFF)V	a	func_82412_a	func_82412_a
 	m	(Lsi;F)V	a	func_82411_a	func_82411_a
 	m	()V	b	func_82410_b	func_82410_b
@@ -17642,8 +17642,8 @@ c	big	net/minecraft/src/RenderWither	net/minecraft/client/render/RenderWither
 	m	(Lng;DDDFF)V	a	func_77031_a	doRenderLiving
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lng;IF)I	a	func_77032_a	shouldRenderPass
 		c	Queries whether should render the specified pass or not.
 	m	(Lrb;DDDFF)V	a	func_82418_a	func_82418_a
@@ -23821,8 +23821,8 @@ c	mm	net/minecraft/src/EntityAgeable	net/minecraft/entity/EntityAgeable
 	m	()V	a	func_70088_a	entityInit
 	m	(FF)V	a	func_70105_a	setSize
 		c	Sets the width and height of the entity. Args: width, height
-		p	0	arg0	width	width
-		p	1	arg1	height	height
+		p	1	arg0	width	width
+		p	2	arg1	height	height
 	m	(I)V	a	func_70873_a	setGrowingAge
 		c	The age value may be negative or positive or zero. If it's negative, it get's incremented on each tick, if it's positive, it get's decremented each tick. With a negative value the Entity is considered a child.
 	m	(Lbs;)V	a	func_70037_a	readEntityFromNBT
@@ -25585,6 +25585,8 @@ c	ns	net/minecraft/src/DataWatcher	net/minecraft/entity/DataWatcher
 		c	Add a new object for the DataWatcher to watch, using the specified data type.
 	m	(ILjava/lang/Object;)V	a	func_75682_a	addObject
 		c	adds a new object to dataWatcher to watch, to update an already existing object see updateObject. Arguments: data Value Id, Object to add
+		p	1	arg0	data	data
+		p	2	arg1	Object	Object
 	m	(Ljava/io/DataInputStream;)Ljava/util/List;	a	func_75686_a	readWatchableObjects
 	m	(Ljava/io/DataOutputStream;)V	a	func_75689_a	writeWatchableObjects
 	m	(Ljava/io/DataOutputStream;Lnt;)V	a	func_75690_a	writeWatchableObject

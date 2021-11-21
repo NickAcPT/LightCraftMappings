@@ -14247,6 +14247,12 @@ c	awd$a	net/minecraft/client/gui/GuiListExtended$IGuiListEntry	net/minecraft/cli
 	m	(IIIIIIIZ)V	a	func_180790_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	0	arg0	index	index
+		p	1	arg1	x	x
+		p	2	arg2	y	y
+		p	3	arg3	mouseEvent	mouseEvent
+		p	4	arg4	relativeX	relativeX
+		p	5	arg5	relativeY	relativeY
 c	awe	net/minecraft/client/gui/GuiOptionButton	net/minecraft/client/gui/GuiOptionButton
 	f	Lavh$a;	o	field_146137_o	enumOptions
 		c	
@@ -14272,6 +14278,12 @@ c	awf$a	net/minecraft/client/gui/GuiOptionsRowList$Row	net/minecraft/client/gui/
 	m	(IIIIIIIZ)V	a	func_180790_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 c	awg	net/minecraft/client/gui/GuiPageButtonList	net/minecraft/client/gui/GuiPageButtonList
 	f	Ljava/util/List;	u	field_178074_u	field_178074_u
 	f	Lnm;	v	field_178073_v	field_178073_v
@@ -14338,6 +14350,12 @@ c	awg$d	net/minecraft/client/gui/GuiPageButtonList$GuiEntry	net/minecraft/client
 	m	()Lavp;	b	func_178021_b	func_178021_b
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 	m	(Lavp;III)V	b	func_178016_b	func_178016_b
 	m	(Lavs;III)V	b	func_178019_b	func_178019_b
 	m	(Lawg$d;)Lavp;	b	access$100	access$100
@@ -16148,6 +16166,12 @@ c	ayi$a	net/minecraft/client/gui/GuiKeyBindingList$CategoryEntry	net/minecraft/c
 	m	(IIIIIIIZ)V	a	func_180790_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 c	ayi$b	net/minecraft/client/gui/GuiKeyBindingList$KeyEntry	net/minecraft/client/gui/GuiKeyBindingList$KeyEntry
 	f	Lavb;	b	field_148282_b	keybinding
 		c	The keybinding specified for this KeyEntry
@@ -16164,6 +16188,12 @@ c	ayi$b	net/minecraft/client/gui/GuiKeyBindingList$KeyEntry	net/minecraft/client
 	m	(IIIIIIIZ)V	a	func_180790_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 c	ayj	net/minecraft/client/gui/GuiControls	net/minecraft/client/gui/GuiControls
 	f	[Lavh$a;	h	field_146492_g	optionsArr
 		c	
@@ -17016,6 +17046,12 @@ c	azi	net/minecraft/client/gui/ServerListEntryLanScan	net/minecraft/client/gui/S
 	m	(IIIIIIIZ)V	a	func_180790_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 c	azj	net/minecraft/client/gui/ServerListEntryLanDetected	net/minecraft/client/gui/ServerListEntryLanDetected
 	f	Lazh;	c	field_148292_c	field_148292_c
 	f	Lave;	a	field_148293_a	mc
@@ -17029,6 +17065,12 @@ c	azj	net/minecraft/client/gui/ServerListEntryLanDetected	net/minecraft/client/g
 	m	(IIIIIIIZ)V	a	func_180790_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 c	azk	net/minecraft/client/gui/ServerListEntryNormal	net/minecraft/client/gui/ServerListEntryNormal
 	f	Lorg/apache/logging/log4j/Logger;	a	field_148304_a	logger
 		c	
@@ -17058,6 +17100,12 @@ c	azk	net/minecraft/client/gui/ServerListEntryNormal	net/minecraft/client/gui/Se
 	m	()Z	b	func_178013_b	func_178013_b
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 	m	(Lazk;)Lazh;	b	access$100	access$100
 	m	()V	c	func_148297_b	prepareServerIcon
 c	azk$1	net/minecraft/client/gui/ServerListEntryNormal$1	net/minecraft/client/gui/ServerListEntryNormal$1
@@ -17149,6 +17197,12 @@ c	azp	net/minecraft/client/resources/ResourcePackListEntry	net/minecraft/client/
 	m	()Ljava/lang/String;	b	func_148311_a	func_148311_a
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 	m	()Ljava/lang/String;	c	func_148312_b	func_148312_b
 	m	()V	d	func_148313_c	func_148313_c
 	m	()Z	e	func_148310_d	func_148310_d
@@ -21697,8 +21751,8 @@ c	bii	net/minecraft/client/renderer/entity/RenderBat	net/minecraft/client/render
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lpr;FFF)V	a	func_77043_a	rotateCorpse
 	m	(Ltk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
@@ -21734,8 +21788,8 @@ c	bil	net/minecraft/client/renderer/entity/RenderCaveSpider	net/minecraft/client
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lvm;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lvm;F)V	a	func_77041_b	preRenderCallback
@@ -21769,13 +21823,13 @@ c	bio	net/minecraft/client/renderer/entity/RenderCreeper	net/minecraft/client/re
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lpr;FF)I	a	func_77030_a	getColorMultiplier
 		c	Returns an ARGB int color back. Args: entityLiving, lightBrightness, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	lightBrightness	lightBrightness
-		p	2	arg2	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	lightBrightness	lightBrightness
+		p	3	arg2	partialTickTime	partialTickTime
 	m	(Lvn;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lvn;F)V	a	func_77041_b	preRenderCallback
@@ -22060,8 +22114,8 @@ c	bja	net/minecraft/client/renderer/entity/RenderGhast	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lvr;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lvr;F)V	a	func_77041_b	preRenderCallback
@@ -22078,8 +22132,8 @@ c	bjb	net/minecraft/client/renderer/entity/RenderGiantZombie	net/minecraft/clien
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lvs;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lvs;F)V	a	func_77041_b	preRenderCallback
@@ -22107,8 +22161,8 @@ c	bjc	net/minecraft/client/renderer/entity/RenderGuardian	net/minecraft/client/r
 	m	(Lpr;DF)Laui;	a	func_177110_a	func_177110_a
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lps;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
 	m	(Lps;Lbia;DDD)Z	a	func_177071_a	shouldRender
@@ -22137,8 +22191,8 @@ c	bjd	net/minecraft/client/renderer/entity/RenderHorse	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Ltp;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Ltp;F)V	a	func_77041_b	preRenderCallback
@@ -22278,8 +22332,8 @@ c	bji	net/minecraft/client/renderer/entity/RenderMagmaCube	net/minecraft/client/
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lvu;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lvu;F)V	a	func_77041_b	preRenderCallback
@@ -22418,8 +22472,8 @@ c	bjq	net/minecraft/client/renderer/entity/RenderOcelot	net/minecraft/client/ren
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lts;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lts;F)V	a	func_77041_b	preRenderCallback
@@ -22505,8 +22559,8 @@ c	bjx	net/minecraft/client/renderer/entity/RenderSkeleton	net/minecraft/client/r
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lps;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lwa;)Ljy;	a	func_110775_a	getEntityTexture
@@ -22529,8 +22583,8 @@ c	bjy	net/minecraft/client/renderer/entity/RenderSlime	net/minecraft/client/rend
 		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lps;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
 	m	(Lwb;)Ljy;	a	func_110775_a	getEntityTexture
@@ -22636,8 +22690,8 @@ c	bkh	net/minecraft/client/renderer/entity/RenderVillager	net/minecraft/client/r
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lwi;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lwi;F)V	a	func_77041_b	preRenderCallback
@@ -22658,8 +22712,8 @@ c	bki	net/minecraft/client/renderer/entity/RenderWitch	net/minecraft/client/rend
 		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lps;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
 	m	(Lwd;)Ljy;	a	func_110775_a	getEntityTexture
@@ -22683,8 +22737,8 @@ c	bkj	net/minecraft/client/renderer/entity/RenderWither	net/minecraft/client/ren
 		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lps;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
 	m	(Luk;)Ljy;	a	func_110775_a	getEntityTexture
@@ -22981,8 +23035,8 @@ c	bln	net/minecraft/client/renderer/entity/RenderPlayer	net/minecraft/client/ren
 		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lpr;FFF)V	a	func_77043_a	rotateCorpse
 	m	()Lbbo;	b	func_177087_b	getMainModel
 	m	(Lbet;)V	b	func_177138_b	renderRightArm
@@ -30517,6 +30571,11 @@ c	lc	net/minecraft/server/management/PlayerManager	net/minecraft/server/manageme
 	m	(II)Z	a	func_152621_a	hasPlayerInstance
 	m	(IIIII)Z	a	func_72684_a	overlaps
 		c	Determine if two rectangles centered at the given points overlap for the provided radius. Arguments: x1, z1, x2, z2, radius.
+		p	1	arg0	x1	x1
+		p	2	arg1	z1	z1
+		p	3	arg2	x2	x2
+		p	4	arg3	z2	z2
+		p	5	arg4	radius	radius
 	m	(IIZ)Llc$a;	a	func_72690_a	getPlayerInstance
 		c	passi n the chunk x and y and a flag as to whether or not the instance should be made if it doesnt exist
 	m	(Lcj;)V	a	func_180244_a	markBlockForUpdate
@@ -34103,8 +34162,8 @@ c	ph	net/minecraft/entity/EntityAgeable	net/minecraft/entity/EntityAgeable
 	m	(F)V	a	func_98055_j	setScale
 	m	(FF)V	a	func_70105_a	setSize
 		c	Sets the width and height of the entity. Args: width, height
-		p	0	arg0	width	width
-		p	1	arg1	height	height
+		p	1	arg0	width	width
+		p	2	arg1	height	height
 	m	(I)V	a	func_110195_a	addGrowth
 		c	"Adds the value of the parameter times 20 to the age of this entity. If the entity is an adult (if the entity's age is greater than 0), it will have no effect."
 	m	(IZ)V	a	func_175501_a	func_175501_a
@@ -35318,6 +35377,8 @@ c	pz	net/minecraft/entity/DataWatcher	net/minecraft/entity/DataWatcher
 		c	Add a new object for the DataWatcher to watch, using the specified data type.
 	m	(ILjava/lang/Object;)V	a	func_75682_a	addObject
 		c	adds a new object to dataWatcher to watch, to update an already existing object see updateObject. Arguments: data Value Id, Object to add
+		p	1	arg0	data	data
+		p	2	arg1	Object	Object
 	m	(Lem;)V	a	func_151509_a	writeTo
 	m	(Lem;Lpz$a;)V	a	func_151510_a	writeWatchableObjectToPacketBuffer
 		c	Writes a watchable object (entity attribute of type {byte, short, int, float, string, ItemStack, ChunkCoordinates}) to the specified PacketBuffer
@@ -36668,9 +36729,9 @@ c	sw	net/minecraft/pathfinding/PathNavigate	net/minecraft/pathfinding/PathNaviga
 		c	Sets the speed
 	m	(DDD)Lasx;	a	func_75488_a	getPathToXYZ
 		c	Returns the path to the given coordinates. Args : x, y, z
-		p	0	arg0	x	x
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
+		p	3	arg2	z	z
 	m	(DDDD)Z	a	func_75492_a	tryMoveToXYZ
 		c	Try to find and set a path to XYZ. Returns true if successful. Args : x, y, z, speed
 		p	1	arg0	x	x
@@ -36687,11 +36748,11 @@ c	sw	net/minecraft/pathfinding/PathNavigate	net/minecraft/pathfinding/PathNaviga
 		c	Checks if entity haven't been moved when last checked and if so, clears current {@link net.minecraft.pathfinding.PathEntity}
 	m	(Laui;Laui;III)Z	a	func_75493_a	isDirectPathBetweenPoints
 		c	Returns true when an entity of specified size could safely walk in a straight line between the two points. Args: pos1, pos2, entityXSize, entityYSize, entityZSize
-		p	0	arg0	pos1	pos1
-		p	1	arg1	pos2	pos2
-		p	2	arg2	entityXSize	entityXSize
-		p	3	arg3	entityYSize	entityYSize
-		p	4	arg4	entityZSize	entityZSize
+		p	1	arg0	pos1	pos1
+		p	2	arg1	pos2	pos2
+		p	3	arg2	entityXSize	entityXSize
+		p	4	arg3	entityYSize	entityYSize
+		p	5	arg4	entityZSize	entityZSize
 	m	(Lcj;)Lasx;	a	func_179680_a	getPathToPos
 		c	Returns path to given BlockPos
 	m	(Lpk;)Lasx;	a	func_75494_a	getPathToEntityLiving
@@ -39784,8 +39845,8 @@ c	we	net/minecraft/entity/monster/EntityZombie	net/minecraft/entity/monster/Enti
 		c	Multiplies the height and width by the provided float.
 	m	(FF)V	a	func_70105_a	setSize
 		c	Sets the width and height of the entity. Args: width, height
-		p	0	arg0	width	width
-		p	1	arg1	height	height
+		p	1	arg0	width	width
+		p	2	arg1	height	height
 	m	(I)V	a	func_82228_a	startConversion
 		c	Starts converting this zombie into a villager. The zombie converts into a villager after the specified time in ticks.
 	m	(Lcj;Lafh;)V	a	func_180429_a	playStepSound

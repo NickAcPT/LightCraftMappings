@@ -5008,7 +5008,7 @@ c	aji	net/minecraft/block/Block	net/minecraft/block/Block
 	m	()I	h	func_149656_h	getMobilityFlag
 	m	(I)Lrf;	h	func_149733_h	getBlockTextureFromSide
 		c	Returns the block texture based on the side being looked at.  Args: side
-		p	0	arg0	side	side
+		p	1	arg0	side	side
 	m	(I)I	i	func_149741_i	getRenderColor
 		c	Returns the color this block should be rendered. Used by leaves.
 	m	()Z	j	func_149730_j	isFullBlock
@@ -6869,8 +6869,8 @@ c	alt	net/minecraft/block/BlockLeaves	net/minecraft/block/BlockLeaves
 		c	Determines the damage on the item the block drops. Used in cloth and wood.
 	m	(II)Lrf;	a	func_149691_a	getIcon
 		c	Gets the block's texture. Args: side, meta
-		p	0	arg0	side	side
-		p	1	arg1	meta	meta
+		p	1	arg0	side	side
+		p	2	arg1	meta	meta
 	m	(ILjava/util/Random;I)Ladb;	a	func_149650_a	getItemDropped
 	m	(Lahb;IIIIFI)V	a	func_149690_a	dropBlockAsItemWithChance
 		c	Drops the block items with a specified chance of dropping the specified items
@@ -13967,6 +13967,12 @@ c	bci	net/minecraft/client/gui/GuiListExtended$IGuiListEntry	net/minecraft/clien
 	m	(IIIIILbmh;IIZ)V	a	func_148279_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	0	arg0	index	index
+		p	1	arg1	x	x
+		p	2	arg2	y	y
+		p	3	arg3	mouseEvent	mouseEvent
+		p	4	arg4	relativeX	relativeX
+		p	5	arg5	relativeY	relativeY
 c	bcj	net/minecraft/client/gui/GuiOptionButton	net/minecraft/client/gui/GuiOptionButton
 	f	Lbbm;	o	field_146137_o	enumOptions
 		c	
@@ -13991,6 +13997,12 @@ c	bcl	net/minecraft/client/gui/GuiOptionsRowList$Row	net/minecraft/client/gui/Gu
 	m	(IIIIILbmh;IIZ)V	a	func_148279_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 c	bcm	net/minecraft/client/gui/GuiSlot	net/minecraft/client/gui/GuiSlot
 	f	Lbao;	k	field_148161_k	mc
 		c	
@@ -15395,6 +15407,12 @@ c	beu	net/minecraft/client/gui/GuiKeyBindingList$CategoryEntry	net/minecraft/cli
 	m	(IIIIILbmh;IIZ)V	a	func_148279_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 c	bev	net/minecraft/client/gui/GuiKeyBindingList$KeyEntry	net/minecraft/client/gui/GuiKeyBindingList$KeyEntry
 	f	Lbal;	b	field_148282_b	field_148282_b
 	f	Ljava/lang/String;	c	field_148283_c	field_148283_c
@@ -15408,6 +15426,12 @@ c	bev	net/minecraft/client/gui/GuiKeyBindingList$KeyEntry	net/minecraft/client/g
 	m	(IIIIILbmh;IIZ)V	a	func_148279_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 c	bew	net/minecraft/client/gui/GuiControls	net/minecraft/client/gui/GuiControls
 	f	[Lbbm;	h	field_146492_g	optionsArr
 		c	
@@ -16189,6 +16213,12 @@ c	bga	net/minecraft/client/gui/ServerListEntryLanScan	net/minecraft/client/gui/S
 	m	(IIIIILbmh;IIZ)V	a	func_148279_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 c	bgb	net/minecraft/client/gui/ServerListEntryLanDetected	net/minecraft/client/gui/ServerListEntryLanDetected
 	f	Lbfz;	c	field_148292_c	field_148292_c
 	f	Lbao;	a	field_148293_a	field_148293_a
@@ -16200,6 +16230,12 @@ c	bgb	net/minecraft/client/gui/ServerListEntryLanDetected	net/minecraft/client/g
 	m	(IIIIILbmh;IIZ)V	a	func_148279_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 c	bgc	net/minecraft/client/gui/ServerListEntryNormal	net/minecraft/client/gui/ServerListEntryNormal
 	f	Lorg/apache/logging/log4j/Logger;	a	field_148304_a	logger
 		c	
@@ -16219,6 +16255,12 @@ c	bgc	net/minecraft/client/gui/ServerListEntryNormal	net/minecraft/client/gui/Se
 	m	()V	b	func_148297_b	prepareServerIcon
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 	m	(Lbgc;)Lbfz;	b	access$100	access$100
 c	bgd	net/minecraft/client/gui/ServerListEntryNormal$1	net/minecraft/client/gui/ServerListEntryNormal$1
 	f	Lbgc;	a	field_148521_a	field_148521_a
@@ -16284,6 +16326,12 @@ c	bgg	net/minecraft/client/resources/ResourcePackListEntry	net/minecraft/client/
 	m	()Ljava/lang/String;	b	func_148312_b	func_148312_b
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
+		p	6	arg5	relativeY	relativeY
 	m	()V	c	func_148313_c	func_148313_c
 	m	()Z	d	func_148310_d	func_148310_d
 	m	()Z	e	func_148309_e	func_148309_e
@@ -19576,8 +19624,8 @@ c	bnc	net/minecraft/client/renderer/entity/RenderBat	net/minecraft/client/render
 		c	Actually renders the given argument. This is a synthetic bridge method, always casting down its argument and then handing it off to a worker function which does the actual work. In all probabilty, the class Render is generic (Render<T extends Entity) and this method has signature public void doRender(T entity, double d, double d1, double d2, float f, float f1). But JAD is pre 1.5 so doesn't do that.
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lsv;FFF)V	a	func_77043_a	rotateCorpse
 	m	(Lsw;DDDFF)V	a	func_76986_a	doRender
 		c	Actually renders the given argument. This is a synthetic bridge method, always casting down its argument and then handing it off to a worker function which does the actual work. In all probabilty, the class Render is generic (Render<T extends Entity) and this method has signature public void doRender(T entity, double d, double d1, double d2, float f, float f1). But JAD is pre 1.5 so doesn't do that.
@@ -19628,8 +19676,8 @@ c	bnf	net/minecraft/client/renderer/entity/RenderCaveSpider	net/minecraft/client
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lxy;)Lbqx;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lxy;F)V	a	func_77041_b	preRenderCallback
@@ -19675,13 +19723,13 @@ c	bni	net/minecraft/client/renderer/entity/RenderCreeper	net/minecraft/client/re
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lsv;FF)I	a	func_77030_a	getColorMultiplier
 		c	Returns an ARGB int color back. Args: entityLiving, lightBrightness, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	lightBrightness	lightBrightness
-		p	2	arg2	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	lightBrightness	lightBrightness
+		p	3	arg2	partialTickTime	partialTickTime
 	m	(Lsv;IF)I	a	func_77032_a	shouldRenderPass
 		c	Queries whether should render the specified pass or not.
 	m	(Lxz;)Lbqx;	a	func_110775_a	getEntityTexture
@@ -19941,8 +19989,8 @@ c	bnt	net/minecraft/client/renderer/entity/RenderGhast	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lyd;)Lbqx;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lyd;F)V	a	func_77041_b	preRenderCallback
@@ -19958,8 +20006,8 @@ c	bnu	net/minecraft/client/renderer/entity/RenderGiantZombie	net/minecraft/clien
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lye;)Lbqx;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lye;F)V	a	func_77041_b	preRenderCallback
@@ -19982,8 +20030,8 @@ c	bnv	net/minecraft/client/renderer/entity/RenderHorse	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lsv;FFFFFF)V	a	func_77036_a	renderModel
 		c	Renders the model in RenderLiving
 	m	(Lwi;)Lbqx;	a	func_110775_a	getEntityTexture
@@ -20131,8 +20179,8 @@ c	boe	net/minecraft/client/renderer/entity/RenderMagmaCube	net/minecraft/client/
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lyf;)Lbqx;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lyf;F)V	a	func_77041_b	preRenderCallback
@@ -20277,8 +20325,8 @@ c	bom	net/minecraft/client/renderer/entity/RenderOcelot	net/minecraft/client/ren
 		c	Actually renders the given argument. This is a synthetic bridge method, always casting down its argument and then handing it off to a worker function which does the actual work. In all probabilty, the class Render is generic (Render<T extends Entity) and this method has signature public void doRender(T entity, double d, double d1, double d2, float f, float f1). But JAD is pre 1.5 so doesn't do that.
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lsw;DDDFF)V	a	func_76986_a	doRender
 		c	Actually renders the given argument. This is a synthetic bridge method, always casting down its argument and then handing it off to a worker function which does the actual work. In all probabilty, the class Render is generic (Render<T extends Entity) and this method has signature public void doRender(T entity, double d, double d1, double d2, float f, float f1). But JAD is pre 1.5 so doesn't do that.
 	m	(Lwn;)Lbqx;	a	func_110775_a	getEntityTexture
@@ -20345,8 +20393,8 @@ c	bop	net/minecraft/client/renderer/entity/RenderPlayer	net/minecraft/client/ren
 	m	(Lsv;DDDLjava/lang/String;FD)V	a	func_96449_a	renderOffsetLivingLabel
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lsv;FFF)V	a	func_77043_a	rotateCorpse
 	m	(Lsv;IF)I	a	func_77032_a	shouldRenderPass
 		c	Queries whether should render the specified pass or not.
@@ -20401,8 +20449,8 @@ c	bos	net/minecraft/client/renderer/entity/RenderSkeleton	net/minecraft/client/r
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lsw;)Lbqx;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lyl;)Lbqx;	a	func_110775_a	getEntityTexture
@@ -20421,8 +20469,8 @@ c	bot	net/minecraft/client/renderer/entity/RenderSlime	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lsv;IF)I	a	func_77032_a	shouldRenderPass
 		c	Queries whether should render the specified pass or not.
 	m	(Lym;)Lbqx;	a	func_110775_a	getEntityTexture
@@ -20548,8 +20596,8 @@ c	bpa	net/minecraft/client/renderer/entity/RenderVillager	net/minecraft/client/r
 		c	Actually renders the given argument. This is a synthetic bridge method, always casting down its argument and then handing it off to a worker function which does the actual work. In all probabilty, the class Render is generic (Render<T extends Entity) and this method has signature public void doRender(T entity, double d, double d1, double d2, float f, float f1). But JAD is pre 1.5 so doesn't do that.
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lsv;IF)I	a	func_77032_a	shouldRenderPass
 		c	Queries whether should render the specified pass or not.
 	m	(Lsw;DDDFF)V	a	func_76986_a	doRender
@@ -20579,8 +20627,8 @@ c	bpb	net/minecraft/client/renderer/entity/RenderWitch	net/minecraft/client/rend
 		c	Actually renders the given argument. This is a synthetic bridge method, always casting down its argument and then handing it off to a worker function which does the actual work. In all probabilty, the class Render is generic (Render<T extends Entity) and this method has signature public void doRender(T entity, double d, double d1, double d2, float f, float f1). But JAD is pre 1.5 so doesn't do that.
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lsw;DDDFF)V	a	func_76986_a	doRender
 		c	Actually renders the given argument. This is a synthetic bridge method, always casting down its argument and then handing it off to a worker function which does the actual work. In all probabilty, the class Render is generic (Render<T extends Entity) and this method has signature public void doRender(T entity, double d, double d1, double d2, float f, float f1). But JAD is pre 1.5 so doesn't do that.
 	m	(Lyp;)Lbqx;	a	func_110775_a	getEntityTexture
@@ -20608,8 +20656,8 @@ c	bpc	net/minecraft/client/renderer/entity/RenderWither	net/minecraft/client/ren
 		c	Actually renders the given argument. This is a synthetic bridge method, always casting down its argument and then handing it off to a worker function which does the actual work. In all probabilty, the class Render is generic (Render<T extends Entity) and this method has signature public void doRender(T entity, double d, double d1, double d2, float f, float f1). But JAD is pre 1.5 so doesn't do that.
 	m	(Lsv;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	0	arg0	entityLiving	entityLiving
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lsv;IF)I	a	func_77032_a	shouldRenderPass
 		c	Queries whether should render the specified pass or not.
 	m	(Lsw;DDDFF)V	a	func_76986_a	doRender
@@ -26603,6 +26651,11 @@ c	mq	net/minecraft/server/management/PlayerManager	net/minecraft/server/manageme
 	m	(III)V	a	func_151250_a	markBlockForUpdate
 	m	(IIIII)Z	a	func_72684_a	overlaps
 		c	Determine if two rectangles centered at the given points overlap for the provided radius. Arguments: x1, z1, x2, z2, radius.
+		p	1	arg0	x1	x1
+		p	2	arg1	z1	z1
+		p	3	arg2	x2	x2
+		p	4	arg3	z2	z2
+		p	5	arg4	radius	radius
 	m	(IIZ)Lmr;	a	func_72690_a	getPlayerInstance
 		c	passi n the chunk x and y and a flag as to whether or not the instance should be made if it doesnt exist
 	m	(Lmq;)Lmt;	a	access$100	access$100
@@ -29667,8 +29720,8 @@ c	rx	net/minecraft/entity/EntityAgeable	net/minecraft/entity/EntityAgeable
 	m	(F)V	a	func_98055_j	setScale
 	m	(FF)V	a	func_70105_a	setSize
 		c	Sets the width and height of the entity. Args: width, height
-		p	0	arg0	width	width
-		p	1	arg1	height	height
+		p	1	arg0	width	width
+		p	2	arg1	height	height
 	m	(I)V	a	func_110195_a	addGrowth
 		c	"Adds the value of the parameter times 20 to the age of this entity. If the entity is an adult (if the entity's age is greater than 0), it will have no effect."
 	m	(Ldh;)V	a	func_70037_a	readEntityFromNBT
@@ -30977,6 +31030,8 @@ c	te	net/minecraft/entity/DataWatcher	net/minecraft/entity/DataWatcher
 		c	Add a new object for the DataWatcher to watch, using the specified data type.
 	m	(ILjava/lang/Object;)V	a	func_75682_a	addObject
 		c	adds a new object to dataWatcher to watch, to update an already existing object see updateObject. Arguments: data Value Id, Object to add
+		p	1	arg0	data	data
+		p	2	arg1	Object	Object
 	m	(Let;)V	a	func_151509_a	func_151509_a
 	m	(Let;Ltf;)V	a	func_151510_a	writeWatchableObjectToPacketBuffer
 		c	Writes a watchable object (entity attribute of type {byte, short, int, float, string, ItemStack, ChunkCoordinates}) to the specified PacketBuffer
@@ -34489,8 +34544,8 @@ c	yq	net/minecraft/entity/monster/EntityZombie	net/minecraft/entity/monster/Enti
 	m	(F)V	a	func_146069_a	func_146069_a
 	m	(FF)V	a	func_70105_a	setSize
 		c	Sets the width and height of the entity. Args: width, height
-		p	0	arg0	width	width
-		p	1	arg1	height	height
+		p	1	arg0	width	width
+		p	2	arg1	height	height
 	m	(I)V	a	func_82228_a	startConversion
 		c	Starts converting this zombie into a villager. The zombie converts into a villager after the specified time in ticks.
 	m	(IIILaji;)V	a	func_145780_a	playStepSound
