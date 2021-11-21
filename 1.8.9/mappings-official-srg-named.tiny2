@@ -88,10 +88,9 @@ c	aab	net/minecraft/item/ItemMap	net/minecraft/item/ItemMap
 c	aac	net/minecraft/item/ItemBucketMilk	net/minecraft/item/ItemBucketMilk
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	(Lzx;Ladm;Lwn;)Lzx;	b	func_77654_b	onItemUseFinish
 		c	Called when the player finishes using this Item (E.g. finishes eating.). Not called when the player stops using the Item before the action is complete.
 	m	(Lzx;)I	d	func_77626_a	getMaxItemUseDuration
@@ -149,10 +148,9 @@ c	aai	net/minecraft/item/ItemPotion	net/minecraft/item/ItemPotion
 	m	(Lzx;I)I	a	func_82790_a	getColorFromItemStack
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	(Lzx;Lwn;Ljava/util/List;Z)V	a	func_77624_a	addInformation
 		c	allows items to add custom lines of information to the mouseover description
 	m	(Lzx;Ladm;Lwn;)Lzx;	b	func_77654_b	onItemUseFinish
@@ -269,10 +267,9 @@ c	aav	net/minecraft/item/ItemSnow	net/minecraft/item/ItemSnow
 c	aaw	net/minecraft/item/ItemSnowball	net/minecraft/item/ItemSnowball
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 c	aax	net/minecraft/item/ItemMonsterPlacer	net/minecraft/item/ItemMonsterPlacer
 	m	(Ladm;IDDD)Lpk;	a	func_77840_a	spawnCreature
 		c	Spawns the creature specified by the egg's type in the location specified by the last three parameters. Parameters: world, entityID, x, y, z.
@@ -282,10 +279,9 @@ c	aax	net/minecraft/item/ItemMonsterPlacer	net/minecraft/item/ItemMonsterPlacer
 	m	(Lzx;I)I	a	func_82790_a	getColorFromItemStack
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	(Lzx;Lwn;Ladm;Lcj;Lcq;FFF)Z	a	func_180614_a	onItemUse
 		c	Called when a Block is right-clicked with this Item
 c	aay	net/minecraft/item/ItemSword	net/minecraft/item/ItemSword
@@ -297,10 +293,9 @@ c	aay	net/minecraft/item/ItemSword	net/minecraft/item/ItemSword
 		c	Called when a Block is destroyed using this Item. Return true to trigger the "Use Item" statistic.
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	(Lzx;Lafh;)F	a	func_150893_a	getStrVsBlock
 	m	(Lzx;Lpr;Lpr;)Z	a	func_77644_a	hitEntity
 		c	Current implementations of this method in child classes do not use the entry argument beside ev. They just raise the damage on the stack.
@@ -360,27 +355,24 @@ c	abb	net/minecraft/item/ItemLilyPad	net/minecraft/item/ItemLilyPad
 	m	(Lzx;I)I	a	func_82790_a	getColorFromItemStack
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 c	abc	net/minecraft/item/ItemWritableBook	net/minecraft/item/ItemWritableBook
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	(Ldn;)Z	b	func_150930_a	isNBTValid
 		c	this method returns true if the book's NBT Tag List "pages" is valid
 c	abd	net/minecraft/item/ItemEditableBook	net/minecraft/item/ItemEditableBook
 	m	(Lzx;)Ljava/lang/String;	a	func_77653_i	getItemStackDisplayName
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	(Lzx;Lwn;)V	a	func_179229_a	resolveContents
 	m	(Lzx;Lwn;Ljava/util/List;Z)V	a	func_77624_a	addInformation
 		c	allows items to add custom lines of information to the mouseover description
@@ -1532,11 +1524,10 @@ c	adm	net/minecraft/world/World	net/minecraft/world/World
 	m	()Lauo;	Z	func_96441_U	getScoreboard
 	m	(DDDD)Lwn;	a	func_72977_a	getClosestPlayer
 		c	Gets the closest player to the point within the specified distance (distance can be set to less than 0 to not limit the distance). Args: x, y, z, dist
-		p	1	arg1	y	y
-		p	2	arg2	z	z
-		p	3	arg3	dist	dist
+		p	1	arg0	x	x
+		p	2	arg1	y	y
+		p	3	arg2	z	z
 		p	4	arg3	dist	dist
-		p	0	arg0	x	x
 	m	(DDDDDDLdn;)V	a	func_92088_a	makeFireworks
 	m	(DDDLjava/lang/String;FF)V	a	func_72908_a	playSoundEffect
 		c	Play a sound effect. Many many parameters for this function. Not sure what they do, but a classic call is : (double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, 'random.door_open', 1.0F, world.rand.nextFloat() * 0.1F + 0.9F with i,j,k position of the block.
@@ -1548,9 +1539,8 @@ c	adm	net/minecraft/world/World	net/minecraft/world/World
 		c	Returns the Entity with the given ID, or null if it doesn't exist in this World.
 	m	(II)Lamy;	a	func_72964_e	getChunkFromChunkCoords
 		c	Returns back a chunk looked up by chunk coordinates Args: x, y
-		p	1	arg1	y	y
+		p	1	arg0	x	x
 		p	2	arg1	y	y
-		p	0	arg0	x	x
 	m	(III)Ljava/util/Random;	a	func_72843_D	setRandomSeed
 		c	puts the World Random seed to a specific state dependant on the inputs
 	m	(IIII)V	a	func_72975_g	markBlocksDirtyVertical
@@ -1588,12 +1578,11 @@ c	adm	net/minecraft/world/World	net/minecraft/world/World
 	m	(Laui;Laui;Z)Lauh;	a	func_72901_a	rayTraceBlocks
 	m	(Laui;Laui;ZZZ)Lauh;	a	func_147447_a	rayTraceBlocks
 		c	Performs a raycast against all blocks in the world. Args : Vec1, Vec2, stopOnLiquid, ignoreBlockWithoutBoundingBox, returnLastUncollidableBlock
-		p	1	arg1	Vec2	Vec2
-		p	2	arg2	stopOnLiquid	stopOnLiquid
-		p	3	arg3	ignoreBlockWithoutBoundingBox	ignoreBlockWithoutBoundingBox
-		p	4	arg4	returnLastUncollidableBlock	returnLastUncollidableBlock
+		p	1	arg0	Vec1	Vec1
+		p	2	arg1	Vec2	Vec2
+		p	3	arg2	stopOnLiquid	stopOnLiquid
+		p	4	arg3	ignoreBlockWithoutBoundingBox	ignoreBlockWithoutBoundingBox
 		p	5	arg4	returnLastUncollidableBlock	returnLastUncollidableBlock
-		p	0	arg0	Vec1	Vec1
 	m	(Lb;)Lc;	a	func_72914_a	addWorldInfoToCrashReport
 		c	Adds some basic stats of the world to the given crash report.
 	m	(Lcj;)Z	a	func_175701_a	isValid
@@ -1621,12 +1610,10 @@ c	adm	net/minecraft/world/World	net/minecraft/world/World
 	m	(Ljava/lang/Class;)I	a	func_72907_a	countEntities
 		c	Counts how many entities of an entity class exist in the world. Args: entityClass
 		p	1	arg0	entityClass	entityClass
-		p	0	arg0	entityClass	entityClass
 	m	(Ljava/lang/Class;Laug;)Ljava/util/List;	a	func_72872_a	getEntitiesWithinAABB
 		c	Returns all entities of the specified class type which intersect with the AABB. Args: entityClass, aabb
-		p	1	arg1	aabb	aabb
+		p	1	arg0	entityClass	entityClass
 		p	2	arg1	aabb	aabb
-		p	0	arg0	entityClass	entityClass
 	m	(Ljava/lang/Class;Laug;Lcom/google/common/base/Predicate;)Ljava/util/List;	a	func_175647_a	getEntitiesWithinAABB
 	m	(Ljava/lang/Class;Laug;Lpk;)Lpk;	a	func_72857_a	findNearestEntityWithinAABB
 	m	(Ljava/lang/Class;Lcom/google/common/base/Predicate;)Ljava/util/List;	a	func_175644_a	getEntities
@@ -1643,45 +1630,39 @@ c	adm	net/minecraft/world/World	net/minecraft/world/World
 		c	sends a Packet 38 (Entity Status) to all tracked players of that entity
 	m	(Lpk;D)Lwn;	a	func_72890_a	getClosestPlayerToEntity
 		c	Gets the closest player to the entity within the specified distance (if distance is less than 0 then ignored). Args: entity, dist
-		p	1	arg1	dist	dist
+		p	1	arg0	entity	entity
 		p	2	arg1	dist	dist
-		p	0	arg0	entity	entity
 	m	(Lpk;DDDFZ)Ladi;	a	func_72876_a	createExplosion
 		c	Creates an explosion. Args: entity, x, y, z, strength
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	z	z
-		p	4	arg4	strength	strength
+		p	1	arg0	entity	entity
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	z	z
 		p	5	arg4	strength	strength
-		p	0	arg0	entity	entity
 	m	(Lpk;DDDFZZ)Ladi;	a	func_72885_a	newExplosion
 		c	returns a new explosion. Does initiation (at time of writing Explosion is not finished)
 	m	(Lpk;F)Laui;	a	func_72833_a	getSkyColor
 		c	Calculates the color for the skybox
 	m	(Lpk;Laug;)Ljava/util/List;	a	func_72945_a	getCollidingBoundingBoxes
 		c	Returns a list of bounding boxes that collide with aabb excluding the passed in entity's collision. Args: entity, aabb
-		p	1	arg1	aabb	aabb
+		p	1	arg0	entity	entity
 		p	2	arg1	aabb	aabb
-		p	0	arg0	entity	entity
 	m	(Lpk;Laug;Lcom/google/common/base/Predicate;)Ljava/util/List;	a	func_175674_a	getEntitiesInAABBexcluding
 		c	Gets all entities within the specified AABB excluding the one passed into it. Args: entityToExclude, aabb, predicate
-		p	1	arg1	aabb	aabb
-		p	2	arg2	predicate	predicate
+		p	1	arg0	entityToExclude	entityToExclude
+		p	2	arg1	aabb	aabb
 		p	3	arg2	predicate	predicate
-		p	0	arg0	entityToExclude	entityToExclude
 	m	(Lpk;Ljava/lang/String;FF)V	a	func_72956_a	playSoundAtEntity
 		c	Plays a sound at the entity's position. Args: entity, sound, volume (relative to 1.0), and frequency (or pitch, also relative to 1.0).
-		p	1	arg1	sound	sound
-		p	2	arg2	volume	volume
-		p	3	arg3	and	and
-		p	4	arg4	also	also
+		p	1	arg0	entity	entity
+		p	2	arg1	sound	sound
+		p	3	arg2	volume	volume
+		p	4	arg3	and	and
 		p	5	arg4	also	also
-		p	0	arg0	entity	entity
 	m	(Lpk;Z)V	a	func_72866_a	updateEntityWithOptionalForce
 		c	Will update the entity in the world if the chunk the entity is in is currently loaded or its forced to update. Args: entity, forceUpdate
-		p	1	arg1	forceUpdate	forceUpdate
+		p	1	arg0	entity	entity
 		p	2	arg1	forceUpdate	forceUpdate
-		p	0	arg0	entity	entity
 	m	(Lwn;ILcj;I)V	a	func_180498_a	playAuxSFXAtEntity
 	m	(Lwn;Lcj;)Z	a	func_175660_a	isBlockModifiable
 	m	(Lwn;Lcj;Lcq;)Z	a	func_175719_a	extinguishFire
@@ -1737,9 +1718,8 @@ c	adm	net/minecraft/world/World	net/minecraft/world/World
 	m	(Lpk;)V	b	func_72847_b	onEntityRemoved
 	m	(Lpk;Laug;)Ljava/util/List;	b	func_72839_b	getEntitiesWithinAABBExcludingEntity
 		c	Will get all entities within the specified AABB excluding the one passed into it. Args: entityToExclude, aabb
-		p	1	arg1	aabb	aabb
+		p	1	arg0	entityToExclude	entityToExclude
 		p	2	arg1	aabb	aabb
-		p	0	arg0	entityToExclude	entityToExclude
 	m	()V	c	func_72835_b	tick
 		c	Runs a single tick for the world
 	m	(F)F	c	func_72826_c	getCelestialAngle
@@ -1767,7 +1747,6 @@ c	adm	net/minecraft/world/World	net/minecraft/world/World
 	m	(Laug;)Z	d	func_72953_d	isAnyLiquid
 		c	Returns if any of the blocks within the aabb are liquids. Args: aabb
 		p	1	arg0	aabb	aabb
-		p	0	arg0	aabb	aabb
 	m	(Lcj;)Z	d	func_175623_d	isAirBlock
 		c	Checks to see if an air block exists at the provided location. Note that this only checks to see if the blocks material is set to air, meaning it is possible for non-vanilla blocks to still pass this check.
 	m	(Lcj;Lafh;)V	d	func_180496_d	notifyBlockOfStateChange
@@ -1798,7 +1777,6 @@ c	adm	net/minecraft/world/World	net/minecraft/world/World
 	m	(Lpk;)V	g	func_72870_g	updateEntity
 		c	Will update the entity in the world if the chunk the entity is in is currently loaded. Args: entity
 		p	1	arg0	entity	entity
-		p	0	arg0	entity	entity
 	m	()V	h	func_147456_g	updateBlocks
 	m	(F)F	h	func_72819_i	getThunderStrength
 	m	(Lcj;)V	h	func_175689_h	markBlockForUpdate
@@ -2516,34 +2494,31 @@ c	aec	net/minecraft/world/biome/WorldChunkManager	net/minecraft/world/biome/Worl
 	m	(Lcj;Lady;)Lady;	a	func_180300_a	getBiomeGenerator
 	m	([FIIII)[F	a	func_76936_a	getRainfall
 		c	Returns a list of rainfall values for the specified blocks. Args: listToReuse, x, z, width, length.
-		p	1	arg1	x	x
-		p	2	arg2	z	z
-		p	3	arg3	width	width
-		p	4	arg4	length	length
+		p	1	arg0	listToReuse	listToReuse
+		p	2	arg1	x	x
+		p	3	arg2	z	z
+		p	4	arg3	width	width
 		p	5	arg4	length	length
-		p	0	arg0	listToReuse	listToReuse
 	m	([Lady;IIII)[Lady;	a	func_76937_a	getBiomesForGeneration
 		c	Returns an array of biomes for the location input.
 	m	([Lady;IIIIZ)[Lady;	a	func_76931_a	getBiomeGenAt
 		c	Return a list of biomes for the specified blocks. Args: listToReuse, x, y, width, length, cacheFlag (if false, don't check biomeCache to avoid infinite loop in BiomeCacheBlock)
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	width	width
-		p	4	arg4	length	length
-		p	5	arg5	cacheFlag	cacheFlag
-		p	6	arg6	don	don
+		p	1	arg0	listToReuse	listToReuse
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	width	width
+		p	5	arg4	length	length
+		p	6	arg5	cacheFlag	cacheFlag
 		p	7	arg6	don	don
-		p	0	arg0	listToReuse	listToReuse
 	m	()V	b	func_76938_b	cleanupCache
 		c	Calls the WorldChunkManager's biomeCache.cleanupCache()
 	m	([Lady;IIII)[Lady;	b	func_76933_b	loadBlockGeneratorData
 		c	Returns biomes to use for the blocks and loads the other data like temperature and humidity onto the WorldChunkManager Args: oldBiomeList, x, z, width, depth
-		p	1	arg1	x	x
-		p	2	arg2	z	z
-		p	3	arg3	width	width
-		p	4	arg4	depth	depth
+		p	1	arg0	oldBiomeList	oldBiomeList
+		p	2	arg1	x	x
+		p	3	arg2	z	z
+		p	4	arg3	width	width
 		p	5	arg4	depth	depth
-		p	0	arg0	oldBiomeList	oldBiomeList
 c	aed	net/minecraft/world/biome/BiomeGenDesert	net/minecraft/world/biome/BiomeGenDesert
 	m	(Ladm;Ljava/util/Random;Lcj;)V	a	func_180624_a	decorate
 c	aee	net/minecraft/world/biome/BiomeGenHills	net/minecraft/world/biome/BiomeGenHills
@@ -2572,32 +2547,29 @@ c	aef	net/minecraft/world/biome/WorldChunkManagerHell	net/minecraft/world/biome/
 		c	Returns the biome generator
 	m	([FIIII)[F	a	func_76936_a	getRainfall
 		c	Returns a list of rainfall values for the specified blocks. Args: listToReuse, x, z, width, length.
-		p	1	arg1	x	x
-		p	2	arg2	z	z
-		p	3	arg3	width	width
-		p	4	arg4	length	length
+		p	1	arg0	listToReuse	listToReuse
+		p	2	arg1	x	x
+		p	3	arg2	z	z
+		p	4	arg3	width	width
 		p	5	arg4	length	length
-		p	0	arg0	listToReuse	listToReuse
 	m	([Lady;IIII)[Lady;	a	func_76937_a	getBiomesForGeneration
 		c	Returns an array of biomes for the location input.
 	m	([Lady;IIIIZ)[Lady;	a	func_76931_a	getBiomeGenAt
 		c	Return a list of biomes for the specified blocks. Args: listToReuse, x, y, width, length, cacheFlag (if false, don't check biomeCache to avoid infinite loop in BiomeCacheBlock)
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	width	width
-		p	4	arg4	length	length
-		p	5	arg5	cacheFlag	cacheFlag
-		p	6	arg6	don	don
+		p	1	arg0	listToReuse	listToReuse
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	width	width
+		p	5	arg4	length	length
+		p	6	arg5	cacheFlag	cacheFlag
 		p	7	arg6	don	don
-		p	0	arg0	listToReuse	listToReuse
 	m	([Lady;IIII)[Lady;	b	func_76933_b	loadBlockGeneratorData
 		c	Returns biomes to use for the blocks and loads the other data like temperature and humidity onto the WorldChunkManager Args: oldBiomeList, x, z, width, depth
-		p	1	arg1	x	x
-		p	2	arg2	z	z
-		p	3	arg3	width	width
-		p	4	arg4	depth	depth
+		p	1	arg0	oldBiomeList	oldBiomeList
+		p	2	arg1	x	x
+		p	3	arg2	z	z
+		p	4	arg3	width	width
 		p	5	arg4	depth	depth
-		p	0	arg0	oldBiomeList	oldBiomeList
 c	aeg	net/minecraft/world/biome/BiomeGenForest	net/minecraft/world/biome/BiomeGenForest
 	f	I	aG	field_150632_aF	field_150632_aF
 	f	Laoj;	aD	field_150629_aC	field_150629_aC
@@ -3089,10 +3061,9 @@ c	afh	net/minecraft/block/Block	net/minecraft/block/Block
 		c	
 	m	()Z	A	func_149703_v	isCollidable
 		c	Returns if this block is collidable (only used by Fire). Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	()D	B	func_149704_x	getBlockBoundsMinX
 		c	returns the block bounderies minX value
 	m	()D	C	func_149753_y	getBlockBoundsMaxX
@@ -3126,7 +3097,6 @@ c	afh	net/minecraft/block/Block	net/minecraft/block/Block
 	m	(F)Lafh;	a	func_149715_a	setLightLevel
 		c	Sets the light value that the block emits. Returns resulting block instance for constructing convenience. Args: level
 		p	1	arg0	level	level
-		p	0	arg0	level	level
 	m	(FFFFFF)V	a	func_149676_a	setBlockBounds
 	m	(I)Lalz;	a	func_176203_a	getStateFromMeta
 		c	Convert the given metadata into a BlockState for this Block
@@ -4697,10 +4667,9 @@ c	agv	net/minecraft/block/BlockFire	net/minecraft/block/BlockFire
 		c	
 	m	()Z	A	func_149703_v	isCollidable
 		c	Returns if this block is collidable (only used by Fire). Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	()Z	N	func_149698_L	requiresUpdates
 	m	(I)Lalz;	a	func_176203_a	getStateFromMeta
 		c	Convert the given metadata into a BlockState for this Block
@@ -6396,10 +6365,9 @@ c	aju	net/minecraft/block/BlockStairs	net/minecraft/block/BlockStairs
 		c	
 	m	()Z	A	func_149703_v	isCollidable
 		c	Returns if this block is collidable (only used by Fire). Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(I)Lalz;	a	func_176203_a	getStateFromMeta
 		c	Convert the given metadata into a BlockState for this Block
 	m	(Ladm;)I	a	func_149738_a	tickRate
@@ -7405,10 +7373,9 @@ c	akx	net/minecraft/tileentity/TileEntityBrewingStand	net/minecraft/tileentity/T
 		c	Sets the given item stack to the specified slot in the inventory (can be crafting or armor sections).
 	m	(ILzx;Lcq;)Z	a	func_180462_a	canInsertItem
 		c	Returns true if automation can insert the given item in the given slot from the given side. Args: slot, item, side
-		p	1	arg1	item	item
-		p	2	arg2	side	side
+		p	1	arg0	slot	slot
+		p	2	arg1	item	item
 		p	3	arg2	side	side
-		p	0	arg0	slot	slot
 	m	(Lcq;)[I	a	func_180463_a	getSlotsForFace
 	m	(Ldn;)V	a	func_145839_a	readFromNBT
 	m	(Ljava/lang/String;)V	a	func_145937_a	setName
@@ -7423,10 +7390,9 @@ c	akx	net/minecraft/tileentity/TileEntityBrewingStand	net/minecraft/tileentity/T
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	(ILzx;Lcq;)Z	b	func_180461_b	canExtractItem
 		c	Returns true if automation can extract the given item in the given slot from the given side. Args: slot, item, side
-		p	1	arg1	item	item
-		p	2	arg2	side	side
+		p	1	arg0	slot	slot
+		p	2	arg1	item	item
 		p	3	arg2	side	side
-		p	0	arg0	slot	slot
 	m	(Ldn;)V	b	func_145841_b	writeToNBT
 	m	(Lwn;)V	b	func_174889_b	openInventory
 	m	()V	c	func_73660_a	update
@@ -7700,10 +7666,9 @@ c	alh	net/minecraft/tileentity/TileEntityFurnace	net/minecraft/tileentity/TileEn
 		c	Sets the given item stack to the specified slot in the inventory (can be crafting or armor sections).
 	m	(ILzx;Lcq;)Z	a	func_180462_a	canInsertItem
 		c	Returns true if automation can insert the given item in the given slot from the given side. Args: slot, item, side
-		p	1	arg1	item	item
-		p	2	arg2	side	side
+		p	1	arg0	slot	slot
+		p	2	arg1	item	item
 		p	3	arg2	side	side
-		p	0	arg0	slot	slot
 	m	(Lcq;)[I	a	func_180463_a	getSlotsForFace
 	m	(Ldn;)V	a	func_145839_a	readFromNBT
 	m	(Ljava/lang/String;)V	a	func_145951_a	setCustomInventoryName
@@ -7720,10 +7685,9 @@ c	alh	net/minecraft/tileentity/TileEntityFurnace	net/minecraft/tileentity/TileEn
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	(ILzx;Lcq;)Z	b	func_180461_b	canExtractItem
 		c	Returns true if automation can extract the given item in the given slot from the given side. Args: slot, item, side
-		p	1	arg1	item	item
-		p	2	arg2	side	side
+		p	1	arg0	slot	slot
+		p	2	arg1	item	item
 		p	3	arg2	side	side
-		p	0	arg0	slot	slot
 	m	(Ldn;)V	b	func_145841_b	writeToNBT
 	m	(Lwn;)V	b	func_174889_b	openInventory
 	m	(Lzx;)I	b	func_145952_a	getItemBurnTime
@@ -8507,7 +8471,6 @@ c	amx	net/minecraft/world/chunk/EmptyChunk	net/minecraft/world/chunk/EmptyChunk
 	m	(Lpk;)V	a	func_76612_a	addEntity
 		c	Adds an entity to the chunk. Args: entity
 		p	1	arg0	entity	entity
-		p	0	arg0	entity	entity
 	m	(Lpk;I)V	a	func_76608_a	removeEntityAtIndex
 		c	Removes entity at the specified index from the entity array.
 	m	(Lpk;Laug;Ljava/util/List;Lcom/google/common/base/Predicate;)V	a	func_177414_a	getEntitiesWithinAABBForEntity
@@ -8602,7 +8565,6 @@ c	amy	net/minecraft/world/chunk/Chunk	net/minecraft/world/chunk/Chunk
 	m	(Lpk;)V	a	func_76612_a	addEntity
 		c	Adds an entity to the chunk. Args: entity
 		p	1	arg0	entity	entity
-		p	0	arg0	entity	entity
 	m	(Lpk;I)V	a	func_76608_a	removeEntityAtIndex
 		c	Removes entity at the specified index from the entity array.
 	m	(Lpk;Laug;Ljava/util/List;Lcom/google/common/base/Predicate;)V	a	func_177414_a	getEntitiesWithinAABBForEntity
@@ -10011,10 +9973,9 @@ c	aqe	net/minecraft/world/gen/structure/StructureBoundingBox	net/minecraft/world
 		c	returns a new StructureBoundingBox with MAX values
 	m	(III)V	a	func_78886_a	offset
 		c	Offsets the current bounding box by the specified coordinates. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(IIII)Z	a	func_78885_a	intersectsWith
 		c	Discover if a coordinate is inside the bounding box area.
 	m	(IIIIII)Laqe;	a	func_175899_a	func_175899_a
@@ -11404,7 +11365,6 @@ c	ase	net/minecraft/world/gen/layer/GenLayer	net/minecraft/world/gen/layer/GenLa
 	m	(I)I	a	func_75902_a	nextInt
 		c	returns a LCG pseudo random number from [0, x). Args: int x
 		p	1	arg0	int	int
-		p	0	arg0	int	int
 	m	(II)Z	a	func_151616_a	biomesEqualOrMesaPlateau
 	m	(IIII)[I	a	func_75904_a	getInts
 		c	Returns a list of integer values generated by this layer. These may be interpreted as temperatures, rainfall amounts, or biomeList[] indices based on the particular GenLayer subclass.
@@ -12318,10 +12278,9 @@ c	aug	net/minecraft/util/AxisAlignedBB	net/minecraft/util/AxisAlignedBB
 		c	Returns the average length of the edges of the bounding box.
 	m	(DDD)Laug;	a	func_72321_a	addCoord
 		c	Adds the coordinates to the bounding box extending it if the point lies outside the current ranges. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(DDDDDD)Laug;	a	func_178781_a	fromBounds
 		c	returns an AABB with corners x1, y1, z1 and x2, y2, z2
 	m	(Laug;)Laug;	a	func_111270_a	union
@@ -12333,38 +12292,32 @@ c	aug	net/minecraft/util/AxisAlignedBB	net/minecraft/util/AxisAlignedBB
 	m	()Z	b	func_181656_b	hasNaN
 	m	(DDD)Laug;	b	func_72314_b	expand
 		c	Returns a bounding box expanded by the specified vector (if negative numbers are given it will shrink). Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(Laug;)Z	b	func_72326_a	intersectsWith
 		c	Returns whether the given bounding box intersects with this one. Args: axisAlignedBB
 		p	1	arg0	axisAlignedBB	axisAlignedBB
-		p	0	arg0	axisAlignedBB	axisAlignedBB
 	m	(Laug;D)D	b	func_72323_b	calculateYOffset
 		c	if instance and the argument bounding boxes overlap in the X and Z dimensions, calculate the offset between them in the Y dimension.  return var2 if the bounding boxes do not overlap or if var2 is closer to 0 then the calculated offset.  Otherwise return the calculated offset.
 	m	(Laui;)Z	b	func_72333_b	isVecInYZ
 		c	Checks if the specified vector is within the YZ dimensions of the bounding box. Args: Vec3D
 		p	1	arg0	Vec3D	Vec3D
-		p	0	arg0	Vec3D	Vec3D
 	m	(DDD)Laug;	c	func_72317_d	offset
 		c	Offsets the current bounding box by the specified coordinates. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(Laug;D)D	c	func_72322_c	calculateZOffset
 		c	if instance and the argument bounding boxes overlap in the Y and X dimensions, calculate the offset between them in the Z dimension.  return var2 if the bounding boxes do not overlap or if var2 is closer to 0 then the calculated offset.  Otherwise return the calculated offset.
 	m	(Laui;)Z	c	func_72315_c	isVecInXZ
 		c	Checks if the specified vector is within the XZ dimensions of the bounding box. Args: Vec3D
 		p	1	arg0	Vec3D	Vec3D
-		p	0	arg0	Vec3D	Vec3D
 	m	(DDD)Laug;	d	func_72331_e	contract
 		c	Returns a bounding box that is inset by the specified amounts
 	m	(Laui;)Z	d	func_72319_d	isVecInXY
 		c	Checks if the specified vector is within the XY dimensions of the bounding box. Args: Vec3D
 		p	1	arg0	Vec3D	Vec3D
-		p	0	arg0	Vec3D	Vec3D
 	m	()Ljava/lang/String;	toString	toString	toString
 c	auh	net/minecraft/util/MovingObjectPosition	net/minecraft/util/MovingObjectPosition
 	f	Lcj;	e	field_178783_e	blockPos
@@ -13561,7 +13514,6 @@ c	avi	net/minecraft/client/LoadingScreenRenderer	net/minecraft/client/LoadingScr
 	m	(I)V	a	func_73718_a	setLoadingProgress
 		c	Updates the progress bar on the loading screen to the specified amount. Args: loadProgress
 		p	1	arg0	loadProgress	loadProgress
-		p	0	arg0	loadProgress	loadProgress
 	m	(Ljava/lang/String;)V	a	func_73720_a	displaySavingString
 		c	Shows the 'Saving level' string.
 	m	(Ljava/lang/String;)V	b	func_73721_b	resetProgressAndMessage
@@ -13872,11 +13824,10 @@ c	avp	net/minecraft/client/gui/Gui	net/minecraft/client/gui/Gui
 		c	Draws a scaled, textured, tiled modal rect at z = 0. This method isn't used anywhere in vanilla code.
 	m	(IIII)V	a	func_73730_a	drawHorizontalLine
 		c	Draw a 1 pixel wide horizontal line. Args: x1, x2, y, color
-		p	1	arg1	x2	x2
-		p	2	arg2	y	y
-		p	3	arg3	color	color
+		p	1	arg0	x1	x1
+		p	2	arg1	x2	x2
+		p	3	arg2	y	y
 		p	4	arg3	color	color
-		p	0	arg0	x1	x1
 	m	(IIIII)V	a	func_73734_a	drawRect
 		c	Draws a solid color rectangle with the specified coordinates and color (ARGB format). Args: x1, y1, x2, y2, color
 		p	0	arg0	x1	x1
@@ -13886,47 +13837,42 @@ c	avp	net/minecraft/client/gui/Gui	net/minecraft/client/gui/Gui
 		p	4	arg4	color	color
 	m	(IIIIII)V	a	func_73733_a	drawGradientRect
 		c	Draws a rectangle with a vertical gradient between the specified colors (ARGB format). Args : x1, y1, x2, y2, topColor, bottomColor
-		p	1	arg1	y1	y1
-		p	2	arg2	x2	x2
-		p	3	arg3	y2	y2
-		p	4	arg4	topColor	topColor
-		p	5	arg5	bottomColor	bottomColor
+		p	1	arg0	x1	x1
+		p	2	arg1	y1	y1
+		p	3	arg2	x2	x2
+		p	4	arg3	y2	y2
+		p	5	arg4	topColor	topColor
 		p	6	arg5	bottomColor	bottomColor
-		p	0	arg0	x1	x1
 	m	(IILbmi;II)V	a	func_175175_a	drawTexturedModalRect
 		c	Draws a texture rectangle using the texture currently bound to the TextureManager
 	m	(Lavn;Ljava/lang/String;III)V	a	func_73732_a	drawCenteredString
 		c	Renders the specified text to the screen, center-aligned. Args : renderer, string, x, y, color
-		p	1	arg1	string	string
-		p	2	arg2	x	x
-		p	3	arg3	y	y
-		p	4	arg4	color	color
+		p	1	arg0	renderer	renderer
+		p	2	arg1	string	string
+		p	3	arg2	x	x
+		p	4	arg3	y	y
 		p	5	arg4	color	color
-		p	0	arg0	renderer	renderer
 	m	(IIII)V	b	func_73728_b	drawVerticalLine
 		c	Draw a 1 pixel wide vertical line. Args : x, y1, y2, color
-		p	1	arg1	y1	y1
-		p	2	arg2	y2	y2
-		p	3	arg3	color	color
+		p	1	arg0	x	x
+		p	2	arg1	y1	y1
+		p	3	arg2	y2	y2
 		p	4	arg3	color	color
-		p	0	arg0	x	x
 	m	(IIIIII)V	b	func_73729_b	drawTexturedModalRect
 		c	Draws a textured rectangle at the stored z-value. Args: x, y, u, v, width, height
-		p	1	arg1	y	y
-		p	2	arg2	u	u
-		p	3	arg3	v	v
-		p	4	arg4	width	width
-		p	5	arg5	height	height
+		p	1	arg0	x	x
+		p	2	arg1	y	y
+		p	3	arg2	u	u
+		p	4	arg3	v	v
+		p	5	arg4	width	width
 		p	6	arg5	height	height
-		p	0	arg0	x	x
 	m	(Lavn;Ljava/lang/String;III)V	c	func_73731_b	drawString
 		c	Renders the specified text to the screen. Args : renderer, string, x, y, color
-		p	1	arg1	string	string
-		p	2	arg2	x	x
-		p	3	arg3	y	y
-		p	4	arg4	color	color
+		p	1	arg0	renderer	renderer
+		p	2	arg1	string	string
+		p	3	arg2	x	x
+		p	4	arg3	y	y
 		p	5	arg4	color	color
-		p	0	arg0	renderer	renderer
 c	avq	net/minecraft/client/gui/MapItemRenderer	net/minecraft/client/gui/MapItemRenderer
 	f	Ljy;	a	field_148253_a	mapIcons
 		c	
@@ -14332,13 +14278,12 @@ c	awf$a	net/minecraft/client/gui/GuiOptionsRowList$Row	net/minecraft/client/gui/
 	m	(IIIIIIIZ)V	a	func_180790_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	mouseEvent	mouseEvent
-		p	4	arg4	relativeX	relativeX
-		p	5	arg5	relativeY	relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
 		p	6	arg5	relativeY	relativeY
-		p	0	arg0	index	index
 c	awg	net/minecraft/client/gui/GuiPageButtonList	net/minecraft/client/gui/GuiPageButtonList
 	f	Ljava/util/List;	u	field_178074_u	field_178074_u
 	f	Lnm;	v	field_178073_v	field_178073_v
@@ -14405,13 +14350,12 @@ c	awg$d	net/minecraft/client/gui/GuiPageButtonList$GuiEntry	net/minecraft/client
 	m	()Lavp;	b	func_178021_b	func_178021_b
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	mouseEvent	mouseEvent
-		p	4	arg4	relativeX	relativeX
-		p	5	arg5	relativeY	relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
 		p	6	arg5	relativeY	relativeY
-		p	0	arg0	index	index
 	m	(Lavp;III)V	b	func_178016_b	func_178016_b
 	m	(Lavs;III)V	b	func_178019_b	func_178019_b
 	m	(Lawg$d;)Lavp;	b	access$100	access$100
@@ -14642,30 +14586,26 @@ c	awr	net/minecraft/client/gui/GuiScreenRealmsProxy	net/minecraft/client/gui/Gui
 	m	()Lnet/minecraft/realms/RealmsScreen;	a	func_154321_a	func_154321_a
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(IIIIII)V	a	func_73733_a	drawGradientRect
 		c	Draws a rectangle with a vertical gradient between the specified colors (ARGB format). Args : x1, y1, x2, y2, topColor, bottomColor
-		p	1	arg1	y1	y1
-		p	2	arg2	x2	x2
-		p	3	arg3	y2	y2
-		p	4	arg4	topColor	topColor
-		p	5	arg5	bottomColor	bottomColor
+		p	1	arg0	x1	x1
+		p	2	arg1	y1	y1
+		p	3	arg2	x2	x2
+		p	4	arg3	y2	y2
+		p	5	arg4	topColor	topColor
 		p	6	arg5	bottomColor	bottomColor
-		p	0	arg0	x1	x1
 	m	(IIIJ)V	a	func_146273_a	mouseClickMove
 		c	Called when a mouse button is pressed and the mouse is moved around. Parameters are : mouseX, mouseY, lastButtonClicked & timeSinceMouseClick.
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
@@ -14683,19 +14623,17 @@ c	awr	net/minecraft/client/gui/GuiScreenRealmsProxy	net/minecraft/client/gui/Gui
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	(III)V	b	func_146286_b	mouseReleased
 		c	Called when a mouse button is released.  Args : mouseX, mouseY, releaseButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	releaseButton	releaseButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	releaseButton	releaseButton
-		p	0	arg0	mouseX	mouseX
 	m	(IIIIII)V	b	func_73729_b	drawTexturedModalRect
 		c	Draws a textured rectangle at the stored z-value. Args: x, y, u, v, width, height
-		p	1	arg1	y	y
-		p	2	arg2	u	u
-		p	3	arg3	v	v
-		p	4	arg4	width	width
-		p	5	arg5	height	height
+		p	1	arg0	x	x
+		p	2	arg1	y	y
+		p	3	arg2	u	u
+		p	4	arg3	v	v
+		p	5	arg4	width	width
 		p	6	arg5	height	height
-		p	0	arg0	x	x
 	m	(Ljava/lang/String;III)V	b	func_154322_b	func_154322_b
 	m	(Lnet/minecraft/realms/RealmsButton;)V	b	func_154328_b	func_154328_b
 	m	(I)V	b_	func_146270_b	drawWorldBackground
@@ -14759,10 +14697,9 @@ c	awu	net/minecraft/client/gui/ScreenChatOptions	net/minecraft/client/gui/Screen
 	f	Ljava/lang/String;	h	field_146401_i	field_146401_i
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -14789,21 +14726,18 @@ c	awv	net/minecraft/client/gui/GuiChat	net/minecraft/client/gui/GuiChat
 	m	()V	a	func_146404_p_	autocompletePlayerNames
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Ljava/lang/String;Ljava/lang/String;)V	a	func_146405_a	sendAutocompleteRequest
 	m	(Ljava/lang/String;Z)V	a	func_175274_a	setText
 		c	Sets the text of the chat
@@ -14833,10 +14767,9 @@ c	aww	net/minecraft/client/gui/GuiConfirmOpenLink	net/minecraft/client/gui/GuiCo
 		c	Copies the link to the system clipboard.
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -14862,10 +14795,9 @@ c	awy	net/minecraft/client/gui/GuiYesNo	net/minecraft/client/gui/GuiYesNo
 		c	
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -14888,15 +14820,13 @@ c	awz	net/minecraft/client/multiplayer/GuiConnecting	net/minecraft/client/multip
 	m	()Lorg/apache/logging/log4j/Logger;	a	access$300	access$300
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Lawz;)Z	a	access$000	access$000
@@ -14947,10 +14877,9 @@ c	axa	net/minecraft/client/gui/GuiCreateFlatWorld	net/minecraft/client/gui/GuiCr
 	m	()Ljava/lang/String;	a	func_146384_e	func_146384_e
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Laxa;)F	a	access$000	access$000
@@ -15038,21 +14967,18 @@ c	axb	net/minecraft/client/gui/GuiCreateWorld	net/minecraft/client/gui/GuiCreate
 		c	Determine a save-directory name from the world name
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lato;)V	a	func_146318_a	recreateFromExistingWorld
 		c	Set the initial values of a new world to create, from the values from an existing world.\\n \\nCalled after construction when a user selects the "Recreate" button.\\n \\n@param original The world we're copying from
 	m	(Latr;Ljava/lang/String;)Ljava/lang/String;	a	func_146317_a	getUncollidingSaveDirName
@@ -15085,21 +15011,18 @@ c	axc	net/minecraft/client/gui/GuiScreenCustomizePresets	net/minecraft/client/gu
 	m	()V	a	func_175304_a	func_175304_a
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Laxc;)Laxc$b;	a	access$100	access$100
@@ -15159,23 +15082,20 @@ c	axd	net/minecraft/client/gui/GuiCustomizeWorldScreen	net/minecraft/client/gui/
 	m	()Ljava/lang/String;	a	func_175323_a	func_175323_a
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(F)V	a	func_175327_a	func_175327_a
 	m	(IF)V	a	func_175320_a	onTick
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(ILjava/lang/String;)V	a	func_175319_a	func_175319_a
 	m	(ILjava/lang/String;F)Ljava/lang/String;	a	func_175318_a	getText
 	m	(IZ)V	a	func_175321_a	func_175321_a
@@ -15189,10 +15109,9 @@ c	axd	net/minecraft/client/gui/GuiCustomizeWorldScreen	net/minecraft/client/gui/
 	m	(IF)Ljava/lang/String;	b	func_175330_b	func_175330_b
 	m	(III)V	b	func_146286_b	mouseReleased
 		c	Called when a mouse button is released.  Args : mouseX, mouseY, releaseButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	releaseButton	releaseButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	releaseButton	releaseButton
-		p	0	arg0	mouseX	mouseX
 	m	(Z)V	b	func_175329_a	func_175329_a
 	m	()V	f	func_175325_f	func_175325_f
 	m	()V	g	func_175326_g	func_175326_g
@@ -15210,15 +15129,13 @@ c	axe	net/minecraft/client/gui/GuiGameOver	net/minecraft/client/gui/GuiGameOver
 	f	Z	f	field_146346_f	field_146346_f
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(ZI)V	a	func_73878_a	confirmClicked
@@ -15234,10 +15151,9 @@ c	axf	net/minecraft/client/gui/GuiScreenDemo	net/minecraft/client/gui/GuiScreenD
 	f	Ljy;	f	field_146348_f	field_146348_f
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -15252,21 +15168,18 @@ c	axg	net/minecraft/client/gui/GuiScreenServerList	net/minecraft/client/gui/GuiS
 	f	Lavw;	g	field_146302_g	field_146302_g
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -15287,15 +15200,13 @@ c	axh	net/minecraft/client/gui/GuiDisconnected	net/minecraft/client/gui/GuiDisco
 	f	I	i	field_175353_i	field_175353_i
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -15314,21 +15225,18 @@ c	axi	net/minecraft/client/gui/GuiScreenAddServer	net/minecraft/client/gui/GuiSc
 	f	Lcom/google/common/base/Predicate;	r	field_181032_r	field_181032_r
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -15346,15 +15254,13 @@ c	axj	net/minecraft/client/gui/GuiErrorScreen	net/minecraft/client/gui/GuiErrorS
 	f	Ljava/lang/String;	f	field_146312_f	field_146312_f
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -15362,9 +15268,8 @@ c	axj	net/minecraft/client/gui/GuiErrorScreen	net/minecraft/client/gui/GuiErrorS
 c	axk	net/minecraft/client/gui/GuiSleepMP	net/minecraft/client/gui/GuiSleepMP
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -15385,10 +15290,9 @@ c	axl	net/minecraft/client/gui/GuiLanguage	net/minecraft/client/gui/GuiLanguage
 		c	The button to confirm the current settings.
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Laxl;)Lbns;	a	access$000	access$000
@@ -15424,10 +15328,9 @@ c	axn	net/minecraft/client/gui/GuiOptions	net/minecraft/client/gui/GuiOptions
 	f	Ljava/lang/String;	a	field_146442_a	field_146442_a
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Loj;)Ljava/lang/String;	a	func_175355_a	func_175355_a
@@ -15440,15 +15343,13 @@ c	axn$1	net/minecraft/client/gui/GuiOptions$1	net/minecraft/client/gui/GuiOption
 c	axo	net/minecraft/client/gui/GuiMemoryErrorScreen	net/minecraft/client/gui/GuiMemoryErrorScreen
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -15458,10 +15359,9 @@ c	axp	net/minecraft/client/gui/GuiIngameMenu	net/minecraft/client/gui/GuiIngameM
 	f	I	f	field_146444_f	field_146444_f
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -15484,21 +15384,18 @@ c	axq	net/minecraft/client/gui/GuiFlatPresets	net/minecraft/client/gui/GuiFlatPr
 	m	()V	a	func_146426_g	func_146426_g
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Laxq;)F	a	access$000	access$000
@@ -15549,13 +15446,11 @@ c	axr	net/minecraft/client/gui/GuiScreenWorking	net/minecraft/client/gui/GuiScre
 	m	(I)V	a	func_73718_a	setLoadingProgress
 		c	Updates the progress bar on the loading screen to the specified amount. Args: loadProgress
 		p	1	arg0	loadProgress	loadProgress
-		p	0	arg0	loadProgress	loadProgress
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Ljava/lang/String;)V	a	func_73720_a	displaySavingString
 		c	Shows the 'Saving level' string.
 	m	(Ljava/lang/String;)V	b	func_73721_b	resetProgressAndMessage
@@ -15569,15 +15464,13 @@ c	axs	net/minecraft/client/gui/GuiDownloadTerrain	net/minecraft/client/gui/GuiDo
 		c	
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	()V	b	func_73866_w_	initGui
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	()Z	d	func_73868_f	doesGuiPauseGame
@@ -15592,21 +15485,18 @@ c	axt	net/minecraft/client/gui/GuiRenameWorld	net/minecraft/client/gui/GuiRename
 		c	
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -15650,21 +15540,18 @@ c	axu	net/minecraft/client/gui/GuiScreen	net/minecraft/client/gui/GuiScreen
 		c	
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(IIIJ)V	a	func_146273_a	mouseClickMove
 		c	Called when a mouse button is pressed and the mouse is moved around. Parameters are : mouseX, mouseY, lastButtonClicked & timeSinceMouseClick.
 	m	(Lave;II)V	a	func_146280_a	setWorldAndResolution
@@ -15688,10 +15575,9 @@ c	axu	net/minecraft/client/gui/GuiScreen	net/minecraft/client/gui/GuiScreen
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	(III)V	b	func_146286_b	mouseReleased
 		c	Called when a mouse button is released.  Args : mouseX, mouseY, releaseButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	releaseButton	releaseButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	releaseButton	releaseButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lave;II)V	b	func_175273_b	onResize
 		c	Called when the GUI is resized in order to update the world and the resolution\\n \\n@param w The width of the screen\\n@param h The height of the screen
 	m	(Ljava/lang/String;Z)V	b	func_175281_b	sendChatMessage
@@ -15758,10 +15644,9 @@ c	axv	net/minecraft/client/gui/GuiSelectWorld	net/minecraft/client/gui/GuiSelect
 	m	()V	a	func_146618_g	addWorldSelectionButtons
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Lawx;Ljava/lang/String;I)Lawy;	a	func_152129_a	makeDeleteWorldYesNo
@@ -15807,10 +15692,9 @@ c	axw	net/minecraft/client/gui/GuiShareToLan	net/minecraft/client/gui/GuiShareTo
 	m	()V	a	func_146595_g	func_146595_g
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -15822,10 +15706,9 @@ c	axx	net/minecraft/client/gui/GuiCustomizeSkin	net/minecraft/client/gui/GuiCust
 		c	The title of the GUI.
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Laxx;Lwo;)Ljava/lang/String;	a	access$200	access$200
@@ -15850,10 +15733,9 @@ c	axy	net/minecraft/client/gui/GuiSnooper	net/minecraft/client/gui/GuiSnooper
 	f	Lavs;	t	field_146605_t	field_146605_t
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Laxy;)Ljava/util/List;	a	access$000	access$000
@@ -15880,10 +15762,9 @@ c	axz	net/minecraft/client/gui/GuiScreenOptionsSounds	net/minecraft/client/gui/G
 	f	Ljava/lang/String;	h	field_146508_h	field_146508_h
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Laxz;)Lavh;	a	access$000	access$000
@@ -15957,23 +15838,20 @@ c	aya	net/minecraft/client/gui/GuiMainMenu	net/minecraft/client/gui/GuiMainMenu
 	m	()V	a	func_140005_i	switchToRealms
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(F)V	a	func_73968_a	rotateAndBlurSkybox
 		c	Rotate and blurs the skybox view in the main menu
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(ZI)V	a	func_73878_a	confirmClicked
@@ -16004,26 +15882,23 @@ c	ayb	net/minecraft/client/gui/GuiVideoSettings	net/minecraft/client/gui/GuiVide
 		c	An array of all of GameSettings.Options's video options.
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	(III)V	b	func_146286_b	mouseReleased
 		c	Called when a mouse button is released.  Args : mouseX, mouseY, releaseButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	releaseButton	releaseButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	releaseButton	releaseButton
-		p	0	arg0	mouseX	mouseX
 	m	()V	k	func_146274_d	handleMouseInput
 		c	Handles mouse input.
 c	ayc	net/minecraft/client/gui/GuiWinGame	net/minecraft/client/gui/GuiWinGame
@@ -16040,15 +15915,13 @@ c	ayc	net/minecraft/client/gui/GuiWinGame	net/minecraft/client/gui/GuiWinGame
 	m	()V	a	func_146574_g	sendRespawnPacket
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	()V	b	func_73866_w_	initGui
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	(IIF)V	b	func_146575_b	drawWinGameScreen
@@ -16110,15 +15983,13 @@ c	aye	net/minecraft/client/gui/achievement/GuiAchievements	net/minecraft/client/
 	m	()V	a	func_146509_g	doneLoading
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lafh;)Lbmi;	a	func_175371_a	func_175371_a
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
@@ -16151,10 +16022,9 @@ c	ayf	net/minecraft/client/gui/achievement/GuiStats	net/minecraft/client/gui/ach
 	m	()V	a	func_146509_g	doneLoading
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(IILzw;)V	a	func_146521_a	drawStatsScreen
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
@@ -16296,13 +16166,12 @@ c	ayi$a	net/minecraft/client/gui/GuiKeyBindingList$CategoryEntry	net/minecraft/c
 	m	(IIIIIIIZ)V	a	func_180790_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	mouseEvent	mouseEvent
-		p	4	arg4	relativeX	relativeX
-		p	5	arg5	relativeY	relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
 		p	6	arg5	relativeY	relativeY
-		p	0	arg0	index	index
 c	ayi$b	net/minecraft/client/gui/GuiKeyBindingList$KeyEntry	net/minecraft/client/gui/GuiKeyBindingList$KeyEntry
 	f	Lavb;	b	field_148282_b	keybinding
 		c	The keybinding specified for this KeyEntry
@@ -16319,13 +16188,12 @@ c	ayi$b	net/minecraft/client/gui/GuiKeyBindingList$KeyEntry	net/minecraft/client
 	m	(IIIIIIIZ)V	a	func_180790_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	mouseEvent	mouseEvent
-		p	4	arg4	relativeX	relativeX
-		p	5	arg5	relativeY	relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
 		p	6	arg5	relativeY	relativeY
-		p	0	arg0	index	index
 c	ayj	net/minecraft/client/gui/GuiControls	net/minecraft/client/gui/GuiControls
 	f	[Lavh$a;	h	field_146492_g	optionsArr
 		c	
@@ -16345,31 +16213,27 @@ c	ayj	net/minecraft/client/gui/GuiControls	net/minecraft/client/gui/GuiControls
 		c	
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	(III)V	b	func_146286_b	mouseReleased
 		c	Called when a mouse button is released.  Args : mouseX, mouseY, releaseButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	releaseButton	releaseButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	releaseButton	releaseButton
-		p	0	arg0	mouseX	mouseX
 	m	()V	k	func_146274_d	handleMouseInput
 		c	Handles mouse input.
 c	ayl	net/minecraft/client/gui/inventory/GuiContainer	net/minecraft/client/gui/inventory/GuiContainer
@@ -16432,71 +16296,62 @@ c	ayl	net/minecraft/client/gui/inventory/GuiContainer	net/minecraft/client/gui/i
 	m	()V	a	func_146980_g	updateDragSplitting
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(FII)V	a	func_146976_a	drawGuiContainerBackgroundLayer
 		c	Args : renderPartialTicks, mouseX, mouseY
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(IIIJ)V	a	func_146273_a	mouseClickMove
 		c	Called when a mouse button is pressed and the mouse is moved around. Parameters are : mouseX, mouseY, lastButtonClicked & timeSinceMouseClick.
 	m	(Lyg;)V	a	func_146977_a	drawSlot
 	m	(Lyg;II)Z	a	func_146981_a	isMouseOverSlot
 		c	Returns if the passed mouse position is over the specified slot. Args : slot, mouseX, mouseY
-		p	1	arg1	mouseX	mouseX
-		p	2	arg2	mouseY	mouseY
+		p	1	arg0	slot	slot
+		p	2	arg1	mouseX	mouseX
 		p	3	arg2	mouseY	mouseY
-		p	0	arg0	slot	slot
 	m	(Lyg;III)V	a	func_146984_a	handleMouseClick
 		c	Called when the mouse is clicked over a slot or outside the gui.
 	m	(Lzx;IILjava/lang/String;)V	a	func_146982_a	drawItemStack
 		c	Render an ItemStack. Args : stack, x, y, format
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	format	format
+		p	1	arg0	stack	stack
+		p	2	arg1	x	x
+		p	3	arg2	y	y
 		p	4	arg3	format	format
-		p	0	arg0	stack	stack
 	m	()V	b	func_73866_w_	initGui
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	(I)Z	b	func_146983_a	checkHotbarKeys
 		c	This function is what controls the hotbar shortcut check when you press a number key when hovering a stack. Args : keyCode, Returns true if a Hotbar key is pressed, else false
-		p	1	arg1	Returns	Returns
-		p	2	arg2	else	else
+		p	1	arg0	keyCode	keyCode
+		p	2	arg1	Returns	Returns
 		p	3	arg2	else	else
-		p	0	arg0	keyCode	keyCode
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	b	func_146286_b	mouseReleased
 		c	Called when a mouse button is released.  Args : mouseX, mouseY, releaseButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	releaseButton	releaseButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	releaseButton	releaseButton
-		p	0	arg0	mouseX	mouseX
 	m	(II)Lyg;	c	func_146975_c	getSlotAtPosition
 		c	Returns the slot at the given coordinates or null if there is none.
 	m	(IIIIII)Z	c	func_146978_c	isPointInRegion
 		c	Test if the 2D point is in a rectangle (relative to the GUI). Args : rectX, rectY, rectWidth, rectHeight, pointX, pointY
-		p	1	arg1	rectY	rectY
-		p	2	arg2	rectWidth	rectWidth
-		p	3	arg3	rectHeight	rectHeight
-		p	4	arg4	pointX	pointX
-		p	5	arg5	pointY	pointY
+		p	1	arg0	rectX	rectX
+		p	2	arg1	rectY	rectY
+		p	3	arg2	rectWidth	rectWidth
+		p	4	arg3	rectHeight	rectHeight
+		p	5	arg4	pointX	pointX
 		p	6	arg5	pointY	pointY
-		p	0	arg0	rectX	rectX
 	m	()Z	d	func_73868_f	doesGuiPauseGame
 		c	Returns true if this GUI should pause the game when it is displayed in single-player
 	m	()V	e	func_73876_c	updateScreen
@@ -16515,31 +16370,27 @@ c	aym	net/minecraft/client/gui/GuiRepair	net/minecraft/client/gui/GuiRepair
 	m	()V	a	func_147090_g	renameItem
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(FII)V	a	func_146976_a	drawGuiContainerBackgroundLayer
 		c	Args : renderPartialTicks, mouseX, mouseY
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lxi;II)V	a	func_71112_a	sendProgressBarUpdate
 		c	Sends two ints to the client-side Container. Used for furnace burning time, smelting progress, brewing progress, and enchanting level. Normally the first int identifies which variable to update, and the second contains the new value. Both are truncated to shorts in non-local SMP.
 	m	(Lxi;ILzx;)V	a	func_71111_a	sendSlotContents
 		c	Sends the contents of an inventory slot to the client-side Container. This doesn't have to match the actual contents of that slot. Args: Container, slot number, slot contents
-		p	1	arg1	slot	slot
-		p	2	arg2	slot	slot
+		p	1	arg0	Container	Container
+		p	2	arg1	slot	slot
 		p	3	arg2	slot	slot
-		p	0	arg0	Container	Container
 	m	(Lxi;Ljava/util/List;)V	a	func_71110_a	updateCraftingInventory
 		c	update the crafting window inventory with the items in the list
 	m	(Lxi;Log;)V	a	func_175173_a	sendAllWindowProperties
@@ -16547,9 +16398,8 @@ c	aym	net/minecraft/client/gui/GuiRepair	net/minecraft/client/gui/GuiRepair
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 	m	()V	m	func_146281_b	onGuiClosed
 		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 c	ayn	net/minecraft/client/gui/inventory/GuiBeacon	net/minecraft/client/gui/inventory/GuiBeacon
@@ -16573,9 +16423,8 @@ c	ayn	net/minecraft/client/gui/inventory/GuiBeacon	net/minecraft/client/gui/inve
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 	m	(Layn;Ljava/lang/String;II)V	b	access$200	access$200
 	m	(Layn;Ljava/lang/String;II)V	c	access$300	access$300
 	m	()V	e	func_73876_c	updateScreen
@@ -16646,21 +16495,18 @@ c	ayo	net/minecraft/client/gui/GuiScreenBook	net/minecraft/client/gui/GuiScreenB
 	m	()Ljy;	a	access$000	access$000
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Leu;)Z	a	func_175276_a	handleComponentClick
@@ -16700,9 +16546,8 @@ c	ayp	net/minecraft/client/gui/inventory/GuiBrewingStand	net/minecraft/client/gu
 		c	Args : renderPartialTicks, mouseX, mouseY
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 c	ayq	net/minecraft/client/gui/GuiCommandBlock	net/minecraft/client/gui/GuiCommandBlock
 	f	Lorg/apache/logging/log4j/Logger;	a	field_146488_a	field_146488_a
 	f	Lavw;	f	field_146485_f	commandTextField
@@ -16720,21 +16565,18 @@ c	ayq	net/minecraft/client/gui/GuiCommandBlock	net/minecraft/client/gui/GuiComma
 	m	()V	a	func_175388_a	func_175388_a
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -16756,9 +16598,8 @@ c	ayr	net/minecraft/client/gui/inventory/GuiChest	net/minecraft/client/gui/inven
 		c	Args : renderPartialTicks, mouseX, mouseY
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 c	ays	net/minecraft/client/gui/inventory/GuiCrafting	net/minecraft/client/gui/inventory/GuiCrafting
 	f	Ljy;	u	field_147019_u	craftingTableGuiTextures
 		c	
@@ -16766,9 +16607,8 @@ c	ays	net/minecraft/client/gui/inventory/GuiCrafting	net/minecraft/client/gui/in
 		c	Args : renderPartialTicks, mouseX, mouseY
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 c	ayt	net/minecraft/client/gui/inventory/CreativeCrafting	net/minecraft/client/gui/inventory/CreativeCrafting
 	f	Lave;	a	field_146109_a	mc
 		c	
@@ -16776,10 +16616,9 @@ c	ayt	net/minecraft/client/gui/inventory/CreativeCrafting	net/minecraft/client/g
 		c	Sends two ints to the client-side Container. Used for furnace burning time, smelting progress, brewing progress, and enchanting level. Normally the first int identifies which variable to update, and the second contains the new value. Both are truncated to shorts in non-local SMP.
 	m	(Lxi;ILzx;)V	a	func_71111_a	sendSlotContents
 		c	Sends the contents of an inventory slot to the client-side Container. This doesn't have to match the actual contents of that slot. Args: Container, slot number, slot contents
-		p	1	arg1	slot	slot
-		p	2	arg2	slot	slot
+		p	1	arg0	Container	Container
+		p	2	arg1	slot	slot
 		p	3	arg2	slot	slot
-		p	0	arg0	Container	Container
 	m	(Lxi;Ljava/util/List;)V	a	func_71110_a	updateCraftingInventory
 		c	update the crafting window inventory with the items in the list
 	m	(Lxi;Log;)V	a	func_175173_a	sendAllWindowProperties
@@ -16804,23 +16643,20 @@ c	ayu	net/minecraft/client/gui/inventory/GuiContainerCreative	net/minecraft/clie
 	m	()V	a	func_175378_g	updateActivePotionEffects
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(FII)V	a	func_146976_a	drawGuiContainerBackgroundLayer
 		c	Args : renderPartialTicks, mouseX, mouseY
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Lyg;III)V	a	func_146984_a	handleMouseClick
@@ -16832,15 +16668,13 @@ c	ayu	net/minecraft/client/gui/inventory/GuiContainerCreative	net/minecraft/clie
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	b	func_146286_b	mouseReleased
 		c	Called when a mouse button is released.  Args : mouseX, mouseY, releaseButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	releaseButton	releaseButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	releaseButton	releaseButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lyz;)V	b	func_147050_b	setCurrentCreativeTab
 	m	(Lyz;II)Z	b	func_147052_b	renderCreativeInventoryHoveringText
 		c	Renders the creative inventory hovering text if mouse is over it. Returns true if did render or false otherwise. Params: current creative tab to be checked, current mouse x position, current mouse y position.
@@ -16905,19 +16739,17 @@ c	ayv	net/minecraft/client/gui/inventory/GuiDispenser	net/minecraft/client/gui/i
 		c	Args : renderPartialTicks, mouseX, mouseY
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 c	ayw	net/minecraft/client/renderer/InventoryEffectRenderer	net/minecraft/client/renderer/InventoryEffectRenderer
 	f	Z	u	field_147045_u	hasActivePotionEffects
 		c	True if there is some potion effect to display
 	m	()V	a	func_175378_g	updateActivePotionEffects
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	()V	b	func_73866_w_	initGui
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	()V	f	func_147044_g	drawActivePotionEffects
@@ -16961,21 +16793,18 @@ c	ayy	net/minecraft/client/gui/GuiEnchantment	net/minecraft/client/gui/GuiEnchan
 		c	Args : renderPartialTicks, mouseX, mouseY
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 	m	()V	e	func_73876_c	updateScreen
 		c	Called from the main game loop to update the screen.
 c	ayz	net/minecraft/client/gui/inventory/GuiFurnace	net/minecraft/client/gui/inventory/GuiFurnace
@@ -16989,9 +16818,8 @@ c	ayz	net/minecraft/client/gui/inventory/GuiFurnace	net/minecraft/client/gui/inv
 		c	Args : renderPartialTicks, mouseX, mouseY
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 	m	(I)I	h	func_175381_h	getCookProgressScaled
 	m	(I)I	i	func_175382_i	getBurnLeftScaled
 c	az	net/minecraft/command/server/CommandSaveOff	net/minecraft/command/server/CommandSaveOff
@@ -17012,9 +16840,8 @@ c	aza	net/minecraft/client/gui/GuiHopper	net/minecraft/client/gui/GuiHopper
 		c	Args : renderPartialTicks, mouseX, mouseY
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 c	azb	net/minecraft/client/gui/inventory/GuiScreenHorseInventory	net/minecraft/client/gui/inventory/GuiScreenHorseInventory
 	f	Ljy;	u	field_147031_u	horseGuiTextures
 		c	
@@ -17032,15 +16859,13 @@ c	azb	net/minecraft/client/gui/inventory/GuiScreenHorseInventory	net/minecraft/c
 		c	Args : renderPartialTicks, mouseX, mouseY
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 c	azc	net/minecraft/client/gui/inventory/GuiInventory	net/minecraft/client/gui/inventory/GuiInventory
 	f	F	u	field_147048_u	oldMouseX
 		c	The old x position of the mouse pointer
@@ -17050,10 +16875,9 @@ c	azc	net/minecraft/client/gui/inventory/GuiInventory	net/minecraft/client/gui/i
 		c	Args : renderPartialTicks, mouseX, mouseY
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(IIIFFLpr;)V	a	func_147046_a	drawEntityOnScreen
 		c	Draws the entity to the screen. Args: xPos, yPos, scale, mouseX, mouseY, entityLiving
 		p	0	arg0	xPos	xPos
@@ -17068,9 +16892,8 @@ c	azc	net/minecraft/client/gui/inventory/GuiInventory	net/minecraft/client/gui/i
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 	m	()V	e	func_73876_c	updateScreen
 		c	Called from the main game loop to update the screen.
 c	azd	net/minecraft/client/gui/GuiMerchant	net/minecraft/client/gui/GuiMerchant
@@ -17093,19 +16916,17 @@ c	azd	net/minecraft/client/gui/GuiMerchant	net/minecraft/client/gui/GuiMerchant
 		c	Args : renderPartialTicks, mouseX, mouseY
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	(II)V	b	func_146979_b	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
-		p	1	arg1	mouseY	mouseY
+		p	1	arg0	mouseX	mouseX
 		p	2	arg1	mouseY	mouseY
-		p	0	arg0	mouseX	mouseX
 	m	()V	e	func_73876_c	updateScreen
 		c	Called from the main game loop to update the screen.
 	m	()Ljy;	f	access$000	access$000
@@ -17124,15 +16945,13 @@ c	aze	net/minecraft/client/gui/inventory/GuiEditSign	net/minecraft/client/gui/in
 		c	"Done" button for the GUI.
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -17179,21 +16998,18 @@ c	azh	net/minecraft/client/gui/GuiMultiplayer	net/minecraft/client/gui/GuiMultip
 	m	()V	a	func_146794_g	createButtons
 	m	(CI)V	a	func_73869_a	keyTyped
 		c	Fired when a key is typed (except F11 which toggles full screen). This is the equivalent of KeyListener.keyTyped(KeyEvent e). Args : character (character on the key), keyCode (lwjgl Keyboard key code)
-		p	1	arg1	keyCode	keyCode
+		p	1	arg0	character	character
 		p	2	arg1	keyCode	keyCode
-		p	0	arg0	character	character
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Lazk;I)Z	a	func_175392_a	func_175392_a
@@ -17206,10 +17022,9 @@ c	azh	net/minecraft/client/gui/GuiMultiplayer	net/minecraft/client/gui/GuiMultip
 	m	(I)V	b	func_146790_a	selectServer
 	m	(III)V	b	func_146286_b	mouseReleased
 		c	Called when a mouse button is released.  Args : mouseX, mouseY, releaseButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	releaseButton	releaseButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	releaseButton	releaseButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lazk;I)Z	b	func_175394_b	func_175394_b
 	m	(Lazk;IZ)V	b	func_175393_b	func_175393_b
 	m	()V	e	func_73876_c	updateScreen
@@ -17231,13 +17046,12 @@ c	azi	net/minecraft/client/gui/ServerListEntryLanScan	net/minecraft/client/gui/S
 	m	(IIIIIIIZ)V	a	func_180790_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	mouseEvent	mouseEvent
-		p	4	arg4	relativeX	relativeX
-		p	5	arg5	relativeY	relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
 		p	6	arg5	relativeY	relativeY
-		p	0	arg0	index	index
 c	azj	net/minecraft/client/gui/ServerListEntryLanDetected	net/minecraft/client/gui/ServerListEntryLanDetected
 	f	Lazh;	c	field_148292_c	field_148292_c
 	f	Lave;	a	field_148293_a	mc
@@ -17251,13 +17065,12 @@ c	azj	net/minecraft/client/gui/ServerListEntryLanDetected	net/minecraft/client/g
 	m	(IIIIIIIZ)V	a	func_180790_a	drawEntry
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	mouseEvent	mouseEvent
-		p	4	arg4	relativeX	relativeX
-		p	5	arg5	relativeY	relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
 		p	6	arg5	relativeY	relativeY
-		p	0	arg0	index	index
 c	azk	net/minecraft/client/gui/ServerListEntryNormal	net/minecraft/client/gui/ServerListEntryNormal
 	f	Lorg/apache/logging/log4j/Logger;	a	field_148304_a	logger
 		c	
@@ -17287,13 +17100,12 @@ c	azk	net/minecraft/client/gui/ServerListEntryNormal	net/minecraft/client/gui/Se
 	m	()Z	b	func_178013_b	func_178013_b
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	mouseEvent	mouseEvent
-		p	4	arg4	relativeX	relativeX
-		p	5	arg5	relativeY	relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
 		p	6	arg5	relativeY	relativeY
-		p	0	arg0	index	index
 	m	(Lazk;)Lazh;	b	access$100	access$100
 	m	()V	c	func_148297_b	prepareServerIcon
 c	azk$1	net/minecraft/client/gui/ServerListEntryNormal$1	net/minecraft/client/gui/ServerListEntryNormal$1
@@ -17341,16 +17153,14 @@ c	azo	net/minecraft/client/gui/GuiScreenResourcePacks	net/minecraft/client/gui/G
 		c	Returns a list containing the available resource packs
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(III)V	a	func_73864_a	mouseClicked
 		c	Called when the mouse is clicked. Args : mouseX, mouseY, clickedButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	clickedButton	clickedButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Lazp;)Z	a	func_146961_a	hasResourcePackEntry
@@ -17358,10 +17168,9 @@ c	azo	net/minecraft/client/gui/GuiScreenResourcePacks	net/minecraft/client/gui/G
 		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
 	m	(III)V	b	func_146286_b	mouseReleased
 		c	Called when a mouse button is released.  Args : mouseX, mouseY, releaseButton
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	releaseButton	releaseButton
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	releaseButton	releaseButton
-		p	0	arg0	mouseX	mouseX
 	m	(Lazp;)Ljava/util/List;	b	func_146962_b	getListContaining
 		c	Returns the list containing the resource pack entry, returns the selected list if it is selected, otherwise returns the available list
 	m	()Ljava/util/List;	f	func_146963_h	getSelectedResourcePacks
@@ -17388,13 +17197,12 @@ c	azp	net/minecraft/client/resources/ResourcePackListEntry	net/minecraft/client/
 	m	()Ljava/lang/String;	b	func_148311_a	func_148311_a
 	m	(IIIIII)V	b	func_148277_b	mouseReleased
 		c	Fired when the mouse button is released. Arguments: index, x, y, mouseEvent, relativeX, relativeY
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	mouseEvent	mouseEvent
-		p	4	arg4	relativeX	relativeX
-		p	5	arg5	relativeY	relativeY
+		p	1	arg0	index	index
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	mouseEvent	mouseEvent
+		p	5	arg4	relativeX	relativeX
 		p	6	arg5	relativeY	relativeY
-		p	0	arg0	index	index
 	m	()Ljava/lang/String;	c	func_148312_b	func_148312_b
 	m	()V	d	func_148313_c	func_148313_c
 	m	()Z	e	func_148310_d	func_148310_d
@@ -17453,10 +17261,9 @@ c	azy	net/minecraft/client/gui/stream/GuiIngestServers	net/minecraft/client/gui/
 	f	Lazy$a;	g	field_152311_g	field_152311_g
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Lazy;)Lavn;	a	access$000	access$000
@@ -17495,10 +17302,9 @@ c	azz	net/minecraft/client/gui/stream/GuiStreamOptions	net/minecraft/client/gui/
 	f	Z	t	field_152315_t	field_152315_t
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	()V	b	func_73866_w_	initGui
@@ -17590,10 +17396,9 @@ c	baa	net/minecraft/client/gui/stream/GuiStreamUnavailable	net/minecraft/client/
 	f	Ljava/util/List;	r	field_152323_r	field_152323_r
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Laxu;)V	a	func_152321_a	func_152321_a
@@ -17637,10 +17442,9 @@ c	bab	net/minecraft/client/gui/stream/GuiTwitchUserMode	net/minecraft/client/gui
 	f	I	t	field_152334_t	field_152334_t
 	m	(IIF)V	a	func_73863_a	drawScreen
 		c	Draws the screen and all the components in it. Args : mouseX, mouseY, renderPartialTicks
-		p	1	arg1	mouseY	mouseY
-		p	2	arg2	renderPartialTicks	renderPartialTicks
+		p	1	arg0	mouseX	mouseX
+		p	2	arg1	mouseY	mouseY
 		p	3	arg2	renderPartialTicks	renderPartialTicks
-		p	0	arg0	mouseX	mouseX
 	m	(Lavs;)V	a	func_146284_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Ljava/util/Set;Ljava/util/Set;Lbqm;)Ljava/util/List;	a	func_152328_a	func_152328_a
@@ -18603,14 +18407,13 @@ c	bct	net/minecraft/client/model/ModelRenderer	net/minecraft/client/model/ModelR
 	m	(FFFIII)Lbct;	a	func_78789_a	addBox
 	m	(FFFIIIF)V	a	func_78790_a	addBox
 		c	Creates a textured box. Args: originX, originY, originZ, width, height, depth, scaleFactor.
-		p	1	arg1	originY	originY
-		p	2	arg2	originZ	originZ
-		p	3	arg3	width	width
-		p	4	arg4	height	height
-		p	5	arg5	depth	depth
-		p	6	arg6	scaleFactor	scaleFactor
+		p	1	arg0	originX	originX
+		p	2	arg1	originY	originY
+		p	3	arg2	originZ	originZ
+		p	4	arg3	width	width
+		p	5	arg4	height	height
+		p	6	arg5	depth	depth
 		p	7	arg6	scaleFactor	scaleFactor
-		p	0	arg0	originX	originX
 	m	(FFFIIIZ)Lbct;	a	func_178769_a	addBox
 	m	(II)Lbct;	a	func_78784_a	setTextureOffset
 	m	(Lbct;)V	a	func_78792_a	addChild
@@ -19297,45 +19100,41 @@ c	bdq$c	net/minecraft/client/particle/EntityFirework$StarterFX	net/minecraft/cli
 	m	()I	a	func_70537_b	getFXLayer
 	m	(DDDDDD[I[IZZ)V	a	func_92034_a	createParticle
 		c	Creates a single particle. Args: x, y, z, x velocity, y velocity, z velocity, colours, fade colours, whether to trail, whether to twinkle
-		p	1	arg1	y	y
-		p	2	arg2	z	z
-		p	3	arg3	x	x
-		p	4	arg4	y	y
-		p	5	arg5	z	z
-		p	6	arg6	colours	colours
-		p	7	arg7	fade	fade
-		p	8	arg8	whether	whether
-		p	9	arg9	whether	whether
+		p	1	arg0	x	x
+		p	2	arg1	y	y
+		p	3	arg2	z	z
+		p	4	arg3	x	x
+		p	5	arg4	y	y
+		p	6	arg5	z	z
+		p	7	arg6	colours	colours
+		p	8	arg7	fade	fade
+		p	9	arg8	whether	whether
 		p	10	arg9	whether	whether
-		p	0	arg0	x	x
 	m	(DI[I[IZZ)V	a	func_92035_a	createBall
 		c	Creates a small ball or large ball type explosion. Args: particle speed, size, colours, fade colours, whether to trail, whether to flicker
-		p	1	arg1	size	size
-		p	2	arg2	colours	colours
-		p	3	arg3	fade	fade
-		p	4	arg4	whether	whether
-		p	5	arg5	whether	whether
+		p	1	arg0	particle	particle
+		p	2	arg1	size	size
+		p	3	arg2	colours	colours
+		p	4	arg3	fade	fade
+		p	5	arg4	whether	whether
 		p	6	arg5	whether	whether
-		p	0	arg0	particle	particle
 	m	(D[[D[I[IZZZ)V	a	func_92038_a	createShaped
 		c	Creates a creeper-shaped or star-shaped explosion. Args: particle speed, shape, colours, fade colours, whether to trail, whether to flicker, unknown
-		p	1	arg1	shape	shape
-		p	2	arg2	colours	colours
-		p	3	arg3	fade	fade
-		p	4	arg4	whether	whether
-		p	5	arg5	whether	whether
-		p	6	arg6	unknown	unknown
+		p	1	arg0	particle	particle
+		p	2	arg1	shape	shape
+		p	3	arg2	colours	colours
+		p	4	arg3	fade	fade
+		p	5	arg4	whether	whether
+		p	6	arg5	whether	whether
 		p	7	arg6	unknown	unknown
-		p	0	arg0	particle	particle
 	m	(Lbfd;Lpk;FFFFFF)V	a	func_180434_a	renderParticle
 		c	Renders the particle
 	m	([I[IZZ)V	a	func_92036_a	createBurst
 		c	Creates a burst type explosion. Args: colours, fade colours, whether to trail, whether to flicker
-		p	1	arg1	fade	fade
-		p	2	arg2	whether	whether
-		p	3	arg3	whether	whether
+		p	1	arg0	colours	colours
+		p	2	arg1	fade	fade
+		p	3	arg2	whether	whether
 		p	4	arg3	whether	whether
-		p	0	arg0	colours	colours
 	m	()Z	l	func_92037_i	func_92037_i
 	m	()V	t_	func_70071_h_	onUpdate
 		c	Called to update the entity's position/logic.
@@ -19816,7 +19615,6 @@ c	bew	net/minecraft/client/entity/EntityPlayerSP	net/minecraft/client/entity/Ent
 	m	(Log;)V	a	func_71007_a	displayGUIChest
 		c	Displays the GUI for interacting with a chest inventory. Args: chestInventory
 		p	1	arg0	chestInventory	chestInventory
-		p	0	arg0	chestInventory	chestInventory
 	m	(Lol;)V	a	func_180468_a	displayGui
 	m	(Low;F)Z	a	func_70097_a	attackEntityFrom
 		c	Called when the entity is attacked.
@@ -19826,7 +19624,6 @@ c	bew	net/minecraft/client/entity/EntityPlayerSP	net/minecraft/client/entity/Ent
 	m	(Luz;)V	a	func_71012_a	joinEntityItemWithWorld
 		c	Joins the passed in entity item with the world. Args: entityItem
 		p	1	arg0	entityItem	entityItem
-		p	0	arg0	entityItem	entityItem
 	m	(Lzx;)V	a	func_71048_c	displayGUIBook
 		c	Displays the GUI for interacting with a book.
 	m	(Z)Luz;	a	func_71040_bB	dropOneItem
@@ -19837,7 +19634,6 @@ c	bew	net/minecraft/client/entity/EntityPlayerSP	net/minecraft/client/entity/Ent
 	m	(Lpk;)V	b	func_71009_b	onCriticalHit
 		c	Called when the player performs a critical hit on the Entity. Args: entity that was hit critically
 		p	1	arg0	entity	entity
-		p	0	arg0	entity	entity
 	m	()V	bK	func_70626_be	updateEntityActionState
 	m	()Z	bM	func_70613_aW	isServerWorld
 		c	Returns whether the entity is in a server world
@@ -19852,7 +19648,6 @@ c	bew	net/minecraft/client/entity/EntityPlayerSP	net/minecraft/client/entity/Ent
 	m	(Low;F)V	d	func_70665_d	damageEntity
 		c	Deals damage to the entity. If its a EntityPlayer then will take damage from the armor first and then health second with the reduced value. Args: damageAmount
 		p	1	arg0	damageAmount	damageAmount
-		p	0	arg0	damageAmount	damageAmount
 	m	(Z)V	d	func_70031_b	setSprinting
 		c	Set sprinting switch for Entity.
 	m	(Lcj;)Z	e	func_175162_d	isOpenBlockSpace
@@ -19860,7 +19655,6 @@ c	bew	net/minecraft/client/entity/EntityPlayerSP	net/minecraft/client/entity/Ent
 	m	(Ljava/lang/String;)V	e	func_71165_d	sendChatMessage
 		c	Sends a chat message from the player. Args: chatMessage
 		p	1	arg0	chatMessage	chatMessage
-		p	0	arg0	chatMessage	chatMessage
 	m	(Ljava/lang/String;)V	f	func_175158_f	setClientBrand
 	m	(F)V	h	func_70691_i	heal
 		c	Heal living entity (param: amount of half-hearts)
@@ -20017,7 +19811,6 @@ c	bfd	net/minecraft/client/renderer/WorldRenderer	net/minecraft/client/renderer/
 	m	(I)I	c	func_78909_a	getColorIndex
 		c	Takes in the pass the call list is being requested for. Args: renderPass
 		p	1	arg0	renderPass	renderPass
-		p	0	arg0	renderPass	renderPass
 	m	()V	d	func_181675_d	endVertex
 	m	(FFF)V	d	func_178990_f	putColorRGB_F4
 	m	()V	e	func_178977_d	finishDrawing
@@ -20248,7 +20041,6 @@ c	bfk	net/minecraft/client/renderer/EntityRenderer	net/minecraft/client/renderer
 	m	(F)V	a	func_78473_a	getMouseOver
 		c	Finds what block or object the mouse is over at the specified partial tick time. Args: partialTickTime
 		p	1	arg0	partialTickTime	partialTickTime
-		p	0	arg0	partialTickTime	partialTickTime
 	m	(FFFF)Ljava/nio/FloatBuffer;	a	func_78469_a	setFogColorBuffer
 		c	Update and return fogColorBuffer with the RGBA values passed as arguments
 	m	(FI)V	a	func_78479_a	setupCameraTransform
@@ -20282,7 +20074,6 @@ c	bfk	net/minecraft/client/renderer/EntityRenderer	net/minecraft/client/renderer
 	m	(F)V	e	func_78475_f	setupViewBobbing
 		c	Setups all the GL settings for view bobbing. Args: partialTickTime
 		p	1	arg0	partialTickTime	partialTickTime
-		p	0	arg0	partialTickTime	partialTickTime
 	m	()Lblr;	f	func_147706_e	getShaderGroup
 	m	(F)V	f	func_78467_g	orientCamera
 		c	sets up player's eye (or camera in third person mode)
@@ -20593,7 +20384,6 @@ c	bfn	net/minecraft/client/renderer/ItemRenderer	net/minecraft/client/renderer/I
 	m	(F)V	a	func_78440_a	renderItemInFirstPerson
 		c	Renders the active item in the player's hand when in first person mode. Args: partialTickTime
 		p	1	arg0	partialTickTime	partialTickTime
-		p	0	arg0	partialTickTime	partialTickTime
 	m	(FF)V	a	func_178101_a	rotateArroundXAndY
 		c	Rotate the render around X and Y\\n \\n@param angleY The angle for the rotation arround Y
 	m	(FLbet;)V	a	func_178098_a	doBowTransformations
@@ -20618,7 +20408,6 @@ c	bfn	net/minecraft/client/renderer/ItemRenderer	net/minecraft/client/renderer/I
 	m	(F)V	b	func_78447_b	renderOverlays
 		c	Renders all the overlays that are in first person mode. Args: partialTickTime
 		p	1	arg0	partialTickTime	partialTickTime
-		p	0	arg0	partialTickTime	partialTickTime
 	m	(FF)V	b	func_178096_b	transformFirstPersonItem
 		c	Performs transformations prior to the rendering of a held item in first person.
 	m	(Lbet;)V	b	func_178102_b	renderPlayerArms
@@ -20634,7 +20423,6 @@ c	bfn	net/minecraft/client/renderer/ItemRenderer	net/minecraft/client/renderer/I
 	m	(F)V	e	func_78448_c	renderWaterOverlayTexture
 		c	Renders a texture that warps around based on the direction the player is looking. Texture needs to be bound before being called. Used for the water overlay. Args: parialTickTime\\n \\n@param partialTicks Partial ticks
 		p	1	arg0	parialTickTime	parialTickTime
-		p	0	arg0	parialTickTime	parialTickTime
 	m	(F)V	f	func_78442_d	renderFireInFirstPerson
 		c	Renders the fire on the screen for first person mode. Arg: partialTickTime\\n \\n@param partialTicks Partial ticks
 c	bfn$1	net/minecraft/client/renderer/ItemRenderer$1	net/minecraft/client/renderer/ItemRenderer$1
@@ -20780,13 +20568,12 @@ c	bfr	net/minecraft/client/renderer/RenderGlobal	net/minecraft/client/renderer/R
 	m	(II)V	a	func_72720_a	createBindEntityOutlineFbs
 	m	(IIIIII)V	a	func_147585_a	markBlockRangeForRenderUpdate
 		c	On the client, re-renders all blocks in this range, inclusive. On the server, does nothing. Args: min x, min y, min z, max x, max y, max z
-		p	1	arg1	min	min
-		p	2	arg2	min	min
-		p	3	arg3	max	max
-		p	4	arg4	max	max
-		p	5	arg5	max	max
+		p	1	arg0	min	min
+		p	2	arg1	min	min
+		p	3	arg2	min	min
+		p	4	arg3	max	max
+		p	5	arg4	max	max
 		p	6	arg5	max	max
-		p	0	arg0	min	min
 	m	(ILcj;I)V	a	func_180440_a	broadcastSound
 	m	(IZDDDDDD[I)V	a	func_180442_a	spawnParticle
 	m	(J)V	a	func_174967_a	updateChunks
@@ -20819,12 +20606,11 @@ c	bfr	net/minecraft/client/renderer/RenderGlobal	net/minecraft/client/renderer/R
 	m	(Lwn;ILcj;I)V	a	func_180439_a	playAuxSFX
 	m	(Lwn;Lauh;IF)V	a	func_72731_b	drawSelectionBox
 		c	Draws the selection box for the player. Args: entityPlayer, rayTraceHit, i, itemStack, partialTickTime\\n \\n@param execute If equals to 0 the method is executed
-		p	1	arg1	rayTraceHit	rayTraceHit
-		p	2	arg2	i	i
-		p	3	arg3	itemStack	itemStack
-		p	4	arg4	partialTickTime	partialTickTime
+		p	1	arg0	entityPlayer	entityPlayer
+		p	2	arg1	rayTraceHit	rayTraceHit
+		p	3	arg2	i	i
+		p	4	arg3	itemStack	itemStack
 		p	5	arg4	partialTickTime	partialTickTime
-		p	0	arg0	entityPlayer	entityPlayer
 	m	(Lwn;Ljava/lang/String;DDDFF)V	a	func_85102_a	playSoundToNearExcept
 		c	Plays sound to all near players except the player reference given
 	m	()V	b	func_174966_b	makeEntityOutlineShader
@@ -21965,17 +21751,15 @@ c	bii	net/minecraft/client/renderer/entity/RenderBat	net/minecraft/client/render
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lpr;FFF)V	a	func_77043_a	rotateCorpse
 	m	(Ltk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Ltk;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Ltk;FFF)V	a	func_77043_a	rotateCorpse
 c	bij	net/minecraft/client/renderer/entity/RenderBlaze	net/minecraft/client/renderer/entity/RenderBlaze
 	f	Ljy;	a	field_110837_a	blazeTextures
@@ -22004,16 +21788,14 @@ c	bil	net/minecraft/client/renderer/entity/RenderCaveSpider	net/minecraft/client
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lvm;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lvm;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lwc;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 c	bim	net/minecraft/client/renderer/entity/RenderChicken	net/minecraft/client/renderer/entity/RenderChicken
@@ -22041,28 +21823,24 @@ c	bio	net/minecraft/client/renderer/entity/RenderCreeper	net/minecraft/client/re
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lpr;FF)I	a	func_77030_a	getColorMultiplier
 		c	Returns an ARGB int color back. Args: entityLiving, lightBrightness, partialTickTime
-		p	1	arg1	lightBrightness	lightBrightness
-		p	2	arg2	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	lightBrightness	lightBrightness
 		p	3	arg2	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lvn;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lvn;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lvn;FF)I	a	func_77030_a	getColorMultiplier
 		c	Returns an ARGB int color back. Args: entityLiving, lightBrightness, partialTickTime
-		p	1	arg1	lightBrightness	lightBrightness
-		p	2	arg2	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	lightBrightness	lightBrightness
 		p	3	arg2	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 c	bip	net/minecraft/client/renderer/entity/RenderEntity	net/minecraft/client/renderer/entity/RenderEntity
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
@@ -22226,12 +22004,11 @@ c	biv	net/minecraft/client/renderer/entity/Render	net/minecraft/client/renderer/
 	m	(Lpk;DDD)V	a	func_177067_a	renderName
 	m	(Lpk;DDDF)V	a	func_76977_a	renderEntityOnFire
 		c	Renders fire on top of the entity. Args: entity, x, y, z, partialTickTime
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	z	z
-		p	4	arg4	partialTickTime	partialTickTime
+		p	1	arg0	entity	entity
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	z	z
 		p	5	arg4	partialTickTime	partialTickTime
-		p	0	arg0	entity	entity
 	m	(Lpk;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
 	m	(Lpk;DDDLjava/lang/String;FD)V	a	func_177069_a	renderOffsetLivingLabel
@@ -22241,25 +22018,23 @@ c	biv	net/minecraft/client/renderer/entity/Render	net/minecraft/client/renderer/
 	m	(Lpk;)Z	b	func_177070_b	canRenderName
 	m	(Lpk;DDDFF)V	b	func_76979_b	doRenderShadowAndFire
 		c	Renders the entity's shadow and fire (if its on fire). Args: entity, x, y, z, yaw, partialTickTime
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	z	z
-		p	4	arg4	yaw	yaw
-		p	5	arg5	partialTickTime	partialTickTime
+		p	1	arg0	entity	entity
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	z	z
+		p	5	arg4	yaw	yaw
 		p	6	arg5	partialTickTime	partialTickTime
-		p	0	arg0	entity	entity
 	m	()Lavn;	c	func_76983_a	getFontRendererFromRenderManager
 		c	Returns the font renderer from the set render manager
 	m	(Lpk;)Z	c	func_180548_c	bindEntityTexture
 	m	(Lpk;DDDFF)V	c	func_76975_c	renderShadow
 		c	Renders the entity shadows at the position, shadow alpha and partialTickTime. Args: entity, x, y, z, shadowAlpha, partialTickTime
-		p	1	arg1	x	x
-		p	2	arg2	y	y
-		p	3	arg3	z	z
-		p	4	arg4	shadowAlpha	shadowAlpha
-		p	5	arg5	partialTickTime	partialTickTime
+		p	1	arg0	entity	entity
+		p	2	arg1	x	x
+		p	3	arg2	y	y
+		p	4	arg3	z	z
+		p	5	arg4	shadowAlpha	shadowAlpha
 		p	6	arg5	partialTickTime	partialTickTime
-		p	0	arg0	entity	entity
 	m	()Lbiu;	d	func_177068_d	getRenderManager
 c	biw	net/minecraft/client/renderer/entity/RenderXPOrb	net/minecraft/client/renderer/entity/RenderXPOrb
 	f	Ljy;	a	field_110785_a	experienceOrbTextures
@@ -22339,16 +22114,14 @@ c	bja	net/minecraft/client/renderer/entity/RenderGhast	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lvr;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lvr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 c	bjb	net/minecraft/client/renderer/entity/RenderGiantZombie	net/minecraft/client/renderer/entity/RenderGiantZombie
 	f	Ljy;	a	field_110871_a	zombieTextures
 		c	
@@ -22359,16 +22132,14 @@ c	bjb	net/minecraft/client/renderer/entity/RenderGiantZombie	net/minecraft/clien
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lvs;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lvs;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 c	bjb$1	net/minecraft/client/renderer/entity/RenderGiantZombie$1	net/minecraft/client/renderer/entity/RenderGiantZombie$1
 	f	Lbjb;	a	field_177197_a	field_177197_a
 	m	()V	a	func_177177_a	initArmor
@@ -22390,9 +22161,8 @@ c	bjc	net/minecraft/client/renderer/entity/RenderGuardian	net/minecraft/client/r
 	m	(Lpr;DF)Laui;	a	func_177110_a	func_177110_a
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lps;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
 	m	(Lps;Lbia;DDD)Z	a	func_177071_a	shouldRender
@@ -22402,9 +22172,8 @@ c	bjc	net/minecraft/client/renderer/entity/RenderGuardian	net/minecraft/client/r
 		c	Renders the desired {@code T} type Entity.
 	m	(Lvt;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lvt;Lbia;DDD)Z	a	func_177071_a	shouldRender
 c	bjd	net/minecraft/client/renderer/entity/RenderHorse	net/minecraft/client/renderer/entity/RenderHorse
 	f	Ljava/util/Map;	a	field_110852_a	field_110852_a
@@ -22422,16 +22191,14 @@ c	bjd	net/minecraft/client/renderer/entity/RenderHorse	net/minecraft/client/rend
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Ltp;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Ltp;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Ltp;)Ljy;	b	func_110848_b	func_110848_b
 c	bje	net/minecraft/client/renderer/entity/RenderBiped	net/minecraft/client/renderer/entity/RenderBiped
 	f	Ljy;	j	field_177118_j	DEFAULT_RES_LOC
@@ -22565,16 +22332,14 @@ c	bji	net/minecraft/client/renderer/entity/RenderMagmaCube	net/minecraft/client/
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lvu;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lvu;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 c	bjj	net/minecraft/client/renderer/entity/RenderLeashKnot	net/minecraft/client/renderer/entity/RenderLeashKnot
 	f	Ljy;	a	field_110802_a	leashKnotTextures
 		c	
@@ -22624,15 +22389,13 @@ c	bjl	net/minecraft/client/renderer/entity/RendererLivingEntity	net/minecraft/cl
 		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lpr;FF)I	a	func_77030_a	getColorMultiplier
 		c	Returns an ARGB int color back. Args: entityLiving, lightBrightness, partialTickTime
-		p	1	arg1	lightBrightness	lightBrightness
-		p	2	arg2	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
+		p	2	arg1	lightBrightness	lightBrightness
 		p	3	arg2	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lpr;FFF)V	a	func_77043_a	rotateCorpse
 	m	(Lpr;FFFFFF)V	a	func_77036_a	renderModel
 		c	Renders the model in RenderLiving
@@ -22650,9 +22413,8 @@ c	bjl	net/minecraft/client/renderer/entity/RendererLivingEntity	net/minecraft/cl
 	m	(Lpr;F)Z	c	func_177090_c	setDoRenderBrightness
 	m	(Lpr;F)F	d	func_77040_d	getSwingProgress
 		c	Returns where in the swing animation the living entity is (from 0 to 1).  Args : entity, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entity	entity
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entity	entity
 	m	()V	e	func_180565_e	unsetScoreTeamColor
 	m	()V	f	func_177091_f	unsetBrightness
 c	bjl$1	net/minecraft/client/renderer/entity/RendererLivingEntity$1	net/minecraft/client/renderer/entity/RendererLivingEntity$1
@@ -22710,16 +22472,14 @@ c	bjq	net/minecraft/client/renderer/entity/RenderOcelot	net/minecraft/client/ren
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lts;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lts;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 c	bjr	net/minecraft/client/renderer/entity/RenderPainting	net/minecraft/client/renderer/entity/RenderPainting
 	f	Ljy;	a	field_110807_a	KRISTOFFER_PAINTING_TEXTURE
 		c	
@@ -22799,18 +22559,16 @@ c	bjx	net/minecraft/client/renderer/entity/RenderSkeleton	net/minecraft/client/r
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lps;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lwa;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lwa;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 c	bjx$1	net/minecraft/client/renderer/entity/RenderSkeleton$1	net/minecraft/client/renderer/entity/RenderSkeleton$1
 	f	Lbjx;	a	field_177199_a	field_177199_a
 	m	()V	a	func_177177_a	initArmor
@@ -22825,9 +22583,8 @@ c	bjy	net/minecraft/client/renderer/entity/RenderSlime	net/minecraft/client/rend
 		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lps;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
 	m	(Lwb;)Ljy;	a	func_110775_a	getEntityTexture
@@ -22836,9 +22593,8 @@ c	bjy	net/minecraft/client/renderer/entity/RenderSlime	net/minecraft/client/rend
 		c	Renders the desired {@code T} type Entity.
 	m	(Lwb;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 c	bjz	net/minecraft/client/renderer/entity/RenderSnowMan	net/minecraft/client/renderer/entity/RenderSnowMan
 	f	Ljy;	a	field_110895_a	snowManTextures
 		c	
@@ -22934,16 +22690,14 @@ c	bkh	net/minecraft/client/renderer/entity/RenderVillager	net/minecraft/client/r
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lwi;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
 	m	(Lwi;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	()Lbbo;	b	func_177087_b	getMainModel
 	m	()Lbci;	g	func_177087_b	getMainModel
 c	bki	net/minecraft/client/renderer/entity/RenderWitch	net/minecraft/client/renderer/entity/RenderWitch
@@ -22958,9 +22712,8 @@ c	bki	net/minecraft/client/renderer/entity/RenderWitch	net/minecraft/client/rend
 		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lps;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
 	m	(Lwd;)Ljy;	a	func_110775_a	getEntityTexture
@@ -22969,9 +22722,8 @@ c	bki	net/minecraft/client/renderer/entity/RenderWitch	net/minecraft/client/rend
 		c	Renders the desired {@code T} type Entity.
 	m	(Lwd;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 c	bkj	net/minecraft/client/renderer/entity/RenderWither	net/minecraft/client/renderer/entity/RenderWither
 	f	Ljy;	a	field_110913_a	invulnerableWitherTextures
 		c	
@@ -22985,9 +22737,8 @@ c	bkj	net/minecraft/client/renderer/entity/RenderWither	net/minecraft/client/ren
 		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lps;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
 	m	(Luk;)Ljy;	a	func_110775_a	getEntityTexture
@@ -22996,9 +22747,8 @@ c	bkj	net/minecraft/client/renderer/entity/RenderWither	net/minecraft/client/ren
 		c	Renders the desired {@code T} type Entity.
 	m	(Luk;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 c	bkk	net/minecraft/client/renderer/tileentity/RenderWitherSkull	net/minecraft/client/renderer/tileentity/RenderWitherSkull
 	f	Ljy;	a	field_110811_a	invulnerableWitherTextures
 		c	
@@ -23271,9 +23021,8 @@ c	bln	net/minecraft/client/renderer/entity/RenderPlayer	net/minecraft/client/ren
 	m	(Lbet;DDDLjava/lang/String;FD)V	a	func_177069_a	renderOffsetLivingLabel
 	m	(Lbet;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lbet;FFF)V	a	func_77043_a	rotateCorpse
 	m	(Lpk;)Ljy;	a	func_110775_a	getEntityTexture
 		c	Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
@@ -23286,9 +23035,8 @@ c	bln	net/minecraft/client/renderer/entity/RenderPlayer	net/minecraft/client/ren
 		c	Renders the desired {@code T} type Entity.
 	m	(Lpr;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
-		p	1	arg1	partialTickTime	partialTickTime
+		p	1	arg0	entityLiving	entityLiving
 		p	2	arg1	partialTickTime	partialTickTime
-		p	0	arg0	entityLiving	entityLiving
 	m	(Lpr;FFF)V	a	func_77043_a	rotateCorpse
 	m	()Lbbo;	b	func_177087_b	getMainModel
 	m	(Lbet;)V	b	func_177138_b	renderRightArm
@@ -26728,9 +26476,8 @@ c	dn	net/minecraft/nbt/NBTTagCompound	net/minecraft/nbt/NBTTagCompound
 		c	Returns whether the given string has been previously stored as a key in the map.
 	m	(Ljava/lang/String;I)Ldu;	c	func_150295_c	getTagList
 		c	Gets the NBTTagList object with the given name. Args: name, NBTBase type
-		p	1	arg1	NBTBase	NBTBase
+		p	1	arg0	name	name
 		p	2	arg1	NBTBase	NBTBase
-		p	0	arg0	name	name
 	m	()Z	c_	func_82582_d	hasNoTags
 		c	Return whether this compound has no tags.
 	m	(Ljava/lang/String;)B	d	func_74771_c	getByte
@@ -30778,13 +30525,12 @@ c	lb	net/minecraft/world/WorldManager	net/minecraft/world/WorldManager
 		c	The WorldServer object.
 	m	(IIIIII)V	a	func_147585_a	markBlockRangeForRenderUpdate
 		c	On the client, re-renders all blocks in this range, inclusive. On the server, does nothing. Args: min x, min y, min z, max x, max y, max z
-		p	1	arg1	min	min
-		p	2	arg2	min	min
-		p	3	arg3	max	max
-		p	4	arg4	max	max
-		p	5	arg5	max	max
+		p	1	arg0	min	min
+		p	2	arg1	min	min
+		p	3	arg2	min	min
+		p	4	arg3	max	max
+		p	5	arg4	max	max
 		p	6	arg5	max	max
-		p	0	arg0	min	min
 	m	(ILcj;I)V	a	func_180440_a	broadcastSound
 	m	(IZDDDDDD[I)V	a	func_180442_a	spawnParticle
 	m	(Lcj;)V	a	func_174960_a	markBlockForUpdate
@@ -30825,12 +30571,11 @@ c	lc	net/minecraft/server/management/PlayerManager	net/minecraft/server/manageme
 	m	(II)Z	a	func_152621_a	hasPlayerInstance
 	m	(IIIII)Z	a	func_72684_a	overlaps
 		c	Determine if two rectangles centered at the given points overlap for the provided radius. Arguments: x1, z1, x2, z2, radius.
-		p	1	arg1	z1	z1
-		p	2	arg2	x2	x2
-		p	3	arg3	z2	z2
-		p	4	arg4	radius	radius
+		p	1	arg0	x1	x1
+		p	2	arg1	z1	z1
+		p	3	arg2	x2	x2
+		p	4	arg3	z2	z2
 		p	5	arg4	radius	radius
-		p	0	arg0	x1	x1
 	m	(IIZ)Llc$a;	a	func_72690_a	getPlayerInstance
 		c	passi n the chunk x and y and a flag as to whether or not the instance should be made if it doesnt exist
 	m	(Lcj;)V	a	func_180244_a	markBlockForUpdate
@@ -30990,9 +30735,8 @@ c	le	net/minecraft/world/WorldServer	net/minecraft/world/WorldServer
 		c	returns a new explosion. Does initiation (at time of writing Explosion is not finished)
 	m	(Lpk;Z)V	a	func_72866_a	updateEntityWithOptionalForce
 		c	Will update the entity in the world if the chunk the entity is in is currently loaded or its forced to update. Args: entity, forceUpdate
-		p	1	arg1	forceUpdate	forceUpdate
+		p	1	arg0	entity	entity
 		p	2	arg1	forceUpdate	forceUpdate
-		p	0	arg0	entity	entity
 	m	(Lpt;Lady$c;Lcj;)Z	a	func_175732_a	canCreatureTypeSpawnHere
 	m	(Lpt;Lcj;)Lady$c;	a	func_175734_a	getSpawnListEntryForTypeAt
 	m	(Lwn;Lcj;)Z	a	func_175660_a	isBlockModifiable
@@ -31136,7 +30880,6 @@ c	lf	net/minecraft/entity/player/EntityPlayerMP	net/minecraft/entity/player/Enti
 	m	(Log;)V	a	func_71007_a	displayGUIChest
 		c	Displays the GUI for interacting with a chest inventory. Args: chestInventory
 		p	1	arg0	chestInventory	chestInventory
-		p	0	arg0	chestInventory	chestInventory
 	m	(Lol;)V	a	func_180468_a	displayGui
 	m	(Low;)V	a	func_70645_a	onDeath
 		c	Called when the mob's health reaches 0.
@@ -31148,9 +30891,8 @@ c	lf	net/minecraft/entity/player/EntityPlayerMP	net/minecraft/entity/player/Enti
 		c	Called when a player mounts an entity. e.g. mounts a pig, mounts a boat.
 	m	(Lpk;I)V	a	func_71001_a	onItemPickup
 		c	Called whenever an item is picked up from walking over it. Args: pickedUpEntity, stackSize
-		p	1	arg1	stackSize	stackSize
+		p	1	arg0	pickedUpEntity	pickedUpEntity
 		p	2	arg1	stackSize	stackSize
-		p	0	arg0	pickedUpEntity	pickedUpEntity
 	m	(Ltp;Log;)V	a	func_110298_a	displayGUIHorse
 	m	(Lwn;)Z	a	func_96122_a	canAttackPlayer
 	m	(Lwn;Z)V	a	func_71049_a	clonePlayer
@@ -31160,10 +30902,9 @@ c	lf	net/minecraft/entity/player/EntityPlayerMP	net/minecraft/entity/player/Enti
 		c	Sends two ints to the client-side Container. Used for furnace burning time, smelting progress, brewing progress, and enchanting level. Normally the first int identifies which variable to update, and the second contains the new value. Both are truncated to shorts in non-local SMP.
 	m	(Lxi;ILzx;)V	a	func_71111_a	sendSlotContents
 		c	Sends the contents of an inventory slot to the client-side Container. This doesn't have to match the actual contents of that slot. Args: Container, slot number, slot contents
-		p	1	arg1	slot	slot
-		p	2	arg2	slot	slot
+		p	1	arg0	Container	Container
+		p	2	arg1	slot	slot
 		p	3	arg2	slot	slot
-		p	0	arg0	Container	Container
 	m	(Lxi;Ljava/util/List;)V	a	func_71110_a	updateCraftingInventory
 		c	update the crafting window inventory with the items in the list
 	m	(Lxi;Log;)V	a	func_175173_a	sendAllWindowProperties
@@ -31171,9 +30912,8 @@ c	lf	net/minecraft/entity/player/EntityPlayerMP	net/minecraft/entity/player/Enti
 		c	Displays the GUI for interacting with a book.
 	m	(Lzx;I)V	a	func_71008_a	setItemInUse
 		c	sets the itemInUse when the use item button is clicked. Args: itemstack, int maxItemUseDuration
-		p	1	arg1	int	int
+		p	1	arg0	itemstack	itemstack
 		p	2	arg1	int	int
-		p	0	arg0	itemstack	itemstack
 	m	(ZZZ)V	a	func_70999_a	wakeUpPlayer
 		c	Wake up the player if they're sleeping.
 	m	(I)V	b	func_71013_b	removeExperienceLevel
@@ -31184,7 +30924,6 @@ c	lf	net/minecraft/entity/player/EntityPlayerMP	net/minecraft/entity/player/Enti
 	m	(Lpk;)V	b	func_71009_b	onCriticalHit
 		c	Called when the player performs a critical hit on the Entity. Args: entity that was hit critically
 		p	1	arg0	entity	entity
-		p	0	arg0	entity	entity
 	m	()Lcj;	c	func_180425_c	getPosition
 		c	Get the position in the world. <b>{@code null} is not allowed!</b> If you are not an entity in the world, return the coordinates 0, 0, 0
 	m	(I)V	c	func_71027_c	travelToDimension
@@ -31200,7 +30939,6 @@ c	lf	net/minecraft/entity/player/EntityPlayerMP	net/minecraft/entity/player/Enti
 	m	(Lpk;)V	f	func_71059_n	attackTargetEntityWithCurrentItem
 		c	Attacks for the player the targeted entity with the currently equipped item.  The equipped item has hitEntity called on it. Args: targetEntity
 		p	1	arg0	targetEntity	targetEntity
-		p	0	arg0	targetEntity	targetEntity
 	m	()V	g_	func_71116_b	addSelfToInternalCraftingInventory
 	m	()V	h_	func_152111_bt	sendEnterCombat
 		c	Sends an ENTER_COMBAT packet to the client
@@ -33278,7 +33016,6 @@ c	net/minecraft/server/MinecraftServer$1	net/minecraft/server/MinecraftServer$1	
 	m	(I)V	a	func_73718_a	setLoadingProgress
 		c	Updates the progress bar on the loading screen to the specified amount. Args: loadProgress
 		p	1	arg0	loadProgress	loadProgress
-		p	0	arg0	loadProgress	loadProgress
 	m	(Ljava/lang/String;)V	a	func_73720_a	displaySavingString
 		c	Shows the 'Saving level' string.
 	m	(Ljava/lang/String;)V	b	func_73721_b	resetProgressAndMessage
@@ -34425,9 +34162,8 @@ c	ph	net/minecraft/entity/EntityAgeable	net/minecraft/entity/EntityAgeable
 	m	(F)V	a	func_98055_j	setScale
 	m	(FF)V	a	func_70105_a	setSize
 		c	Sets the width and height of the entity. Args: width, height
-		p	1	arg1	height	height
+		p	1	arg0	width	width
 		p	2	arg1	height	height
-		p	0	arg0	width	width
 	m	(I)V	a	func_110195_a	addGrowth
 		c	"Adds the value of the parameter times 20 to the age of this entity. If the entity is an adult (if the entity's age is greater than 0), it will have no effect."
 	m	(IZ)V	a	func_175501_a	func_175501_a
@@ -34641,7 +34377,6 @@ c	pk	net/minecraft/entity/Entity	net/minecraft/entity/Entity
 	m	(D)Z	a	func_70112_a	isInRangeToRenderDist
 		c	Checks if the entity is in range to render by using the past in distance and comparing it to its average edge length * 64 * renderDistanceWeight Args: distance
 		p	1	arg0	distance	distance
-		p	0	arg0	distance	distance
 	m	(DDD)V	a	func_70634_a	setPositionAndUpdate
 		c	Sets the position of the entity and updates the 'last' variables
 	m	(DDDFF)V	a	func_70080_a	setPositionAndRotation
@@ -34651,9 +34386,8 @@ c	pk	net/minecraft/entity/Entity	net/minecraft/entity/Entity
 	m	(DZLafh;Lcj;)V	a	func_180433_a	updateFallState
 	m	(FF)V	a	func_70105_a	setSize
 		c	Sets the width and height of the entity. Args: width, height
-		p	1	arg1	height	height
+		p	1	arg0	width	width
 		p	2	arg1	height	height
-		p	0	arg0	width	width
 	m	(FFF)V	a	func_70060_a	moveFlying
 		c	Used in both water and by flying objects
 	m	(ILjava/lang/String;)Z	a	func_70003_b	canCommandSenderUseCommand
@@ -34775,9 +34509,8 @@ c	pk	net/minecraft/entity/Entity	net/minecraft/entity/Entity
 	m	(F)I	b	func_70070_b	getBrightnessForRender
 	m	(FF)V	b	func_70101_b	setRotation
 		c	Sets the rotation of the entity. Args: yaw, pitch (both in degrees)
-		p	1	arg1	pitch	pitch
+		p	1	arg0	yaw	yaw
 		p	2	arg1	pitch	pitch
-		p	0	arg0	yaw	yaw
 	m	(IZ)V	b	func_70052_a	setFlag
 		c	Enable or disable a entity flag, see getEntityFlag to read the know flags.
 	m	(Laug;)Z	b	func_174809_b	isLiquidPresentInAABB
@@ -34788,19 +34521,17 @@ c	pk	net/minecraft/entity/Entity	net/minecraft/entity/Entity
 	m	(Low;)Z	b	func_180431_b	isEntityInvulnerable
 	m	(Lpk;I)V	b	func_70084_c	addToPlayerScore
 		c	Adds a value to the player score. Currently not actually used and the entity passed in does nothing. Args: entity, scoreToAdd
-		p	1	arg1	scoreToAdd	scoreToAdd
+		p	1	arg0	entity	entity
 		p	2	arg1	scoreToAdd	scoreToAdd
-		p	0	arg0	entity	entity
 	m	(Z)V	b	func_174810_b	setSilent
 		c	When set to true the entity will not play sounds.
 	m	()Lcj;	c	func_180425_c	getPosition
 		c	Get the position in the world. <b>{@code null} is not allowed!</b> If you are not an entity in the world, return the coordinates 0, 0, 0
 	m	(DDD)Z	c	func_70038_c	isOffsetPositionInLiquid
 		c	Checks if the offset position from the entity's current position is inside of liquid. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(F)F	c	func_70013_c	getBrightness
 		c	Gets how bright this entity is.
 	m	(FF)V	c	func_70082_c	setAngles
@@ -34818,10 +34549,9 @@ c	pk	net/minecraft/entity/Entity	net/minecraft/entity/Entity
 		c	Get the position vector. <b>{@code null} is not allowed!</b> If you are not an entity in the world, return 0.0D, 0.0D, 0.0D
 	m	(DDD)V	d	func_70091_d	moveEntity
 		c	Tries to moves the entity by the passed in displacement. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(F)Laui;	d	func_70676_i	getLook
 		c	interpolated look vector
 	m	(I)V	d	func_145769_d	setEntityId
@@ -34838,10 +34568,9 @@ c	pk	net/minecraft/entity/Entity	net/minecraft/entity/Entity
 		c	Get the world, if available. <b>{@code null} is not allowed!</b> If you are not an entity in the world, return the overworld
 	m	(DDD)D	e	func_70092_e	getDistanceSq
 		c	Gets the squared distance to the position. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(F)Laui;	e	func_174824_e	getPositionEyes
 	m	(FF)V	e	func_180430_e	fall
 	m	(I)V	e	func_70015_d	setFire
@@ -34858,10 +34587,9 @@ c	pk	net/minecraft/entity/Entity	net/minecraft/entity/Entity
 		c	Returns the entity associated with the command sender. MAY BE NULL!
 	m	(DDD)D	f	func_70011_f	getDistance
 		c	Gets the distance to the position. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(F)V	f	func_70034_d	setRotationYawHead
 		c	Sets the head's yaw rotation of the entity.
 	m	(FF)Laui;	f	func_174806_f	getVectorForRotation
@@ -34869,7 +34597,6 @@ c	pk	net/minecraft/entity/Entity	net/minecraft/entity/Entity
 	m	(I)V	f	func_70081_e	dealFireDamage
 		c	Will deal the specified amount of damage to the entity if the entity isn't immune to fire damage. Args: amountDamage
 		p	1	arg0	amountDamage	amountDamage
-		p	0	arg0	amountDamage	amountDamage
 	m	(Ldn;)V	f	func_70020_e	readFromNBT
 		c	Reads the entity from NBT (calls an abstract helper method to read specialized data)
 	m	(Lwn;)Z	f	func_98034_c	isInvisibleToPlayer
@@ -34879,10 +34606,9 @@ c	pk	net/minecraft/entity/Entity	net/minecraft/entity/Entity
 		c	Get the formatted ChatComponent that will be used for the sender's username in chat
 	m	(DDD)V	g	func_70024_g	addVelocity
 		c	Adds to the current velocity of the entity. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(F)V	g	func_181013_g	setRenderYawOffset
 		c	Set the render yaw offset\\n \\n@param offset The render yaw offset
 	m	(I)Z	g	func_70083_f	getFlag
@@ -34892,7 +34618,6 @@ c	pk	net/minecraft/entity/Entity	net/minecraft/entity/Entity
 	m	(Lpk;)F	g	func_70032_d	getDistanceToEntity
 		c	Returns the distance to the entity. Args: entity
 		p	1	arg0	entity	entity
-		p	0	arg0	entity	entity
 	m	(Z)V	g	func_174805_g	setAlwaysRenderNameTag
 	m	()V	h	func_70088_a	entityInit
 	m	(DDD)Z	h	func_145770_h	isInRangeToRender3d
@@ -34900,20 +34625,17 @@ c	pk	net/minecraft/entity/Entity	net/minecraft/entity/Entity
 	m	(Lpk;)D	h	func_70068_e	getDistanceSqToEntity
 		c	Returns the squared distance to the entity. Args: entity
 		p	1	arg0	entity	entity
-		p	0	arg0	entity	entity
 	m	(Z)V	h	func_174821_h	setOutsideBorder
 	m	()I	hashCode	hashCode	hashCode
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(I)V	i	func_145781_i	onDataWatcherUpdate
 	m	(Lpk;)V	i	func_70108_f	applyEntityCollision
 		c	Applies a velocity to each of the entities pushing them away from each other. Args: entity
 		p	1	arg0	entity	entity
-		p	0	arg0	entity	entity
 	m	(DDD)Z	j	func_145771_j	pushOutOfBlocks
 	m	(Lpk;)Laug;	j	func_70114_g	getCollisionBox
 		c	Returns a boundingBox used to collide the entity with other entities and blocks. This enables the entity to be pushable on contact, like boats or minecarts.
@@ -35061,7 +34783,6 @@ c	pp	net/minecraft/entity/item/EntityXPOrb	net/minecraft/entity/item/EntityXPOrb
 	m	(I)V	f	func_70081_e	dealFireDamage
 		c	Will deal the specified amount of damage to the entity if the entity isn't immune to fire damage. Args: amountDamage
 		p	1	arg0	amountDamage	amountDamage
-		p	0	arg0	amountDamage	amountDamage
 	m	()V	h	func_70088_a	entityInit
 	m	()I	j	func_70526_d	getXpValue
 		c	Returns the XP value of this XP orb.
@@ -35076,9 +34797,8 @@ c	pq	net/minecraft/entity/EntityFlying	net/minecraft/entity/EntityFlying
 	m	(FF)V	e	func_180430_e	fall
 	m	(FF)V	g	func_70612_e	moveEntityWithHeading
 		c	Moves the entity based on the specified heading.  Args: strafe, forward
-		p	1	arg1	forward	forward
+		p	1	arg0	strafe	strafe
 		p	2	arg1	forward	forward
-		p	0	arg0	strafe	strafe
 	m	()Z	k_	func_70617_f_	isOnLadder
 		c	returns true if this entity is by a ladder, false otherwise
 c	pr	net/minecraft/entity/EntityLivingBase	net/minecraft/entity/EntityLivingBase
@@ -35224,9 +34944,8 @@ c	pr	net/minecraft/entity/EntityLivingBase	net/minecraft/entity/EntityLivingBase
 		c	knocks back this entity
 	m	(Lpk;I)V	a	func_71001_a	onItemPickup
 		c	Called whenever an item is picked up from walking over it. Args: pickedUpEntity, stackSize
-		p	1	arg1	stackSize	stackSize
+		p	1	arg0	pickedUpEntity	pickedUpEntity
 		p	2	arg1	stackSize	stackSize
-		p	0	arg0	pickedUpEntity	pickedUpEntity
 	m	(Lqb;)Lqc;	a	func_110148_a	getEntityAttribute
 	m	(ZI)V	a	func_82160_b	dropEquipment
 		c	Drop the equipment for this entity.\\n \\n@param wasRecentlyHit true if this this entity was recently hit by appropriate entity (generally only if player or tameable)\\n@param lootingModifier level of enchanment to be applied to this drop
@@ -35342,7 +35061,6 @@ c	pr	net/minecraft/entity/EntityLivingBase	net/minecraft/entity/EntityLivingBase
 	m	(Low;F)V	d	func_70665_d	damageEntity
 		c	Deals damage to the entity. If its a EntityPlayer then will take damage from the armor first and then health second with the reduced value. Args: damageAmount
 		p	1	arg0	damageAmount	damageAmount
-		p	0	arg0	damageAmount	damageAmount
 	m	(Lpf;)Z	d	func_70687_e	isPotionApplicable
 	m	(Z)V	d	func_70031_b	setSprinting
 		c	Set sprinting switch for Entity.
@@ -35353,9 +35071,8 @@ c	pr	net/minecraft/entity/EntityLivingBase	net/minecraft/entity/EntityLivingBase
 		c	Set the render yaw offset\\n \\n@param offset The render yaw offset
 	m	(FF)V	g	func_70612_e	moveEntityWithHeading
 		c	Moves the entity based on the specified heading.  Args: strafe, forward
-		p	1	arg1	forward	forward
+		p	1	arg0	strafe	strafe
 		p	2	arg1	forward	forward
-		p	0	arg0	strafe	strafe
 	m	()V	h	func_70088_a	entityInit
 	m	(F)V	h	func_70691_i	heal
 		c	Heal living entity (param: amount of half-hearts)
@@ -35379,7 +35096,6 @@ c	pr	net/minecraft/entity/EntityLivingBase	net/minecraft/entity/EntityLivingBase
 	m	(F)F	l	func_70678_g	getSwingProgress
 		c	Returns where in the swing animation the living entity is (from 0 to 1).  Args: partialTickTime
 		p	1	arg0	partialTickTime	partialTickTime
-		p	0	arg0	partialTickTime	partialTickTime
 	m	(I)V	l	func_70618_n	removePotionEffectClient
 		c	Remove the speified potion effect from this entity.
 	m	()V	m	func_70636_d	onLivingUpdate
@@ -35661,9 +35377,8 @@ c	pz	net/minecraft/entity/DataWatcher	net/minecraft/entity/DataWatcher
 		c	Add a new object for the DataWatcher to watch, using the specified data type.
 	m	(ILjava/lang/Object;)V	a	func_75682_a	addObject
 		c	adds a new object to dataWatcher to watch, to update an already existing object see updateObject. Arguments: data Value Id, Object to add
-		p	1	arg1	Object	Object
+		p	1	arg0	data	data
 		p	2	arg1	Object	Object
-		p	0	arg0	data	data
 	m	(Lem;)V	a	func_151509_a	writeTo
 	m	(Lem;Lpz$a;)V	a	func_151510_a	writeWatchableObjectToPacketBuffer
 		c	Writes a watchable object (entity attribute of type {byte, short, int, float, string, ItemStack, ChunkCoordinates}) to the specified PacketBuffer
@@ -35890,10 +35605,9 @@ c	qm	net/minecraft/entity/EntityBodyHelper	net/minecraft/entity/EntityBodyHelper
 		c	Update the Head and Body rendenring angles
 	m	(FFF)F	a	func_75665_a	computeAngleWithBound
 		c	Return the new angle2 such that the difference between angle1 and angle2 is lower than angleMax. Args : angle1, angle2, angleMax
-		p	1	arg1	angle2	angle2
-		p	2	arg2	angleMax	angleMax
+		p	1	arg0	angle1	angle1
+		p	2	arg1	angle2	angle2
 		p	3	arg2	angleMax	angleMax
-		p	0	arg0	angle1	angle1
 c	qo	net/minecraft/entity/ai/EntityJumpHelper	net/minecraft/entity/ai/EntityJumpHelper
 	f	Lps;	b	field_75663_a	entity
 		c	
@@ -36240,9 +35954,8 @@ c	re	net/minecraft/entity/ai/EntityAITasks	net/minecraft/entity/ai/EntityAITasks
 	m	()V	a	func_75774_a	onUpdateTasks
 	m	(ILrd;)V	a	func_75776_a	addTask
 		c	Add a now AITask. Args : priority, task
-		p	1	arg1	task	task
+		p	1	arg0	priority	priority
 		p	2	arg1	task	task
-		p	0	arg0	priority	priority
 	m	(Lrd;)V	a	func_85156_a	removeTask
 		c	removes the indicated task from the entity's AI tasks.
 	m	(Lre$a;)Z	a	func_75773_a	canContinue
@@ -36947,9 +36660,8 @@ c	st	net/minecraft/entity/ai/EntityAITarget	net/minecraft/entity/ai/EntityAITarg
 		c	Checks to see if this entity can find a short path to the given target.\\n \\n@param target the entity to find a path to
 	m	(Lpr;Z)Z	a	func_75296_a	isSuitableTarget
 		c	A method used to see if an entity is a suitable target through a number of checks. Args : entity, canTargetInvinciblePlayer
-		p	1	arg1	canTargetInvinciblePlayer	canTargetInvinciblePlayer
+		p	1	arg0	entity	entity
 		p	2	arg1	canTargetInvinciblePlayer	canTargetInvinciblePlayer
-		p	0	arg0	entity	entity
 	m	(Lps;Lpr;ZZ)Z	a	func_179445_a	isSuitableTarget
 		c	A static method used to see if an entity is a suitable target through a number of checks.
 	m	()Z	b	func_75253_b	continueExecuting
@@ -36969,12 +36681,11 @@ c	sv	net/minecraft/pathfinding/PathNavigateGround	net/minecraft/pathfinding/Path
 		c	Returns true when an entity could stand at a position, including solid blocks under the entire entity.
 	m	(Laui;Laui;III)Z	a	func_75493_a	isDirectPathBetweenPoints
 		c	Returns true when an entity of specified size could safely walk in a straight line between the two points. Args: pos1, pos2, entityXSize, entityYSize, entityZSize
-		p	1	arg1	pos2	pos2
-		p	2	arg2	entityXSize	entityXSize
-		p	3	arg3	entityYSize	entityYSize
-		p	4	arg4	entityZSize	entityZSize
+		p	1	arg0	pos1	pos1
+		p	2	arg1	pos2	pos2
+		p	3	arg2	entityXSize	entityXSize
+		p	4	arg3	entityYSize	entityYSize
 		p	5	arg4	entityZSize	entityZSize
-		p	0	arg0	pos1	pos1
 	m	(Z)V	a	func_179690_a	setAvoidsWater
 	m	()Z	b	func_75485_k	canNavigate
 		c	If on ground or swimming and can swim
@@ -37018,45 +36729,39 @@ c	sw	net/minecraft/pathfinding/PathNavigate	net/minecraft/pathfinding/PathNaviga
 		c	Sets the speed
 	m	(DDD)Lasx;	a	func_75488_a	getPathToXYZ
 		c	Returns the path to the given coordinates. Args : x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(DDDD)Z	a	func_75492_a	tryMoveToXYZ
 		c	Try to find and set a path to XYZ. Returns true if successful. Args : x, y, z, speed
-		p	1	arg1	y	y
-		p	2	arg2	z	z
-		p	3	arg3	speed	speed
+		p	1	arg0	x	x
+		p	2	arg1	y	y
+		p	3	arg2	z	z
 		p	4	arg3	speed	speed
-		p	0	arg0	x	x
 	m	(F)V	a	func_179678_a	setHeightRequirement
 		c	Sets vertical space requirement for path
 	m	(Lasx;D)Z	a	func_75484_a	setPath
 		c	Sets a new path. If it's diferent from the old path. Checks to adjust path for sun avoiding, and stores start coords. Args : path, speed
-		p	1	arg1	speed	speed
+		p	1	arg0	path	path
 		p	2	arg1	speed	speed
-		p	0	arg0	path	path
 	m	(Laui;)V	a	func_179677_a	checkForStuck
 		c	Checks if entity haven't been moved when last checked and if so, clears current {@link net.minecraft.pathfinding.PathEntity}
 	m	(Laui;Laui;III)Z	a	func_75493_a	isDirectPathBetweenPoints
 		c	Returns true when an entity of specified size could safely walk in a straight line between the two points. Args: pos1, pos2, entityXSize, entityYSize, entityZSize
-		p	1	arg1	pos2	pos2
-		p	2	arg2	entityXSize	entityXSize
-		p	3	arg3	entityYSize	entityYSize
-		p	4	arg4	entityZSize	entityZSize
+		p	1	arg0	pos1	pos1
+		p	2	arg1	pos2	pos2
+		p	3	arg2	entityXSize	entityXSize
+		p	4	arg3	entityYSize	entityYSize
 		p	5	arg4	entityZSize	entityZSize
-		p	0	arg0	pos1	pos1
 	m	(Lcj;)Lasx;	a	func_179680_a	getPathToPos
 		c	Returns path to given BlockPos
 	m	(Lpk;)Lasx;	a	func_75494_a	getPathToEntityLiving
 		c	Returns the path to the given EntityLiving. Args : entity
 		p	1	arg0	entity	entity
-		p	0	arg0	entity	entity
 	m	(Lpk;D)Z	a	func_75497_a	tryMoveToEntityLiving
 		c	Try to find and set a path to EntityLiving. Returns true if successful. Args : entity, speed
-		p	1	arg1	speed	speed
+		p	1	arg0	entity	entity
 		p	2	arg1	speed	speed
-		p	0	arg0	entity	entity
 	m	()Z	b	func_75485_k	canNavigate
 		c	If on ground or swimming and can swim
 	m	()Laui;	c	func_75502_i	getEntityPosition
@@ -37082,23 +36787,20 @@ c	sx	net/minecraft/pathfinding/PathNavigateClimber	net/minecraft/pathfinding/Pat
 	m	(Lpk;)Lasx;	a	func_75494_a	getPathToEntityLiving
 		c	Returns the path to the given EntityLiving. Args : entity
 		p	1	arg0	entity	entity
-		p	0	arg0	entity	entity
 	m	(Lpk;D)Z	a	func_75497_a	tryMoveToEntityLiving
 		c	Try to find and set a path to EntityLiving. Returns true if successful. Args : entity, speed
-		p	1	arg1	speed	speed
+		p	1	arg0	entity	entity
 		p	2	arg1	speed	speed
-		p	0	arg0	entity	entity
 	m	()V	k	func_75501_e	onUpdateNavigation
 c	sy	net/minecraft/pathfinding/PathNavigateSwimmer	net/minecraft/pathfinding/PathNavigateSwimmer
 	m	()Lasy;	a	func_179679_a	getPathFinder
 	m	(Laui;Laui;III)Z	a	func_75493_a	isDirectPathBetweenPoints
 		c	Returns true when an entity of specified size could safely walk in a straight line between the two points. Args: pos1, pos2, entityXSize, entityYSize, entityZSize
-		p	1	arg1	pos2	pos2
-		p	2	arg2	entityXSize	entityXSize
-		p	3	arg3	entityYSize	entityYSize
-		p	4	arg4	entityZSize	entityZSize
+		p	1	arg0	pos1	pos1
+		p	2	arg1	pos2	pos2
+		p	3	arg2	entityXSize	entityXSize
+		p	4	arg3	entityYSize	entityYSize
 		p	5	arg4	entityZSize	entityZSize
-		p	0	arg0	pos1	pos1
 	m	()Z	b	func_75485_k	canNavigate
 		c	If on ground or swimming and can swim
 	m	()Laui;	c	func_75502_i	getEntityPosition
@@ -37621,9 +37323,8 @@ c	tp	net/minecraft/entity/passive/EntityHorse	net/minecraft/entity/passive/Entit
 	m	(Z)V	f	func_70019_c	setEating
 	m	(FF)V	g	func_70612_e	moveEntityWithHeading
 		c	Moves the entity based on the specified heading.  Args: strafe, forward
-		p	1	arg1	forward	forward
+		p	1	arg0	strafe	strafe
 		p	2	arg1	forward	forward
-		p	0	arg0	strafe	strafe
 	m	(Lwn;)V	g	func_110199_f	openGUI
 	m	()V	h	func_70088_a	entityInit
 	m	(Lwn;)Z	h	func_110263_g	setTamedBy
@@ -38016,9 +37717,8 @@ c	tx	net/minecraft/entity/passive/EntitySquid	net/minecraft/entity/passive/Entit
 		c	Returns the sound this mob makes on death.
 	m	(FF)V	g	func_70612_e	moveEntityWithHeading
 		c	Moves the entity based on the specified heading.  Args: strafe, forward
-		p	1	arg1	forward	forward
+		p	1	arg0	strafe	strafe
 		p	2	arg1	forward	forward
-		p	0	arg0	strafe	strafe
 	m	()V	m	func_70636_d	onLivingUpdate
 		c	Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons use this to react to sunlight and start to burn.
 	m	()Z	n	func_175567_n	func_175567_n
@@ -38429,7 +38129,6 @@ c	um	net/minecraft/entity/item/EntityArmorStand	net/minecraft/entity/item/Entity
 	m	(D)Z	a	func_70112_a	isInRangeToRenderDist
 		c	Checks if the entity is in range to render by using the past in distance and comparing it to its average edge length * 64 * renderDistanceWeight Args: distance
 		p	1	arg0	distance	distance
-		p	0	arg0	distance	distance
 	m	(F)V	a	func_175406_a	damageArmorStand
 	m	(Ldc;)V	a	func_175415_a	setHeadRotation
 	m	(Ldn;)V	a	func_70037_a	readEntityFromNBT
@@ -38466,9 +38165,8 @@ c	um	net/minecraft/entity/item/EntityArmorStand	net/minecraft/entity/item/Entity
 	m	(Ldc;)V	f	func_175427_f	setRightLegRotation
 	m	(FF)V	g	func_70612_e	moveEntityWithHeading
 		c	Moves the entity based on the specified heading.  Args: strafe, forward
-		p	1	arg1	forward	forward
+		p	1	arg0	strafe	strafe
 		p	2	arg1	forward	forward
-		p	0	arg0	strafe	strafe
 	m	()V	h	func_70088_a	entityInit
 	m	(FF)F	h	func_110146_f	updateDistance
 	m	(Ldn;)V	h	func_175416_h	writePoseToNBT
@@ -38526,16 +38224,14 @@ c	un	net/minecraft/entity/EntityHanging	net/minecraft/entity/EntityHanging
 		c	Called when this entity is broken. Entity parameter may be null.
 	m	(DDD)V	d	func_70091_d	moveEntity
 		c	Tries to moves the entity by the passed in displacement. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(DDD)V	g	func_70024_g	addVelocity
 		c	Adds to the current velocity of the entity. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	()V	h	func_70088_a	entityInit
 	m	()Z	j	func_70518_d	onValidSurface
 		c	checks to make sure painting can be placed there
@@ -38554,7 +38250,6 @@ c	uo	net/minecraft/entity/item/EntityItemFrame	net/minecraft/entity/item/EntityI
 	m	(D)Z	a	func_70112_a	isInRangeToRenderDist
 		c	Checks if the entity is in range to render by using the past in distance and comparing it to its average edge length * 64 * renderDistanceWeight Args: distance
 		p	1	arg0	distance	distance
-		p	0	arg0	distance	distance
 	m	(I)V	a	func_82336_g	setItemRotation
 	m	(IZ)V	a	func_174865_a	func_174865_a
 	m	(Ldn;)V	a	func_70037_a	readEntityFromNBT
@@ -38584,7 +38279,6 @@ c	up	net/minecraft/entity/EntityLeashKnot	net/minecraft/entity/EntityLeashKnot
 	m	(D)Z	a	func_70112_a	isInRangeToRenderDist
 		c	Checks if the entity is in range to render by using the past in distance and comparing it to its average edge length * 64 * renderDistanceWeight Args: distance
 		p	1	arg0	distance	distance
-		p	0	arg0	distance	distance
 	m	(Ladm;Lcj;)Lup;	a	func_174862_a	createKnot
 	m	(Lcq;)V	a	func_174859_a	updateFacingWithBoundingBox
 		c	Updates facing and bounding box based on it
@@ -38718,7 +38412,6 @@ c	ur	net/minecraft/entity/projectile/EntityFishHook	net/minecraft/entity/project
 	m	(D)Z	a	func_70112_a	isInRangeToRenderDist
 		c	Checks if the entity is in range to render by using the past in distance and comparing it to its average edge length * 64 * renderDistanceWeight Args: distance
 		p	1	arg0	distance	distance
-		p	0	arg0	distance	distance
 	m	(DDDFFIZ)V	a	func_180426_a	setPositionAndRotation2
 	m	(Ldn;)V	a	func_70037_a	readEntityFromNBT
 		c	(abstract) Protected helper method to read subclass entity data from NBT.
@@ -38728,10 +38421,9 @@ c	ur	net/minecraft/entity/projectile/EntityFishHook	net/minecraft/entity/project
 	m	()V	h	func_70088_a	entityInit
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	()Ljava/util/List;	j	func_174855_j	func_174855_j
 	m	()I	l	func_146034_e	handleHookRetraction
 	m	()Lzx;	m	func_146033_f	getFishingResult
@@ -38817,10 +38509,9 @@ c	ux	net/minecraft/entity/item/EntityBoat	net/minecraft/entity/item/EntityBoat
 	m	()V	h	func_70088_a	entityInit
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	()F	j	func_70271_g	getDamageTaken
 		c	Gets the damage taken from the last hit.
 	m	(Lpk;)Laug;	j	func_70114_g	getCollisionBox
@@ -38909,7 +38600,6 @@ c	uz	net/minecraft/entity/item/EntityItem	net/minecraft/entity/item/EntityItem
 	m	(I)V	f	func_70081_e	dealFireDamage
 		c	Will deal the specified amount of damage to the entity if the entity isn't immune to fire damage. Args: amountDamage
 		p	1	arg0	amountDamage	amountDamage
-		p	0	arg0	amountDamage	amountDamage
 	m	()V	h	func_70088_a	entityInit
 	m	()V	j	func_70288_d	setAgeToCreativeDespawnTime
 		c	sets the age of the item so that it'll despawn one minute after it has been dropped (instead of five). Used when items are dropped from players in creative mode
@@ -38976,11 +38666,10 @@ c	va	net/minecraft/entity/item/EntityMinecart	net/minecraft/entity/item/EntityMi
 		c	Sets the current amount of damage the minecart has taken. Decreases over time. The cart breaks when this is over 40.
 	m	(IIIZ)V	a	func_96095_a	onActivatorRailPass
 		c	Called every tick the minecart is on an activator rail. Args: x, y, z, is the rail receiving power
-		p	1	arg1	y	y
-		p	2	arg2	z	z
-		p	3	arg3	is	is
+		p	1	arg0	x	x
+		p	2	arg1	y	y
+		p	3	arg2	z	z
 		p	4	arg3	is	is
-		p	0	arg0	x	x
 	m	(Ladm;DDDLva$a;)Lva;	a	func_180458_a	getMinecart
 	m	(Lalz;)V	a	func_174899_a	func_174899_a
 	m	(Lcj;Lalz;)V	a	func_180460_a	func_180460_a
@@ -39012,14 +38701,12 @@ c	va	net/minecraft/entity/item/EntityMinecart	net/minecraft/entity/item/EntityMi
 	m	()V	h	func_70088_a	entityInit
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	(Lpk;)V	i	func_70108_f	applyEntityCollision
 		c	Applies a velocity to each of the entities pushing them away from each other. Args: entity
 		p	1	arg0	entity	entity
-		p	0	arg0	entity	entity
 	m	(I)V	j	func_70497_h	setRollingAmplitude
 		c	Sets the rolling amplitude the cart rolls while being attacked.
 	m	(Lpk;)Laug;	j	func_70114_g	getCollisionBox
@@ -39089,11 +38776,10 @@ c	vc	net/minecraft/entity/EntityMinecartCommandBlock	net/minecraft/entity/Entity
 		c	Cooldown before command block logic runs again in ticks
 	m	(IIIZ)V	a	func_96095_a	onActivatorRailPass
 		c	Called every tick the minecart is on an activator rail. Args: x, y, z, is the rail receiving power
-		p	1	arg1	y	y
-		p	2	arg2	z	z
-		p	3	arg3	is	is
+		p	1	arg0	x	x
+		p	2	arg1	y	y
+		p	3	arg2	z	z
 		p	4	arg3	is	is
-		p	0	arg0	x	x
 	m	(Ldn;)V	a	func_70037_a	readEntityFromNBT
 		c	(abstract) Protected helper method to read subclass entity data from NBT.
 	m	(Ldn;)V	b	func_70014_b	writeEntityToNBT
@@ -39204,11 +38890,10 @@ c	vf	net/minecraft/entity/item/EntityMinecartHopper	net/minecraft/entity/item/En
 		c	Returns whether the hopper cart can currently transfer an item.
 	m	(IIIZ)V	a	func_96095_a	onActivatorRailPass
 		c	Called every tick the minecart is on an activator rail. Args: x, y, z, is the rail receiving power
-		p	1	arg1	y	y
-		p	2	arg2	z	z
-		p	3	arg3	is	is
+		p	1	arg0	x	x
+		p	2	arg1	y	y
+		p	3	arg2	z	z
 		p	4	arg3	is	is
-		p	0	arg0	x	x
 	m	(Ldn;)V	a	func_70037_a	readEntityFromNBT
 		c	(abstract) Protected helper method to read subclass entity data from NBT.
 	m	(Low;)V	a	func_94095_a	killMinecart
@@ -39236,11 +38921,10 @@ c	vf	net/minecraft/entity/item/EntityMinecartHopper	net/minecraft/entity/item/En
 c	vg	net/minecraft/entity/item/EntityMinecartEmpty	net/minecraft/entity/item/EntityMinecartEmpty
 	m	(IIIZ)V	a	func_96095_a	onActivatorRailPass
 		c	Called every tick the minecart is on an activator rail. Args: x, y, z, is the rail receiving power
-		p	1	arg1	y	y
-		p	2	arg2	z	z
-		p	3	arg3	is	is
+		p	1	arg0	x	x
+		p	2	arg1	y	y
+		p	3	arg2	z	z
 		p	4	arg3	is	is
-		p	0	arg0	x	x
 	m	(Lwn;)Z	e	func_130002_c	interactFirst
 		c	First layer of player interaction
 	m	()Lva$a;	s	func_180456_s	getMinecartType
@@ -39268,11 +38952,10 @@ c	vi	net/minecraft/entity/item/EntityMinecartTNT	net/minecraft/entity/item/Entit
 	m	(B)V	a	func_70103_a	handleStatusUpdate
 	m	(IIIZ)V	a	func_96095_a	onActivatorRailPass
 		c	Called every tick the minecart is on an activator rail. Args: x, y, z, is the rail receiving power
-		p	1	arg1	y	y
-		p	2	arg2	z	z
-		p	3	arg3	is	is
+		p	1	arg0	x	x
+		p	2	arg1	y	y
+		p	3	arg2	z	z
 		p	4	arg3	is	is
-		p	0	arg0	x	x
 	m	(Ladi;Ladm;Lcj;Lalz;)F	a	func_180428_a	getExplosionResistance
 		c	Explosion resistance of a block relative to this entity
 	m	(Ladi;Ladm;Lcj;Lalz;F)Z	a	func_174816_a	verifyExplosion
@@ -39670,9 +39353,8 @@ c	vt	net/minecraft/entity/monster/EntityGuardian	net/minecraft/entity/monster/En
 	m	()Lpr;	cq	func_175466_co	getTargetedEntity
 	m	(FF)V	g	func_70612_e	moveEntityWithHeading
 		c	Moves the entity based on the specified heading.  Args: strafe, forward
-		p	1	arg1	forward	forward
+		p	1	arg0	strafe	strafe
 		p	2	arg1	forward	forward
-		p	0	arg0	strafe	strafe
 	m	()V	h	func_70088_a	entityInit
 	m	(I)V	i	func_145781_i	onDataWatcherUpdate
 	m	(Z)V	l	func_175476_l	func_175476_l
@@ -40016,7 +39698,6 @@ c	wb	net/minecraft/entity/monster/EntitySlime	net/minecraft/entity/monster/Entit
 	m	(Lpk;)V	i	func_70108_f	applyEntityCollision
 		c	Applies a velocity to each of the entities pushing them away from each other. Args: entity
 		p	1	arg0	entity	entity
-		p	0	arg0	entity	entity
 	m	()Lcy;	n	func_180487_n	getParticleType
 	m	()V	t_	func_70071_h_	onUpdate
 		c	Called to update the entity's position/logic.
@@ -40164,9 +39845,8 @@ c	we	net/minecraft/entity/monster/EntityZombie	net/minecraft/entity/monster/Enti
 		c	Multiplies the height and width by the provided float.
 	m	(FF)V	a	func_70105_a	setSize
 		c	Sets the width and height of the entity. Args: width, height
-		p	1	arg1	height	height
+		p	1	arg0	width	width
 		p	2	arg1	height	height
-		p	0	arg0	width	width
 	m	(I)V	a	func_82228_a	startConversion
 		c	Starts converting this zombie into a villager. The zombie converts into a villager after the specified time in ticks.
 	m	(Lcj;Lafh;)V	a	func_180429_a	playStepSound
@@ -40626,7 +40306,6 @@ c	wn	net/minecraft/entity/player/EntityPlayer	net/minecraft/entity/player/Entity
 	m	(Log;)V	a	func_71007_a	displayGUIChest
 		c	Displays the GUI for interacting with a chest inventory. Args: chestInventory
 		p	1	arg0	chestInventory	chestInventory
-		p	0	arg0	chestInventory	chestInventory
 	m	(Lol;)V	a	func_180468_a	displayGui
 	m	(Lon;)Z	a	func_175146_a	canOpen
 		c	Check whether this player can open an inventory locked with the given LockCode.
@@ -40640,7 +40319,6 @@ c	wn	net/minecraft/entity/player/EntityPlayer	net/minecraft/entity/player/Entity
 	m	(Luz;)V	a	func_71012_a	joinEntityItemWithWorld
 		c	Joins the passed in entity item with the world. Args: entityItem
 		p	1	arg0	entityItem	entityItem
-		p	0	arg0	entityItem	entityItem
 	m	(Lwn;)Z	a	func_96122_a	canAttackPlayer
 	m	(Lwn;Z)V	a	func_71049_a	clonePlayer
 		c	Copies the values from the given player into this player if boolean par2 is true. Always clones Ender Chest Inventory.
@@ -40649,9 +40327,8 @@ c	wn	net/minecraft/entity/player/EntityPlayer	net/minecraft/entity/player/Entity
 		c	Displays the GUI for interacting with a book.
 	m	(Lzx;I)V	a	func_71008_a	setItemInUse
 		c	sets the itemInUse when the use item button is clicked. Args: itemstack, int maxItemUseDuration
-		p	1	arg1	int	int
+		p	1	arg0	itemstack	itemstack
 		p	2	arg1	int	int
-		p	0	arg0	itemstack	itemstack
 	m	(Lzx;Z)Luz;	a	func_71019_a	dropPlayerItemWithRandomChoice
 		c	Args: itemstack, flag
 	m	(Lzx;ZZ)Luz;	a	func_146097_a	dropItem
@@ -40688,12 +40365,10 @@ c	wn	net/minecraft/entity/player/EntityPlayer	net/minecraft/entity/player/Entity
 	m	(Lpk;)V	b	func_71009_b	onCriticalHit
 		c	Called when the player performs a critical hit on the Entity. Args: entity that was hit critically
 		p	1	arg0	entity	entity
-		p	0	arg0	entity	entity
 	m	(Lpk;I)V	b	func_70084_c	addToPlayerScore
 		c	Adds a value to the player score. Currently not actually used and the entity passed in does nothing. Args: entity, scoreToAdd
-		p	1	arg1	scoreToAdd	scoreToAdd
+		p	1	arg0	entity	entity
 		p	2	arg1	scoreToAdd	scoreToAdd
-		p	0	arg0	entity	entity
 	m	(Lwn;)I	b	func_70693_a	getExperiencePoints
 		c	Get the experience points the entity currently has.
 	m	(Lzx;I)V	b	func_71010_c	updateItemUse
@@ -40769,7 +40444,6 @@ c	wn	net/minecraft/entity/player/EntityPlayer	net/minecraft/entity/player/Entity
 	m	(Low;F)V	d	func_70665_d	damageEntity
 		c	Deals damage to the entity. If its a EntityPlayer then will take damage from the armor first and then health second with the reduced value. Args: damageAmount
 		p	1	arg0	damageAmount	damageAmount
-		p	0	arg0	damageAmount	damageAmount
 	m	(Lpk;)V	d	func_71044_o	collideWithPlayer
 	m	(FF)V	e	func_180430_e	fall
 	m	(Lpk;)Ljava/util/Collection;	e	func_175137_e	func_175137_e
@@ -40778,16 +40452,14 @@ c	wn	net/minecraft/entity/player/EntityPlayer	net/minecraft/entity/player/Entity
 	m	(Lpk;)V	f	func_71059_n	attackTargetEntityWithCurrentItem
 		c	Attacks for the player the targeted entity with the currently equipped item.  The equipped item has hitEntity called on it. Args: targetEntity
 		p	1	arg0	targetEntity	targetEntity
-		p	0	arg0	targetEntity	targetEntity
 	m	(Lwn;)Z	f	func_98034_c	isInvisibleToPlayer
 		c	Only used by renderer in EntityLivingBase subclasses.\\nDetermines if an entity is visible or not to a specfic player, if the entity is normally invisible.\\nFor EntityLivingBase subclasses, returning false when invisible will render the entity semitransparent.
 	m	()Leu;	f_	func_145748_c_	getDisplayName
 		c	Get the formatted ChatComponent that will be used for the sender's username in chat
 	m	(FF)V	g	func_70612_e	moveEntityWithHeading
 		c	Moves the entity based on the specified heading.  Args: strafe, forward
-		p	1	arg1	forward	forward
+		p	1	arg0	strafe	strafe
 		p	2	arg1	forward	forward
-		p	0	arg0	strafe	strafe
 	m	()V	h	func_70088_a	entityInit
 	m	(F)V	j	func_70675_k	damageArmor
 	m	(Z)Z	j	func_71043_e	canEat
@@ -40920,10 +40592,9 @@ c	wq	net/minecraft/entity/projectile/EntityArrow	net/minecraft/entity/projectile
 	m	()V	h	func_70088_a	entityInit
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	()D	j	func_70242_d	getDamage
 	m	()Z	l	func_70241_g	getIsCritical
 		c	Whether the arrow has a stream of critical hit particles flying behind it.
@@ -40945,7 +40616,6 @@ c	wr	net/minecraft/entity/item/EntityEnderEye	net/minecraft/entity/item/EntityEn
 	m	(D)Z	a	func_70112_a	isInRangeToRenderDist
 		c	Checks if the entity is in range to render by using the past in distance and comparing it to its average edge length * 64 * renderDistanceWeight Args: distance
 		p	1	arg0	distance	distance
-		p	0	arg0	distance	distance
 	m	(Lcj;)V	a	func_180465_a	moveTowards
 	m	(Ldn;)V	a	func_70037_a	readEntityFromNBT
 		c	(abstract) Protected helper method to read subclass entity data from NBT.
@@ -40959,10 +40629,9 @@ c	wr	net/minecraft/entity/item/EntityEnderEye	net/minecraft/entity/item/EntityEn
 	m	()V	h	func_70088_a	entityInit
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	()V	t_	func_70071_h_	onUpdate
 		c	Called to update the entity's position/logic.
 c	ws	net/minecraft/entity/projectile/EntityFireball	net/minecraft/entity/projectile/EntityFireball
@@ -40991,7 +40660,6 @@ c	ws	net/minecraft/entity/projectile/EntityFireball	net/minecraft/entity/project
 	m	(D)Z	a	func_70112_a	isInRangeToRenderDist
 		c	Checks if the entity is in range to render by using the past in distance and comparing it to its average edge length * 64 * renderDistanceWeight Args: distance
 		p	1	arg0	distance	distance
-		p	0	arg0	distance	distance
 	m	(Lauh;)V	a	func_70227_a	onImpact
 		c	Called when this EntityFireball hits a block or entity.
 	m	(Ldn;)V	a	func_70037_a	readEntityFromNBT
@@ -41020,7 +40688,6 @@ c	wt	net/minecraft/entity/item/EntityFireworkRocket	net/minecraft/entity/item/En
 	m	(D)Z	a	func_70112_a	isInRangeToRenderDist
 		c	Checks if the entity is in range to render by using the past in distance and comparing it to its average edge length * 64 * renderDistanceWeight Args: distance
 		p	1	arg0	distance	distance
-		p	0	arg0	distance	distance
 	m	(Ldn;)V	a	func_70037_a	readEntityFromNBT
 		c	(abstract) Protected helper method to read subclass entity data from NBT.
 	m	()Z	aD	func_70075_an	canAttackWithItem
@@ -41033,10 +40700,9 @@ c	wt	net/minecraft/entity/item/EntityFireworkRocket	net/minecraft/entity/item/En
 	m	()V	h	func_70088_a	entityInit
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	()V	t_	func_70071_h_	onUpdate
 		c	Called to update the entity's position/logic.
 c	wu	net/minecraft/entity/projectile/EntityLargeFireball	net/minecraft/entity/projectile/EntityLargeFireball
@@ -41085,7 +40751,6 @@ c	wy	net/minecraft/entity/projectile/EntityThrowable	net/minecraft/entity/projec
 	m	(D)Z	a	func_70112_a	isInRangeToRenderDist
 		c	Checks if the entity is in range to render by using the past in distance and comparing it to its average edge length * 64 * renderDistanceWeight Args: distance
 		p	1	arg0	distance	distance
-		p	0	arg0	distance	distance
 	m	(Lauh;)V	a	func_70184_a	onImpact
 		c	Called when this EntityThrowable hits a block or entity.
 	m	(Ldn;)V	a	func_70037_a	readEntityFromNBT
@@ -41097,10 +40762,9 @@ c	wy	net/minecraft/entity/projectile/EntityThrowable	net/minecraft/entity/projec
 	m	()V	h	func_70088_a	entityInit
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
-		p	1	arg1	y	y
-		p	2	arg2	z	z
+		p	1	arg0	x	x
+		p	2	arg1	y	y
 		p	3	arg2	z	z
-		p	0	arg0	x	x
 	m	()F	j	func_70182_d	getVelocity
 	m	()F	l	func_70183_g	getInaccuracy
 	m	()F	m	func_70185_h	getGravityVelocity
@@ -41268,11 +40932,10 @@ c	xi	net/minecraft/inventory/Container	net/minecraft/inventory/Container
 		c	Checks if it's possible to add the given itemstack to the given slot.
 	m	(Lzx;IIZ)Z	a	func_75135_a	mergeItemStack
 		c	Merges provided ItemStack with the first avaliable one in the container/player inventor between minIndex (included) and maxIndex (excluded). Args : stack, minIndex, maxIndex, negativDirection. /!\\ the Container implementation do not check if the item is valid for the slot
-		p	1	arg1	minIndex	minIndex
-		p	2	arg2	maxIndex	maxIndex
-		p	3	arg3	negativDirection	negativDirection
+		p	1	arg0	stack	stack
+		p	2	arg1	minIndex	minIndex
+		p	3	arg2	maxIndex	maxIndex
 		p	4	arg3	negativDirection	negativDirection
-		p	0	arg0	stack	stack
 	m	(Lzx;Lyg;)Z	a	func_94530_a	canMergeSlot
 		c	Called to determine if the current slot is valid for the stack merging (double-click) code. The stack passed in is null for the initial slot that was double-clicked.
 	m	([Lzx;)V	a	func_75131_a	putStacksInSlots
@@ -41447,9 +41110,8 @@ c	xp	net/minecraft/inventory/InventoryCrafting	net/minecraft/inventory/Inventory
 	m	(Lwn;)V	b	func_174889_b	openInventory
 	m	(II)Lzx;	c	func_70463_b	getStackInRowAndColumn
 		c	Returns the itemstack in the slot specified (Top left is 0, 0). Args: row, column
-		p	1	arg1	column	column
+		p	1	arg0	row	row
 		p	2	arg1	column	column
-		p	0	arg0	row	row
 	m	(Lwn;)V	c	func_174886_c	closeInventory
 	m	()Ljava/lang/String;	e_	func_70005_c_	getName
 		c	Get the name of this object. For players this returns their username
@@ -41840,10 +41502,9 @@ c	yj	net/minecraft/item/ItemArmor	net/minecraft/item/ItemArmor
 	m	(Lzx;I)I	a	func_82790_a	getColorFromItemStack
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	(Lzx;Lzx;)Z	a	func_82789_a	getIsRepairable
 		c	Return whether this item is repairable in an anvil.
 	m	()I	b	func_77619_b	getItemEnchantability
@@ -41939,10 +41600,9 @@ c	yp	net/minecraft/item/ItemReed	net/minecraft/item/ItemReed
 c	yq	net/minecraft/item/ItemBoat	net/minecraft/item/ItemBoat
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 c	yr	net/minecraft/item/ItemBook	net/minecraft/item/ItemBook
 	m	()I	b	func_77619_b	getItemEnchantability
 		c	Return the enchantability factor of the item, most of the time is based on material.
@@ -41951,19 +41611,17 @@ c	yr	net/minecraft/item/ItemBook	net/minecraft/item/ItemBook
 c	ys	net/minecraft/item/ItemGlassBottle	net/minecraft/item/ItemGlassBottle
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 c	yt	net/minecraft/item/ItemBow	net/minecraft/item/ItemBow
 	f	[Ljava/lang/String;	a	field_94601_a	bowPullIconNameArray
 		c	
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	(Lzx;Ladm;Lwn;I)V	a	func_77615_a	onPlayerStoppedUsing
 		c	Called when the player stops using an Item (stops holding the right mouse button).
 	m	()I	b	func_77619_b	getItemEnchantability
@@ -41983,18 +41641,16 @@ c	yv	net/minecraft/item/ItemBucket	net/minecraft/item/ItemBucket
 	m	(Ladm;Lcj;)Z	a	func_180616_a	tryPlaceContainedLiquid
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	(Lzx;Lwn;Lzw;)Lzx;	a	func_150910_a	fillBucket
 c	yw	net/minecraft/item/ItemCarrotOnAStick	net/minecraft/item/ItemCarrotOnAStick
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	()Z	e	func_77629_n_	shouldRotateAroundWhenRendering
 		c	Returns true if this item should be rotated by 180 degrees around the Y axis when being held in an entities hands.
 	m	()Z	w_	func_77662_d	isFull3D
@@ -42211,17 +41867,15 @@ c	zf	net/minecraft/item/ItemCloth	net/minecraft/item/ItemCloth
 c	zg	net/minecraft/item/ItemEgg	net/minecraft/item/ItemEgg
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 c	zh	net/minecraft/item/ItemEmptyMap	net/minecraft/item/ItemEmptyMap
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 c	zi	net/minecraft/item/ItemEnchantedBook	net/minecraft/item/ItemEnchantedBook
 	m	(Laci;Ljava/util/List;)V	a	func_92113_a	getAll
 	m	(Lacl;)Lzx;	a	func_92111_a	getEnchantedItemStack
@@ -42241,26 +41895,23 @@ c	zi	net/minecraft/item/ItemEnchantedBook	net/minecraft/item/ItemEnchantedBook
 c	zj	net/minecraft/item/ItemEnderEye	net/minecraft/item/ItemEnderEye
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	(Lzx;Lwn;Ladm;Lcj;Lcq;FFF)Z	a	func_180614_a	onItemUse
 		c	Called when a Block is right-clicked with this Item
 c	zk	net/minecraft/item/ItemEnderPearl	net/minecraft/item/ItemEnderPearl
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 c	zl	net/minecraft/item/ItemExpBottle	net/minecraft/item/ItemExpBottle
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	(Lzx;)Z	f	func_77636_d	hasEffect
 c	zm	net/minecraft/item/ItemFireball	net/minecraft/item/ItemFireball
 	m	(Lzx;Lwn;Ladm;Lcj;Lcq;FFF)Z	a	func_180614_a	onItemUse
@@ -42331,10 +41982,9 @@ c	zp$a	net/minecraft/item/ItemFishFood$FishType	net/minecraft/item/ItemFishFood$
 c	zq	net/minecraft/item/ItemFishingRod	net/minecraft/item/ItemFishingRod
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	()I	b	func_77619_b	getItemEnchantability
 		c	Return the enchantability factor of the item, most of the time is based on material.
 	m	()Z	e	func_77629_n_	shouldRotateAroundWhenRendering
@@ -42367,17 +42017,15 @@ c	zs	net/minecraft/item/ItemFood	net/minecraft/item/ItemFood
 		c	probably of the set potion effect occurring
 	m	(IIIF)Lzs;	a	func_77844_a	setPotionEffect
 		c	sets a potion effect on the item. Args: int potionId, int duration (will be multiplied by 20), int amplifier, float probability of effect happening
-		p	1	arg1	int	int
-		p	2	arg2	int	int
-		p	3	arg3	float	float
+		p	1	arg0	int	int
+		p	2	arg1	int	int
+		p	3	arg2	int	int
 		p	4	arg3	float	float
-		p	0	arg0	int	int
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	(Lzx;Ladm;Lwn;)Lzx;	b	func_77654_b	onItemUseFinish
 		c	Called when the player finishes using this Item (E.g. finishes eating.). Not called when the player stops using the Item before the action is complete.
 	m	(Lzx;Ladm;Lwn;)V	c	func_77849_c	onFoodEaten
@@ -42465,10 +42113,9 @@ c	zw	net/minecraft/item/Item	net/minecraft/item/Item
 		c	Called each tick as long the item is on a player inventory. Uses by maps to check if is on a player hand and update it's contents.
 	m	(Lzx;Ladm;Lwn;)Lzx;	a	func_77659_a	onItemRightClick
 		c	Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-		p	1	arg1	world	world
-		p	2	arg2	entityPlayer	entityPlayer
+		p	1	arg0	itemStack	itemStack
+		p	2	arg1	world	world
 		p	3	arg2	entityPlayer	entityPlayer
-		p	0	arg0	itemStack	itemStack
 	m	(Lzx;Ladm;Lwn;I)V	a	func_77615_a	onPlayerStoppedUsing
 		c	Called when the player stops using an Item (stops holding the right mouse button).
 	m	(Lzx;Lafh;)F	a	func_150893_a	getStrVsBlock
@@ -42671,9 +42318,8 @@ c	zx	net/minecraft/item/ItemStack	net/minecraft/item/ItemStack
 		c	Called each tick as long the ItemStack in on player inventory. Used to progress the pickup animation and update maps.
 	m	(Ladm;Lwn;)Lzx;	a	func_77957_a	useItemRightClick
 		c	Called whenever this item stack is equipped and right clicked. Returns the new item stack to put in the position where this item is. Args: world, player
-		p	1	arg1	player	player
+		p	1	arg0	world	world
 		p	2	arg1	player	player
-		p	0	arg0	world	world
 	m	(Ladm;Lwn;I)V	a	func_77980_a	onCrafting
 	m	(Lafh;)F	a	func_150997_a	getStrVsBlock
 	m	(Ldn;)Lzx;	a	func_77949_a	loadItemStackFromNBT
@@ -42698,15 +42344,13 @@ c	zx	net/minecraft/item/ItemStack	net/minecraft/item/ItemStack
 	m	(I)V	b	func_77964_b	setItemDamage
 	m	(Ladm;Lwn;)Lzx;	b	func_77950_b	onItemUseFinish
 		c	Called when the item in use count reach 0, e.g. item food eaten. Return the new ItemStack. Args : world, entity
-		p	1	arg1	entity	entity
+		p	1	arg0	world	world
 		p	2	arg1	entity	entity
-		p	0	arg0	world	world
 	m	(Ladm;Lwn;I)V	b	func_77974_b	onPlayerStoppedUsing
 		c	Called when the player releases the use item button. Args: world, entityplayer, itemInUseCount
-		p	1	arg1	entityplayer	entityplayer
-		p	2	arg2	itemInUseCount	itemInUseCount
+		p	1	arg0	world	world
+		p	2	arg1	entityplayer	entityplayer
 		p	3	arg2	itemInUseCount	itemInUseCount
-		p	0	arg0	world	world
 	m	(Lafh;)Z	b	func_150998_b	canHarvestBlock
 		c	Check whether the given Block can be harvested using this ItemStack.
 	m	(Ldn;)Ldn;	b	func_77955_b	writeToNBT
