@@ -462,7 +462,7 @@ c	aab	net/minecraft/src/World	net/minecraft/world/World
 		c	Returns whether or not the given bounding box is on fire or not
 	m	(Lmp;)V	e	func_72900_e	removeEntity
 		c	Schedule the entity for removal during the next tick. Marks the entity dead in anticipation.
-	m	()V	f	func_72974_f	setInitialSpawnLocation
+	m	()V	f	func_72974_f	setSpawnLocation
 		c	Sets a new spawn location by finding an uncovered block at a random (x,z) location in the chunk.
 	m	(F)Larc;	f	func_72948_g	getFogColor
 		c	Returns vector(ish) with R/G/B for fog
@@ -489,7 +489,7 @@ c	aab	net/minecraft/src/World	net/minecraft/world/World
 		p	7	arg6	if	if
 	m	(Lmp;)V	f	func_72973_f	removePlayerEntityDangerously
 		c	Do NOT use this method to remove normal entities- use normal removeEntity
-	m	()V	g	func_72893_g	updateBlocks
+	m	()V	g	func_72893_g	tickBlocksAndAmbiance
 		c	plays random cave ambient sounds and runs updateTick on random blocks within each chunk in the vacinity of a player
 	m	(F)F	g	func_72880_h	getStarBrightness
 		c	How bright are stars in the sky
@@ -1439,8 +1439,7 @@ c	abt	net/minecraft/src/IChunkProvider	net/minecraft/world/chunk/IChunkProvider
 		c	Returns a list of creatures of the specified type that can spawn at the given location.
 	m	(ZLlc;)Z	a	func_73151_a	saveChunks
 		c	Two modes of operation: if passed true, save all Chunks in one go.  If passed false, save up to two chunks.  Return true if all chunks have been saved.
-	m	()V	b	func_104112_b	saveExtraData
-		c	Save extra data not associated with any Chunk.  Not saved during autosave, only during world unload.  Currently unimplemented.
+	m	()V	b	func_104112_b	func_104112_b
 	m	()Z	c	func_73156_b	unloadQueuedChunks
 		c	Unloads chunks that are marked to be unloaded. This is not guaranteed to unload every such chunk.
 	m	(II)Labw;	c	func_73158_c	loadChunk
@@ -1962,13 +1961,13 @@ c	aco	net/minecraft/src/WorldProviderHell	net/minecraft/world/WorldProviderHell
 		c	Returns 'true' if in the "main surface world", but 'false' if in the Nether or End dimensions.
 	m	()Z	e	func_76567_e	canRespawnHere
 		c	True if the player can respawn in this dimension (true = overworld, false = nether).
-	m	()Ljava/lang/String;	l	func_80007_l	getInternalNameSuffix
+	m	()Ljava/lang/String;	l	func_80007_l	getDimensionName
 		c	Returns the dimension's name, e.g. "The End", "Nether", or "Overworld".
 	m	()Ljava/lang/String;	k	func_80007_l	getDimensionName
 		c	Returns the dimension's name, e.g. "The End", "Nether", or "Overworld".
 	m	()Lnet/minecraft/class_2250;	r	func_177501_r	getWorldBorder
 c	acp	net/minecraft/src/WorldProviderSurface	net/minecraft/world/WorldProviderSurface
-	m	()Ljava/lang/String;	l	func_80007_l	getInternalNameSuffix
+	m	()Ljava/lang/String;	l	func_80007_l	getDimensionName
 		c	Returns the dimension's name, e.g. "The End", "Nether", or "Overworld".
 	m	()Ljava/lang/String;	k	func_80007_l	getDimensionName
 		c	Returns the dimension's name, e.g. "The End", "Nether", or "Overworld".
@@ -1997,7 +1996,7 @@ c	acq	net/minecraft/src/WorldProviderEnd	net/minecraft/world/WorldProviderEnd
 	m	()Lt;	h	func_76554_h	getEntrancePortalLocation
 		c	Gets the hard-coded portal location to use when entering this dimension.
 	m	()I	i	func_76557_i	getAverageGroundLevel
-	m	()Ljava/lang/String;	l	func_80007_l	getInternalNameSuffix
+	m	()Ljava/lang/String;	l	func_80007_l	getDimensionName
 		c	Returns the dimension's name, e.g. "The End", "Nether", or "Overworld".
 	m	()Lnet/minecraft/class_2552;	h	func_177496_h	getSpawnCoordinate
 	m	()Ljava/lang/String;	k	func_80007_l	getDimensionName
@@ -6737,8 +6736,8 @@ c	amq	net/minecraft/src/BlockGravel	net/minecraft/block/BlockGravel
 		c	Get the MapColor for this Block and the given BlockState
 c	amr	net/minecraft/src/BlockHalfSlab	net/minecraft/block/BlockHalfSlab
 	f	Z	a	field_72242_a	isDoubleSlab
-	m	(I)Ljava/lang/String;	c	func_72240_d	getUnlocalizedName
-		c	Returns the slab block name with the type associated with it
+	m	(I)Ljava/lang/String;	c	func_72240_d	getFullSlabName
+		c	Returns the slab block name with step type.
 	m	(I)Z	d	func_72241_e	isBlockSingleSlab
 		c	Takes a block ID, returns true if it's the same as the ID for a stone or wooden single slab.
 	m	(I)I	a	func_71899_b	damageDropped
@@ -9399,7 +9398,7 @@ c	apa	net/minecraft/src/Block	net/minecraft/block/Block
 		p	3	arg2	y	y
 		p	4	arg3	z	z
 		p	5	arg4	side	side
-	m	()Z	b	func_71886_c	isFullCube
+	m	()Z	b	func_71886_c	renderAsNormalBlock
 		c	If this block doesn't render as an ordinary block it will return False (examples: signs, buttons, stairs, etc)
 	m	(F)Lapa;	b	func_71894_b	setResistance
 		c	Sets the the blocks resistance to explosions. Returns the object for convenience in constructing.
@@ -9521,7 +9520,7 @@ c	apa	net/minecraft/src/Block	net/minecraft/block/Block
 		c	Sets how much light is blocked going through this block. Returns the object for convenience in constructing.
 	m	(Laab;IIII)V	k	func_85105_g	onPostBlockPlaced
 		c	Called after a block is placed
-	m	()Z	l	func_82506_l	requiresUpdates
+	m	()Z	l	func_82506_l	func_82506_l
 	m	(I)Z	l	func_71932_i	isNormalCube
 	m	(Laab;III)F	l	func_71934_m	getBlockHardness
 		c	Returns the block hardness at a location. Args: world, x, y, z
@@ -10441,7 +10440,7 @@ c	apw	net/minecraft/src/TileEntityBeacon	net/minecraft/tileentity/TileEntityBeac
 		c	Returns the name of the inventory.
 	m	(I)Lwm;	b	func_70304_b	removeStackFromSlot
 		c	Removes a stack from the given slot and returns it.
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	(Lbs;)V	b	func_70310_b	writeToNBT
 		c	Writes a tile entity to NBT.
@@ -10520,7 +10519,7 @@ c	apx	net/minecraft/src/TileEntityBrewingStand	net/minecraft/tileentity/TileEnti
 		c	Returns the name of the inventory.
 	m	(I)Lwm;	b	func_70304_b	removeStackFromSlot
 		c	Removes a stack from the given slot and returns it.
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	(ILwm;I)Z	b	func_102008_b	canExtractItem
 		c	Returns true if automation can extract the given item in the given slot from the given side. Args: Slot, item, side
@@ -10614,7 +10613,7 @@ c	apy	net/minecraft/src/TileEntityChest	net/minecraft/tileentity/TileEntityChest
 		c	Removes a stack from the given slot and returns it.
 	m	(II)Z	b	func_70315_b	receiveClientEvent
 		c	Called when a client event is received with the event number and argument, see World.sendClientEvent
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	(Lbs;)V	b	func_70310_b	writeToNBT
 		c	Writes a tile entity to NBT.
@@ -10736,7 +10735,7 @@ c	aqc	net/minecraft/src/TileEntityDispenser	net/minecraft/tileentity/TileEntityD
 		c	Returns the name of the inventory.
 	m	(I)Lwm;	b	func_70304_b	removeStackFromSlot
 		c	Removes a stack from the given slot and returns it.
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	(Lbs;)V	b	func_70310_b	writeToNBT
 		c	Writes a tile entity to NBT.
@@ -10877,7 +10876,7 @@ c	aqg	net/minecraft/src/TileEntityFurnace	net/minecraft/tileentity/TileEntityFur
 		c	Returns the name of the inventory.
 	m	(I)Lwm;	b	func_70304_b	removeStackFromSlot
 		c	Removes a stack from the given slot and returns it.
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	(ILwm;I)Z	b	func_102008_b	canExtractItem
 		c	Returns true if automation can extract the given item in the given slot from the given side. Args: Slot, item, side
@@ -10933,7 +10932,7 @@ c	aqh	net/minecraft/src/Hopper	net/minecraft/Hopper
 		c	Gets the world Y position for this hopper entity.
 	m	()D	aC	func_96108_aC	getZPos
 		c	Gets the world Z position for this hopper entity.
-	m	()Laab;	az	func_70314_l	getWorld
+	m	()Laab;	az	func_70314_l	getWorldObj
 		c	Returns the worldObj for this tileEntity.
 c	aqi	net/minecraft/src/TileEntityHopper	net/minecraft/tileentity/TileEntityHopper
 	f	[Lwm;	a	field_94124_b	hopperItemStacks
@@ -10987,7 +10986,7 @@ c	aqi	net/minecraft/src/TileEntityHopper	net/minecraft/tileentity/TileEntityHopp
 		c	Returns the name of the inventory.
 	m	(I)Lwm;	b	func_70304_b	removeStackFromSlot
 		c	Removes a stack from the given slot and returns it.
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	(Lbs;)V	b	func_70310_b	writeToNBT
 		c	Writes a tile entity to NBT.
@@ -11137,7 +11136,7 @@ c	aqp	net/minecraft/src/TileEntity	net/minecraft/tileentity/TileEntity
 	m	(Ljava/lang/Class;Ljava/lang/String;)V	a	func_70306_a	addMapping
 		c	Adds a new two-way mapping between the class and its string name in both hashmaps.
 	m	(Lm;)V	a	func_85027_a	addInfoToCrashReport
-	m	()Laab;	az	func_70314_l	getWorld
+	m	()Laab;	az	func_70314_l	getWorldObj
 		c	Returns the worldObj for this tileEntity.
 	m	(II)Z	b	func_70315_b	receiveClientEvent
 		c	Called when a client event is received with the event number and argument, see World.sendClientEvent
@@ -11151,8 +11150,8 @@ c	aqp	net/minecraft/src/TileEntity	net/minecraft/tileentity/TileEntity
 		c	Allows the entity to update its state. Overridden in most subclasses, e.g. the mob spawner uses this to count ticks and creates a new spawn inside its implementation.
 	m	()V	i	func_70321_h	updateContainingBlockInfo
 		c	Causes the TileEntity to reset all it's cached values for it's container block, blockID, metaData and in the case of chests, the adjcacent chest check
-	m	()V	k_	func_70296_d	markDirty
-		c	For tile entities, ensures the chunk containing the tile entity is saved to disk later - the game won't think it hasn't changed and skip it.
+	m	()V	k_	func_70296_d	onInventoryChanged
+		c	Called when an the contents of an Inventory change, usually
 	m	()Lei;	m	func_70319_e	getDescriptionPacket
 		c	Allows for a specialized description packet to be created. This is often used to sync tile entity data from the server to the client easily. For example this is used by signs to synchronise the text to be displayed.
 	m	()D	n	func_82115_m	getMaxRenderDistanceSquared
@@ -13331,8 +13330,8 @@ c	awq	net/minecraft/src/GuiScreenDemo	net/minecraft/client/gui/GuiScreenDemo
 		p	3	arg2	renderPartialTicks	renderPartialTicks
 	m	(Lawg;)V	a	func_73875_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
-	m	()V	c	func_73876_c	drawDefaultBackground
-		c	Draws either a gradient over the background screen (when it exists) or a flat gradient over background.png
+	m	()V	c	func_73876_c	updateScreen
+		c	Called from the main game loop to update the screen.
 	m	()V	e	func_73873_v_	drawDefaultBackground
 		c	Draws either a gradient over the background screen (when it exists) or a flat gradient over background.png
 	m	()V	b	func_73866_w_	initGui
@@ -14675,7 +14674,7 @@ c	ayk	net/minecraft/src/GuiSlotStats	net/minecraft/client/gui/GuiSlotStats
 	f	Laye;	l	field_77263_l	statsGui
 	m	(Ljy;II)V	a	func_77259_a	func_148213_a
 	m	(Ljy;IIZ)V	a	func_77260_a	func_77260_a
-	m	(I)Ljava/lang/String;	c	func_77258_c	func_148210_b
+	m	(I)Ljava/lang/String;	c	func_77258_c	func_77258_c
 	m	(I)Ljy;	d	func_77257_d	func_148211_c
 	m	(I)V	e	func_77261_e	func_148212_h
 	m	()I	a	func_77217_a	getSize
@@ -15662,7 +15661,7 @@ c	ba	net/minecraft/src/BlockSourceImpl	net/minecraft/block/BlockSourceImpl
 	m	()D	c	func_82616_c	getZ
 	m	()I	d	func_82623_d	getXInt
 	m	()I	e	func_82622_e	getYInt
-	m	()I	f	func_82621_f	getBlockMetadata
+	m	()I	f	func_82621_f	getZInt
 	m	()I	h	func_82620_h	getBlockMetadata
 	m	()Laqp;	j	func_82619_j	getBlockTileEntity
 	m	()Laab;	k	func_82618_k	getWorld
@@ -19010,8 +19009,7 @@ c	bgw	net/minecraft/src/RenderDragon	net/minecraft/client/render/RenderDragon
 		c	Renders the overlay for glowing eyes and the mouth. Called by shouldRenderPass.
 	m	(Lmp;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lng;DDDFF)V	a	func_77031_a	doRender
-		c	Renders the desired {@code T} type Entity.
+	m	(Lng;DDDFF)V	a	func_77031_a	doRenderLiving
 	m	(Lng;FFF)V	a	func_77043_a	rotateCorpse
 	m	(Lng;FFFFFF)V	a	func_77036_a	renderModel
 		c	Renders the model in RenderLiving
@@ -19037,8 +19035,7 @@ c	bgx	net/minecraft/src/RenderEnderman	net/minecraft/client/render/RenderEnderma
 		c	Render the endermans eyes
 	m	(Lmp;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lng;DDDFF)V	a	func_77031_a	doRender
-		c	Renders the desired {@code T} type Entity.
+	m	(Lng;DDDFF)V	a	func_77031_a	doRenderLiving
 	m	(Lng;IF)I	a	func_77032_a	shouldRenderPass
 		c	Queries whether should render the specified pass or not.
 	m	(Lng;F)V	c	func_77029_c	renderEquippedItems
@@ -19357,8 +19354,7 @@ c	bho	net/minecraft/src/RenderLiving	net/minecraft/client/render/RenderLiving
 	m	(Lng;)V	a	func_98190_a	func_98190_a
 	m	(Lng;DDD)V	a	func_77039_a	renderLivingAt
 		c	Sets a simple glTranslate on a LivingEntity.
-	m	(Lng;DDDFF)V	a	func_77031_a	doRender
-		c	Renders the desired {@code T} type Entity.
+	m	(Lng;DDDFF)V	a	func_77031_a	doRenderLiving
 	m	(Lng;DDDLjava/lang/String;FD)V	a	func_96449_a	func_96449_a
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
@@ -19677,8 +19673,7 @@ c	bif	net/minecraft/src/RenderWitch	net/minecraft/client/render/RenderWitch
 		p	2	arg1	partialTickTime	partialTickTime
 	m	(Lmp;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lng;DDDFF)V	a	func_77031_a	doRender
-		c	Renders the desired {@code T} type Entity.
+	m	(Lng;DDDFF)V	a	func_77031_a	doRenderLiving
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 		p	1	arg0	entityLiving	entityLiving
@@ -19705,8 +19700,7 @@ c	big	net/minecraft/src/RenderWither	net/minecraft/client/render/RenderWither
 	m	(Lrb;IF)I	b	func_82416_b	func_82416_b
 	m	(Lmp;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lng;DDDFF)V	a	func_77031_a	doRender
-		c	Renders the desired {@code T} type Entity.
+	m	(Lng;DDDFF)V	a	func_77031_a	doRenderLiving
 	m	(Lng;F)V	a	func_77041_b	preRenderCallback
 		c	Allows the render to do any OpenGL state modifications necessary before the model is rendered. Args: entityLiving, partialTickTime
 		p	1	arg0	entityLiving	entityLiving
@@ -19766,8 +19760,7 @@ c	bij	net/minecraft/src/RenderZombie	net/minecraft/client/render/RenderZombie
 	m	(Lsj;IF)I	a	func_82429_a	func_82429_a
 	m	(Lmp;DDDFF)V	a	func_76986_a	doRender
 		c	Renders the desired {@code T} type Entity.
-	m	(Lng;DDDFF)V	a	func_77031_a	doRender
-		c	Renders the desired {@code T} type Entity.
+	m	(Lng;DDDFF)V	a	func_77031_a	doRenderLiving
 	m	(Lng;FFF)V	a	func_77043_a	rotateCorpse
 	m	(Lng;IF)I	a	func_77032_a	shouldRenderPass
 		c	Queries whether should render the specified pass or not.
@@ -23323,8 +23316,7 @@ c	gw	net/minecraft/src/ServerScoreboard	net/minecraft/scoreboard/ServerScoreboar
 		c	This packet will notify the players that this team is created, and that will register it on the client
 	m	(Larg;)V	a	func_96536_a	func_96536_a
 	m	(Ljava/lang/String;)V	a	func_96516_a	func_96516_a
-	m	(Ljava/lang/String;Larf;)V	a	func_96521_a	removePlayerFromTeam
-		c	Removes the given username from the given ScorePlayerTeam. If the player is not on the team then an IllegalStateException is thrown.
+	m	(Ljava/lang/String;Larf;)V	a	func_96521_a	func_96521_a
 	m	(Lare;)V	b	func_96532_b	onObjectiveDisplayNameChanged
 	m	(Larf;)V	b	func_96538_b	sendTeamUpdate
 		c	This packet will notify the players that this team is updated
@@ -24319,9 +24311,9 @@ c	iz	net/minecraft/src/WorldServer	net/minecraft/world/WorldServer
 		p	6	arg5	EventParameter	EventParameter
 	m	()V	f	func_72974_f	setSpawnLocation
 		c	Sets a new spawn location by finding an uncovered block at a random (x,z) location in the chunk.
-	m	()V	g	func_72893_g	setInitialSpawnLocation
-		c	Sets a new spawn location by finding an uncovered block at a random (x,z) location in the chunk.
-	m	()V	h	func_72939_s	updateBlocks
+	m	()V	g	func_72893_g	tickBlocksAndAmbiance
+		c	plays random cave ambient sounds and runs updateTick on random blocks within each chunk in the vacinity of a player
+	m	()V	h	func_72939_s	updateEntities
 		c	Updates (and cleans up) entities and tile entities
 	m	()Labt;	j	func_72970_h	createChunkProvider
 		c	Creates the chunk provider for this world. Called in the constructor. Retrieves provider from worldProvider?
@@ -24475,7 +24467,7 @@ c	jc	net/minecraft/src/EntityPlayerMP	net/minecraft/entity/player/EntityPlayerMP
 		c	Wake up the player if they're sleeping.
 	m	()Lt;	b	func_82114_b	getCommandSenderPosition
 		c	Return the position for this command sender.
-	m	(I)V	b	func_70606_j	removeExperienceLevel
+	m	(I)V	b	func_70606_j	setEntityHealth
 	m	(III)V	b	func_71058_b	displayGUIWorkbench
 		c	Displays the crafting GUI for a workbench.
 	m	(Lbs;)V	b	func_70014_b	writeEntityToNBT
@@ -24501,8 +24493,8 @@ c	jc	net/minecraft/src/EntityPlayerMP	net/minecraft/entity/player/EntityPlayerMP
 		c	Called to update the entity's position/logic.
 	m	()V	m	func_71036_o	onItemUseFinish
 		c	Used for when item use count runs out, ie: eating completed
-	m	()V	n	func_71016_p	closeScreen
-		c	set current crafting inventory back to the 2x2 square
+	m	()V	n	func_71016_p	sendPlayerAbilities
+		c	Sends the player's abilities to the server (if there is one).
 	m	()Lbp;	r	func_71025_t	getTranslator
 	m	()V	B	func_175135_B	updatePotionMetadata
 		c	Clears potion metadata values if the entity has no potion effects. Otherwise, updates potion effect color, ambience, and invisibility metadata values
@@ -25623,7 +25615,7 @@ c	ls	net/minecraft/src/InventoryLargeChest	net/minecraft/inventory/InventoryLarg
 		c	Returns the name of the inventory.
 	m	(I)Lwm;	b	func_70304_b	removeStackFromSlot
 		c	Removes a stack from the given slot and returns it.
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	()Z	c	func_94042_c	isInvNameLocalized
 		c	If this returns false, the inventory name will be used as an unlocalized name, and translated into the player's language. Otherwise it will be used directly.
@@ -25671,7 +25663,7 @@ c	lt	net/minecraft/src/IInventory	net/minecraft/inventory/IInventory
 		c	Returns the name of the inventory.
 	m	(I)Lwm;	b	func_70304_b	removeStackFromSlot
 		c	Removes a stack from the given slot and returns it.
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	()Z	c	func_94042_c	isInvNameLocalized
 		c	If this returns false, the inventory name will be used as an unlocalized name, and translated into the player's language. Otherwise it will be used directly.
@@ -25681,8 +25673,8 @@ c	lt	net/minecraft/src/IInventory	net/minecraft/inventory/IInventory
 	m	()V	g	func_70305_f	closeChest
 	m	()I	j_	func_70302_i_	getSizeInventory
 		c	Returns the number of slots in the inventory.
-	m	()V	k_	func_70296_d	markDirty
-		c	For tile entities, ensures the chunk containing the tile entity is saved to disk later - the game won't think it hasn't changed and skip it.
+	m	()V	k_	func_70296_d	onInventoryChanged
+		c	Called when an the contents of an Inventory change, usually
 c	lu	net/minecraft/src/IInvBasic	net/minecraft/inventory/IInvBasic
 	m	(Llz;)V	a	func_76316_a	onInventoryChanged
 		c	Called by InventoryBasic.onInventoryChanged() on a array that is never filled.
@@ -25754,7 +25746,7 @@ c	lz	net/minecraft/src/InventoryBasic	net/minecraft/inventory/InventoryBasic
 		c	Returns the name of the inventory.
 	m	(I)Lwm;	b	func_70304_b	removeStackFromSlot
 		c	Removes a stack from the given slot and returns it.
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	()Z	c	func_94042_c	isInvNameLocalized
 		c	If this returns false, the inventory name will be used as an unlocalized name, and translated into the player's language. Otherwise it will be used directly.
@@ -25984,7 +25976,7 @@ c	mi	net/minecraft/src/EntityDamageSourceIndirect	net/minecraft/util/EntityDamag
 	m	(Lng;)Ljava/lang/String;	b	func_76360_b	getDeathMessage
 		c	Returns the message to be displayed on player death.
 	m	()Lmp;	h	func_76364_f	getSourceOfDamage
-	m	()Lmp;	i	func_76346_g	getSourceOfDamage
+	m	()Lmp;	i	func_76346_g	getEntity
 	m	(Lnet/minecraft/class_1699;)Lnet/minecraft/class_1982;	b	func_151519_b	getDeathMessage
 		c	Gets the death message that is displayed when the player dies\\n \\n@param entityLivingBaseIn The EntityLivingBase that died
 	m	()Lmp;	j	func_76346_g	getEntity
@@ -26272,8 +26264,8 @@ c	mp	net/minecraft/src/Entity	net/minecraft/entity/Entity
 		c	sets the dead flag. Used when you fall off the bottom of the world.
 	m	()V	C	func_70017_D	doBlockCollisions
 		c	Checks for block collisions, and calls the associated onBlockCollided method for the collided block.
-	m	()Laqx;	D	func_70046_E	getCollisionBoundingBox
-		c	Returns the collision bounding box for this entity
+	m	()Laqx;	D	func_70046_E	getBoundingBox
+		c	returns the bounding box for this entity
 	m	()Z	E	func_70045_F	isImmuneToFire
 	m	()Z	F	func_70026_G	isWet
 		c	Checks if this entity is either in water or on an open air block in rain (used in wolves).
@@ -26410,14 +26402,13 @@ c	mp	net/minecraft/src/Entity	net/minecraft/entity/Entity
 		c	If returns false, the item will not inflict any damage against entities.
 	m	()Z	aq	func_85032_ar	isEntityInvulnerable
 		c	Return whether this entity is invulnerable to damage.
-	m	()I	ar	func_82143_as	getMaxFallHeight
-		c	The maximum height from where the entity is alowed to jump (used in pathfinder)
+	m	()I	ar	func_82143_as	func_82143_as
 	m	()I	as	func_82148_at	getTeleportDirection
 	m	()Z	at	func_82144_au	doesEntityNotTriggerPressurePlate
 		c	Return whether this entity should NOT trigger a pressure plate or a tripwire.
 	m	()Z	au	func_90999_ad	canRenderOnFire
 		c	Return whether this entity should be rendered as on fire.
-	m	()Z	aw	func_96092_aw	isPushedByWater
+	m	()Z	aw	func_96092_aw	func_96092_aw
 	m	()Ljava/lang/String;	ax	func_96090_ax	getTranslatedEntityName
 		c	Returns the translated name of the entity.
 	m	(DDD)V	b	func_70107_b	setPosition
@@ -26458,8 +26449,7 @@ c	mp	net/minecraft/src/Entity	net/minecraft/entity/Entity
 		c	Adds a value to the player score. Currently not actually used and the entity passed in does nothing. Args: entity, scoreToAdd
 		p	1	arg0	entity	entity
 		p	2	arg1	scoreToAdd	scoreToAdd
-	m	(Lsq;)Z	c	func_98034_c	isInvisibleToPlayer
-		c	Only used by renderer in EntityLivingBase subclasses.\\nDetermines if an entity is visible or not to a specfic player, if the entity is normally invisible.\\nFor EntityLivingBase subclasses, returning false when invisible will render the entity semitransparent.
+	m	(Lsq;)Z	c	func_98034_c	func_98034_c
 	m	(Z)V	c	func_70031_b	setSprinting
 		c	Set sprinting switch for Entity.
 	m	(DDD)V	d	func_70091_d	moveEntity
@@ -26530,8 +26520,7 @@ c	mp	net/minecraft/src/Entity	net/minecraft/entity/Entity
 		p	3	arg2	z	z
 	m	(Lmp;)Z	i	func_70028_i	isEntityEqual
 		c	Returns true if Entity argument is equal to this Entity
-	m	(Lmp;)Z	j	func_85031_j	hitByEntity
-		c	Called when a player attacks an entity. If this returns true the attack will not happen.
+	m	(Lmp;)Z	j	func_85031_j	func_85031_j
 	m	(Lmp;)V	k	func_82149_j	copyLocationAndAnglesFrom
 		c	Sets this entity's location and angles to the location and angles of the passed in entity.
 	m	()V	l_	func_70071_h_	onUpdate
@@ -26710,7 +26699,7 @@ c	nd	net/minecraft/src/EntityFlying	net/minecraft/entity/EntityFlying
 		p	2	arg1	onGround	onGround
 	m	(F)V	a	func_70069_a	fall
 		c	Called when the mob is falling. Calculates and applies fall damage.
-	m	(FF)V	e	func_70612_e	fall
+	m	(FF)V	e	func_70612_e	moveEntityWithHeading
 		c	Moves the entity based on the specified heading.  Args: strafe, forward
 		p	1	arg0	strafe	strafe
 		p	2	arg1	forward	forward
@@ -26733,8 +26722,8 @@ c	ne	net/minecraft/src/EntityHanging	net/minecraft/entity/EntityHanging
 	m	(I)F	b	func_70517_b	func_70517_b
 	m	()Z	c	func_70518_d	onValidSurface
 		c	checks to make sure painting can be placed there
-	m	()I	d	func_82329_d	getWidthPixels
-	m	()I	g	func_82330_g	getHeightPixels
+	m	()I	d	func_82329_d	func_82329_d
+	m	()I	g	func_82330_g	func_82330_g
 	m	()V	h	func_82331_h	dropItemStack
 		c	Drop the item currently on this item frame.
 	m	()Z	K	func_70067_L	canBeCollidedWith
@@ -27534,7 +27523,7 @@ c	ng	net/minecraft/src/EntityLiving	net/minecraft/entity/EntityLiving
 	m	()V	bI	func_82162_bC	func_82162_bC
 	m	()V	bJ	func_82163_bD	initCreature
 		c	Initialize this creature.
-	m	()V	bK	func_71038_i	updateEntityActionState
+	m	()V	bK	func_71038_i	swingItem
 		c	Swings the item the player is holding.
 	m	()Z	bL	func_82171_bF	canBeSteered
 		c	returns true if all the conditions for steering the entity are met. For pigs, this is true if it is being ridden by a player and the player is holding a carrot-on-a-stick
@@ -29787,7 +29776,7 @@ c	qv	net/minecraft/src/IBossDisplayData	net/minecraft/entity/boss/IBossDisplayDa
 		c	Returns the health points of the dragon.
 c	qw	net/minecraft/src/IEntityMultiPart	net/minecraft/entity/IEntityMultiPart
 	m	(Lqx;Lmg;I)Z	a	func_70965_a	attackEntityFromPart
-	m	()Laab;	d	func_82194_d	getWorld
+	m	()Laab;	d	func_82194_d	func_82194_d
 c	qx	net/minecraft/src/EntityDragonPart	net/minecraft/entity/boss/EntityDragonPart
 	f	Lqw;	a	field_70259_a	entityDragonObj
 		c	The dragon entity this dragon part belongs to
@@ -30181,7 +30170,7 @@ c	rg	net/minecraft/src/EntityFallingSand	net/minecraft/EntityFallingSand
 	f	F	i	field_82158_h	fallHurtAmount
 		c	Actual damage dealt to entities hit by falling block
 	m	(Z)V	a	func_82154_e	setHurtEntities
-	m	()Laab;	c	func_70283_d	getWorldObj
+	m	()Laab;	c	func_70283_d	getWorld
 	m	()Z	K	func_70067_L	canBeCollidedWith
 		c	Returns true if other Entities should be prevented from moving through this Entity.
 	m	()F	Q	func_70053_R	getShadowSize
@@ -30444,7 +30433,7 @@ c	rk	net/minecraft/src/EntityMinecartContainer	net/minecraft/entity/item/EntityM
 		c	Returns the name of the inventory.
 	m	(I)Lwm;	b	func_70304_b	removeStackFromSlot
 		c	Removes a stack from the given slot and returns it.
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	(Lbs;)V	b	func_70014_b	writeEntityToNBT
 		c	(abstract) Protected helper method to write subclass entity data to NBT.
@@ -31289,7 +31278,7 @@ c	sg	net/minecraft/src/EntitySlime	net/minecraft/entity/monster/EntitySlime
 	m	()Lsg;	i	func_70802_j	createInstance
 	m	()I	j	func_70806_k	getJumpDelay
 		c	Gets the amount of time the slime needs to wait between jumps.
-	m	()V	k	func_70808_l	alterSquishAmount
+	m	()V	k	func_70808_l	func_70808_l
 	m	()Z	l	func_70800_m	canDamagePlayer
 		c	Indicates weather the slime is able to damage the player (based upon the slime's size)
 	m	()I	m	func_70805_n	getAttackStrength
@@ -31804,7 +31793,7 @@ c	so	net/minecraft/src/InventoryPlayer	net/minecraft/entity/player/InventoryPlay
 		c	Returns the name of the inventory.
 	m	(I)Lwm;	b	func_70304_b	removeStackFromSlot
 		c	Removes a stack from the given slot and returns it.
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	()Z	c	func_94042_c	isInvNameLocalized
 		c	If this returns false, the inventory name will be used as an unlocalized name, and translated into the player's language. Otherwise it will be used directly.
@@ -32041,7 +32030,7 @@ c	sq	net/minecraft/src/EntityPlayer	net/minecraft/entity/player/EntityPlayer
 	m	(I)Z	v	func_82241_s	getHideCape
 	m	(I)V	w	func_71023_q	addExperience
 		c	Add experience points to player.
-	m	(I)V	x	func_71013_b	removeExperienceLevel
+	m	(I)V	x	func_71013_b	func_71013_b
 	m	()Z	S	func_70094_T	isEntityInsideOpaqueBlock
 		c	Checks if this entity is inside of an opaque block
 	m	()V	T	func_70098_U	updateRidden
@@ -32118,7 +32107,7 @@ c	sq	net/minecraft/src/EntityPlayer	net/minecraft/entity/player/EntityPlayer
 	m	(Lsq;)I	d	func_70693_a	getExperiencePoints
 		c	Get the experience points the entity currently has.
 	m	()F	e	func_70047_e	getEyeHeight
-	m	(FF)V	e	func_70612_e	fall
+	m	(FF)V	e	func_70612_e	moveEntityWithHeading
 		c	Moves the entity based on the specified heading.  Args: strafe, forward
 		p	1	arg0	strafe	strafe
 		p	2	arg1	forward	forward
@@ -32540,8 +32529,8 @@ c	tb	net/minecraft/src/EntityThrowable	net/minecraft/entity/projectile/EntityThr
 	f	I	j	field_70195_i	ticksInAir
 	m	(Lara;)V	a	func_70184_a	onImpact
 		c	Called when this EntityThrowable hits a block or entity.
-	m	()F	c	func_70182_d	getVelocity
-	m	()F	d	func_70183_g	getInaccuracy
+	m	()F	c	func_70182_d	func_70182_d
+	m	()F	d	func_70183_g	func_70183_g
 	m	()F	g	func_70185_h	getGravityVelocity
 		c	Gets the amount of gravity to apply to the thrown entity with each tick.
 	m	()Lng;	h	func_85052_h	getThrower
@@ -32848,7 +32837,7 @@ c	tr	net/minecraft/src/InventoryCrafting	net/minecraft/inventory/InventoryCrafti
 		c	Returns the name of the inventory.
 	m	(I)Lwm;	b	func_70304_b	removeStackFromSlot
 		c	Removes a stack from the given slot and returns it.
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	()Z	c	func_94042_c	isInvNameLocalized
 		c	If this returns false, the inventory name will be used as an unlocalized name, and translated into the player's language. Otherwise it will be used directly.
@@ -33026,7 +33015,7 @@ c	uc	net/minecraft/src/InventoryMerchant	net/minecraft/inventory/InventoryMercha
 		c	Returns the name of the inventory.
 	m	(I)Lwm;	b	func_70304_b	removeStackFromSlot
 		c	Removes a stack from the given slot and returns it.
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	()Z	c	func_94042_c	isInvNameLocalized
 		c	If this returns false, the inventory name will be used as an unlocalized name, and translated into the player's language. Otherwise it will be used directly.
@@ -33173,7 +33162,7 @@ c	uj	net/minecraft/src/InventoryCraftResult	net/minecraft/inventory/InventoryCra
 		c	Returns the name of the inventory.
 	m	(I)Lwm;	b	func_70304_b	removeStackFromSlot
 		c	Removes a stack from the given slot and returns it.
-	m	(ILwm;)Z	b	func_94041_b	isItemValidForSlot
+	m	(ILwm;)Z	b	func_94041_b	isStackValidForSlot
 		c	Returns true if automation is allowed to insert the given stack (ignoring stack size) into the given slot.
 	m	()Z	c	func_94042_c	isInvNameLocalized
 		c	If this returns false, the inventory name will be used as an unlocalized name, and translated into the player's language. Otherwise it will be used directly.
@@ -34098,7 +34087,7 @@ c	wk	net/minecraft/src/Item	net/minecraft/item/Item
 	m	(Lwm;)Ljava/lang/String;	k	func_77653_i	func_77653_i
 	m	()I	l	func_77639_j	getItemStackLimit
 		c	Returns the maximum size of the stack for a specific item. *Isn't this more a Set than a Get?*
-	m	(Lwm;)Ljava/lang/String;	l	func_77628_j	getItemStackDisplayName
+	m	(Lwm;)Ljava/lang/String;	l	func_77628_j	getItemDisplayName
 	m	()Z	m	func_77614_k	getHasSubtypes
 	m	()I	n	func_77612_l	getMaxDamage
 		c	Returns the maximum damage an item can take.
@@ -34171,7 +34160,7 @@ c	wm	net/minecraft/src/ItemStack	net/minecraft/item/ItemStack
 		c	Return the item frame this stack is on. Returns null if not on an item frame.
 	m	()I	B	func_82838_A	getRepairCost
 		c	Get this stack's repair cost, or 0 if no repair cost is defined.
-	m	()Ljava/lang/String;	a	func_77977_a	getUnlocalizedName
+	m	()Ljava/lang/String;	a	func_77977_a	getItemName
 	m	(I)Lwm;	a	func_77979_a	splitStack
 		c	Splits off a stack of the given amount of this stack and reduces this stack by the amount.
 	m	(ILjava/util/Random;)Z	a	func_96631_a	attemptDamageItem
