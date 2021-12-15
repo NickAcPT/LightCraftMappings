@@ -27461,8 +27461,8 @@ c	ng	net/minecraft/src/EntityLiving	net/minecraft/entity/EntityLiving
 		c	knocks back this entity
 	m	(Lwm;)V	a	func_70669_a	renderBrokenItemStack
 		c	Renders broken item particles using the given ItemStack
-	m	(ZI)V	a	func_70628_a	dropEquipment
-		c	Drop the equipment for this entity.\\n \\n@param wasRecentlyHit true if this this entity was recently hit by appropriate entity (generally only if player or tameable)\\n@param lootingModifier level of enchanment to be applied to this drop
+	m	(ZI)V	a	func_70628_a	dropFewItems
+		c	Drop 0-2 items of this living's type
 	m	()Lnz;	aA	func_70605_aq	getMoveHelper
 	m	()Lnx;	aB	func_70683_ar	getJumpHelper
 	m	()Lpx;	aC	func_70661_as	getNavigator
