@@ -2035,8 +2035,8 @@ c	act	net/minecraft/src/ChunkProviderFlat	net/minecraft/world/gen/ChunkProviderF
 		c	Unloads chunks that are marked to be unloaded. This is not guaranteed to unload every such chunk.
 	m	(II)Labw;	c	func_73158_c	loadChunk
 		c	loads or generates the chunk at the chunk location specified
-	m	()Z	d	func_73157_c	unloadQueuedChunks
-		c	Unloads chunks that are marked to be unloaded. This is not guaranteed to unload every such chunk.
+	m	()Z	d	func_73157_c	canSave
+		c	Returns if the IChunkProvider supports saving.
 	m	(II)Labw;	d	func_73154_d	provideChunk
 		c	Will return back a chunk, if it doesn't exist and its not a MP client it will generates all the blocks for the specified chunk from the map seed and chunk seed
 	m	()Ljava/lang/String;	e	func_73148_d	makeString
@@ -2103,8 +2103,8 @@ c	acu	net/minecraft/src/ChunkProviderHell	net/minecraft/world/gen/ChunkProviderH
 		c	Unloads chunks that are marked to be unloaded. This is not guaranteed to unload every such chunk.
 	m	(II)Labw;	c	func_73158_c	loadChunk
 		c	loads or generates the chunk at the chunk location specified
-	m	()Z	d	func_73157_c	unloadQueuedChunks
-		c	Unloads chunks that are marked to be unloaded. This is not guaranteed to unload every such chunk.
+	m	()Z	d	func_73157_c	canSave
+		c	Returns if the IChunkProvider supports saving.
 	m	(II)Labw;	d	func_73154_d	provideChunk
 		c	Will return back a chunk, if it doesn't exist and its not a MP client it will generates all the blocks for the specified chunk from the map seed and chunk seed
 	m	()Ljava/lang/String;	e	func_73148_d	makeString
@@ -2220,8 +2220,8 @@ c	acy	net/minecraft/src/ChunkProviderGenerate	net/minecraft/world/gen/ChunkProvi
 		c	Unloads chunks that are marked to be unloaded. This is not guaranteed to unload every such chunk.
 	m	(II)Labw;	c	func_73158_c	loadChunk
 		c	loads or generates the chunk at the chunk location specified
-	m	()Z	d	func_73157_c	unloadQueuedChunks
-		c	Unloads chunks that are marked to be unloaded. This is not guaranteed to unload every such chunk.
+	m	()Z	d	func_73157_c	canSave
+		c	Returns if the IChunkProvider supports saving.
 	m	(II)Labw;	d	func_73154_d	provideChunk
 		c	Will return back a chunk, if it doesn't exist and its not a MP client it will generates all the blocks for the specified chunk from the map seed and chunk seed
 	m	()Ljava/lang/String;	e	func_73148_d	makeString
@@ -2276,8 +2276,8 @@ c	acz	net/minecraft/src/ChunkProviderEnd	net/minecraft/world/gen/ChunkProviderEn
 		c	Unloads chunks that are marked to be unloaded. This is not guaranteed to unload every such chunk.
 	m	(II)Labw;	c	func_73158_c	loadChunk
 		c	loads or generates the chunk at the chunk location specified
-	m	()Z	d	func_73157_c	unloadQueuedChunks
-		c	Unloads chunks that are marked to be unloaded. This is not guaranteed to unload every such chunk.
+	m	()Z	d	func_73157_c	canSave
+		c	Returns if the IChunkProvider supports saving.
 	m	(II)Labw;	d	func_73154_d	provideChunk
 		c	Will return back a chunk, if it doesn't exist and its not a MP client it will generates all the blocks for the specified chunk from the map seed and chunk seed
 	m	()Ljava/lang/String;	e	func_73148_d	makeString
@@ -13078,8 +13078,8 @@ c	awj	net/minecraft/src/GuiChat	net/minecraft/client/gui/GuiChat
 		p	2	arg1	mouseY	mouseY
 		p	3	arg2	clickedButton	clickedButton
 	m	(ZI)V	a	func_73878_a	confirmClicked
-	m	()V	b	func_73874_b	initGui
-		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
+	m	()V	b	func_73874_b	onGuiClosed
+		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 	m	()V	c	func_73876_c	updateScreen
 		c	Called from the main game loop to update the screen.
 	m	()V	d	func_73867_d	handleMouseInput
@@ -13286,8 +13286,8 @@ c	awo	net/minecraft/src/GuiCreateWorld	net/minecraft/client/gui/GuiCreateWorld
 		p	3	arg2	clickedButton	clickedButton
 	m	(Lawg;)V	a	func_73875_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
-	m	()V	b	func_73874_b	initGui
-		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
+	m	()V	b	func_73874_b	onGuiClosed
+		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 	m	()V	c	func_73876_c	updateScreen
 		c	Called from the main game loop to update the screen.
 	m	()V	e	func_73876_c	updateScreen
@@ -13361,8 +13361,8 @@ c	awr	net/minecraft/src/GuiScreenServerList	net/minecraft/client/gui/GuiScreenSe
 		p	3	arg2	clickedButton	clickedButton
 	m	(Lawg;)V	a	func_73875_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
-	m	()V	b	func_73874_b	initGui
-		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
+	m	()V	b	func_73874_b	onGuiClosed
+		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 	m	()V	c	func_73876_c	updateScreen
 		c	Called from the main game loop to update the screen.
 	m	()V	e	func_73876_c	updateScreen
@@ -13486,8 +13486,8 @@ c	awt	net/minecraft/src/GuiScreenAddServer	net/minecraft/client/gui/GuiScreenAdd
 		p	3	arg2	clickedButton	clickedButton
 	m	(Lawg;)V	a	func_73875_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
-	m	()V	b	func_73874_b	initGui
-		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
+	m	()V	b	func_73874_b	onGuiClosed
+		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 	m	()V	c	func_73876_c	updateScreen
 		c	Called from the main game loop to update the screen.
 	m	()V	e	func_73876_c	updateScreen
@@ -13825,8 +13825,8 @@ c	axa	net/minecraft/src/GuiMultiplayer	net/minecraft/client/gui/GuiMultiplayer
 	m	(Lawg;)V	a	func_73875_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(ZI)V	a	func_73878_a	confirmClicked
-	m	()V	b	func_73874_b	initGui
-		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
+	m	()V	b	func_73874_b	onGuiClosed
+		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 	m	()V	c	func_73876_c	updateScreen
 		c	Called from the main game loop to update the screen.
 	m	(III)V	a	func_73864_a	mouseClicked
@@ -14029,8 +14029,8 @@ c	axm	net/minecraft/src/GuiFlatPresets	net/minecraft/client/gui/GuiFlatPresets
 		p	3	arg2	clickedButton	clickedButton
 	m	(Lawg;)V	a	func_73875_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
-	m	()V	b	func_73874_b	initGui
-		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
+	m	()V	b	func_73874_b	onGuiClosed
+		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 	m	()V	c	func_73876_c	updateScreen
 		c	Called from the main game loop to update the screen.
 	m	()V	e	func_73876_c	updateScreen
@@ -14105,8 +14105,8 @@ c	axq	net/minecraft/src/GuiRenameWorld	net/minecraft/client/gui/GuiRenameWorld
 		p	3	arg2	clickedButton	clickedButton
 	m	(Lawg;)V	a	func_73875_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
-	m	()V	b	func_73874_b	initGui
-		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
+	m	()V	b	func_73874_b	onGuiClosed
+		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 	m	()V	c	func_73876_c	updateScreen
 		c	Called from the main game loop to update the screen.
 	m	()V	e	func_73876_c	updateScreen
@@ -14792,8 +14792,8 @@ c	ayl	net/minecraft/src/GuiContainer	net/minecraft/client/gui/GuiContainer
 		p	3	arg2	clickedButton	clickedButton
 	m	(IIIJ)V	a	func_85041_a	mouseClickMove
 		c	Called when a mouse button is pressed and the mouse is moved around. Parameters are : mouseX, mouseY, lastButtonClicked & timeSinceMouseClick.
-	m	()V	b	func_73874_b	initGui
-		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
+	m	()V	b	func_73874_b	onGuiClosed
+		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 	m	(III)V	b	func_73879_b	mouseReleased
 		c	Called when a mouse button is released.  Args : mouseX, mouseY, releaseButton
 		p	1	arg0	mouseX	mouseX
@@ -14904,8 +14904,8 @@ c	ayr	net/minecraft/src/GuiScreenBook	net/minecraft/client/gui/GuiScreenBook
 		p	3	arg2	renderPartialTicks	renderPartialTicks
 	m	(Lawg;)V	a	func_73875_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
-	m	()V	b	func_73874_b	initGui
-		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
+	m	()V	b	func_73874_b	onGuiClosed
+		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 	m	()V	c	func_73876_c	updateScreen
 		c	Called from the main game loop to update the screen.
 	m	(III)V	a	func_73864_a	mouseClicked
@@ -14958,8 +14958,8 @@ c	ayu	net/minecraft/src/GuiCommandBlock	net/minecraft/client/gui/GuiCommandBlock
 		p	3	arg2	clickedButton	clickedButton
 	m	(Lawg;)V	a	func_73875_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
-	m	()V	b	func_73874_b	initGui
-		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
+	m	()V	b	func_73874_b	onGuiClosed
+		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 	m	()V	c	func_73876_c	updateScreen
 		c	Called from the main game loop to update the screen.
 	m	()V	e	func_73876_c	updateScreen
@@ -15046,8 +15046,8 @@ c	ayy	net/minecraft/src/GuiContainerCreative	net/minecraft/client/gui/GuiContain
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
 	m	(Lul;III)V	a	func_74191_a	handleMouseClick
 		c	Called when the mouse is clicked over a slot or outside the gui.
-	m	()V	b	func_73874_b	initGui
-		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
+	m	()V	b	func_73874_b	onGuiClosed
+		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 	m	(II)V	b	func_74189_g	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
 		p	1	arg0	mouseX	mouseX
@@ -15304,8 +15304,8 @@ c	azj	net/minecraft/src/GuiRepair	net/minecraft/client/gui/GuiRepair
 		p	3	arg2	slot	slot
 	m	(Ltj;Ljava/util/List;)V	a	func_71110_a	updateCraftingInventory
 		c	update the crafting window inventory with the items in the list
-	m	()V	b	func_73874_b	initGui
-		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
+	m	()V	b	func_73874_b	onGuiClosed
+		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 	m	(II)V	b	func_74189_g	drawGuiContainerForegroundLayer
 		c	Draw the foreground layer for the GuiContainer (everything in front of the items). Args : mouseX, mouseY
 		p	1	arg0	mouseX	mouseX
@@ -15339,8 +15339,8 @@ c	azk	net/minecraft/src/GuiEditSign	net/minecraft/client/gui/GuiEditSign
 		p	3	arg2	renderPartialTicks	renderPartialTicks
 	m	(Lawg;)V	a	func_73875_a	actionPerformed
 		c	Called by the controls from the buttonList when activated. (Mouse pressed for buttons)
-	m	()V	b	func_73874_b	initGui
-		c	Adds the buttons (and other controls) to the screen in question. Called when the GUI is displayed and when the window resizes, the buttonList is cleared beforehand.
+	m	()V	b	func_73874_b	onGuiClosed
+		c	Called when the screen is unloaded. Used to disable keyboard repeat events
 	m	()V	c	func_73876_c	updateScreen
 		c	Called from the main game loop to update the screen.
 	m	()V	e	func_73876_c	updateScreen
@@ -16846,8 +16846,8 @@ c	bdq	net/minecraft/src/ChunkProviderClient	net/minecraft/client/multiplayer/Chu
 		c	Unloads chunks that are marked to be unloaded. This is not guaranteed to unload every such chunk.
 	m	(II)Labw;	c	func_73158_c	loadChunk
 		c	loads or generates the chunk at the chunk location specified
-	m	()Z	d	func_73157_c	unloadQueuedChunks
-		c	Unloads chunks that are marked to be unloaded. This is not guaranteed to unload every such chunk.
+	m	()Z	d	func_73157_c	canSave
+		c	Returns if the IChunkProvider supports saving.
 	m	(II)Labw;	d	func_73154_d	provideChunk
 		c	Will return back a chunk, if it doesn't exist and its not a MP client it will generates all the blocks for the specified chunk from the map seed and chunk seed
 	m	()Ljava/lang/String;	e	func_73148_d	makeString
@@ -24194,8 +24194,8 @@ c	iy	net/minecraft/src/ChunkProviderServer	net/minecraft/world/gen/ChunkProvider
 		c	Unloads chunks that are marked to be unloaded. This is not guaranteed to unload every such chunk.
 	m	(II)Labw;	c	func_73158_c	loadChunk
 		c	loads or generates the chunk at the chunk location specified
-	m	()Z	d	func_73157_c	unloadQueuedChunks
-		c	Unloads chunks that are marked to be unloaded. This is not guaranteed to unload every such chunk.
+	m	()Z	d	func_73157_c	canSave
+		c	Returns if the IChunkProvider supports saving.
 	m	(II)Labw;	d	func_73154_d	provideChunk
 		c	Will return back a chunk, if it doesn't exist and its not a MP client it will generates all the blocks for the specified chunk from the map seed and chunk seed
 	m	()Ljava/lang/String;	e	func_73148_d	makeString
@@ -26147,7 +26147,6 @@ c	mm	net/minecraft/src/EntityAgeable	net/minecraft/entity/EntityAgeable
 		c	If Animal, checks if the age timer is negative
 	m	(Lsq;)Z	a	func_70085_c	interact
 		c	Called when a player interacts with a mob. e.g. gets milk from a cow, gets into the saddle on a pig.
-	m	()V	h	func_70088_a	entityInit
 	m	()Z	j_	func_70631_g_	isChild
 		c	If Animal, checks if the age timer is negative
 	m	()V	m	func_70636_d	onLivingUpdate
@@ -26699,7 +26698,6 @@ c	nc	net/minecraft/src/EntityXPOrb	net/minecraft/entity/item/EntityXPOrb
 	m	(I)V	f	func_70081_e	dealFireDamage
 		c	Will deal the specified amount of damage to the entity if the entity isn't immune to fire damage. Args: amountDamage
 		p	1	arg0	amountDamage	amountDamage
-	m	()V	h	func_70088_a	entityInit
 	m	()Z	s_	func_70041_e_	canTriggerWalking
 		c	returns if this entity triggers Block.onEntityWalking on the blocks they walk on. used for spiders and wolves to prevent them from trampling crops
 	m	()V	t_	func_70071_h_	onUpdate
@@ -27719,7 +27717,6 @@ c	ng	net/minecraft/src/EntityLiving	net/minecraft/entity/EntityLiving
 	m	(ILwm;)Z	d	func_174820_d	replaceItemInInventory
 	m	(Lsq;)Z	e	func_130002_c	interactFirst
 		c	First layer of player interaction
-	m	()V	h	func_70088_a	entityInit
 	m	(FF)F	h	func_110146_f	updateDistance
 	m	(F)V	k	func_70659_e	setAIMoveSpeed
 		c	set the movespeed used for the new AI system
@@ -27957,7 +27954,6 @@ c	nu	net/minecraft/src/EntityTameable	net/minecraft/entity/passive/EntityTameabl
 	m	()Ljava/lang/String;	b	func_152113_b	getOwnerId
 	m	()Lnet/minecraft/class_1599;	bO	func_96124_cp	getTeam
 	m	(Lnet/minecraft/class_1699;)Z	c	func_142014_c	isOnSameTeam
-	m	()V	h	func_70088_a	entityInit
 	m	()Lmp;	m_	func_70902_q	getOwner
 c	nv	net/minecraft/src/EntityBodyHelper	net/minecraft/entity/EntityBodyHelper
 	f	Lng;	a	field_75668_a	theLiving
@@ -29068,7 +29064,6 @@ c	qg	net/minecraft/src/EntityBat	net/minecraft/entity/passive/EntityBat
 	m	()Ljava/lang/String;	bp	func_70673_aS	getDeathSound
 		c	Returns the sound this mob makes on death.
 	m	(FF)V	e	func_180430_e	fall
-	m	()V	h	func_70088_a	entityInit
 	m	(Lmp;)V	s	func_82167_n	collideWithEntity
 	m	()Z	s_	func_70041_e_	canTriggerWalking
 		c	returns if this entity triggers Block.onEntityWalking on the blocks they walk on. used for spiders and wolves to prevent them from trampling crops
@@ -29346,7 +29341,6 @@ c	qm	net/minecraft/src/EntityOcelot	net/minecraft/entity/passive/EntityOcelot
 	m	(FF)V	e	func_180430_e	fall
 	m	()Ljava/lang/String;	e_	func_70005_c_	getName
 		c	Get the name of this object. For players this returns their username
-	m	()V	h	func_70088_a	entityInit
 	m	(Z)V	m	func_70903_f	setTamed
 	m	(Lmp;)Z	r	func_70652_k	attackEntityAsMob
 	m	()Ljava/lang/String;	z	func_70639_aQ	getLivingSound
@@ -29410,7 +29404,6 @@ c	qn	net/minecraft/src/EntityPig	net/minecraft/entity/passive/EntityPig
 	m	(Lwm;)Z	d	func_70877_b	isBreedingItem
 		c	Checks if the parameter is an item which this animal can be fed to breed it (wheat, carrots or seeds depending on the animal type)
 	m	(FF)V	e	func_180430_e	fall
-	m	()V	h	func_70088_a	entityInit
 	m	()Ljava/lang/String;	z	func_70639_aQ	getLivingSound
 		c	Returns the sound this mob makes while it's alive.
 c	qo	net/minecraft/src/EntitySheep	net/minecraft/entity/passive/EntitySheep
@@ -29481,7 +29474,6 @@ c	qo	net/minecraft/src/EntitySheep	net/minecraft/entity/passive/EntitySheep
 		c	Returns the sound this mob makes when it is hurt.
 	m	()Ljava/lang/String;	bp	func_70673_aS	getDeathSound
 		c	Returns the sound this mob makes on death.
-	m	()V	h	func_70088_a	entityInit
 	m	()V	m	func_70636_d	onLivingUpdate
 		c	Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons use this to react to sunlight and start to burn.
 	m	()V	v	func_70615_aA	eatGrassBonus
@@ -29634,7 +29626,6 @@ c	qs	net/minecraft/src/EntityIronGolem	net/minecraft/entity/monster/EntityIronGo
 		c	Returns the sound this mob makes when it is hurt.
 	m	()Ljava/lang/String;	bp	func_70673_aS	getDeathSound
 		c	Returns the sound this mob makes on death.
-	m	()V	h	func_70088_a	entityInit
 	m	(I)I	j	func_70682_h	decreaseAirSupply
 		c	Decrements the entity's air supply when underwater
 	m	()V	m	func_70636_d	onLivingUpdate
@@ -29772,7 +29763,6 @@ c	qu	net/minecraft/src/EntityWolf	net/minecraft/entity/passive/EntityWolf
 		c	Sets the active target the Task system uses for tracking
 	m	(Lwm;)Z	d	func_70877_b	isBreedingItem
 		c	Checks if the parameter is an item which this animal can be fed to breed it (wheat, carrots or seeds depending on the animal type)
-	m	()V	h	func_70088_a	entityInit
 	m	()V	m	func_70636_d	onLivingUpdate
 		c	Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons use this to react to sunlight and start to burn.
 	m	(Lmp;)Z	r	func_70652_k	attackEntityAsMob
@@ -29809,7 +29799,6 @@ c	qx	net/minecraft/src/EntityDragonPart	net/minecraft/entity/boss/EntityDragonPa
 		c	Called when the entity is attacked.
 	m	()Z	ad	func_70067_L	canBeCollidedWith
 		c	Returns true if other Entities should be prevented from moving through this Entity.
-	m	()V	h	func_70088_a	entityInit
 	m	(Lmp;)Z	k	func_70028_i	isEntityEqual
 		c	Returns true if Entity argument is equal to this Entity
 c	qy	net/minecraft/src/EntityEnderCrystal	net/minecraft/entity/item/EntityEnderCrystal
@@ -29834,7 +29823,6 @@ c	qy	net/minecraft/src/EntityEnderCrystal	net/minecraft/entity/item/EntityEnderC
 		c	Called when the entity is attacked.
 	m	()Z	ad	func_70067_L	canBeCollidedWith
 		c	Returns true if other Entities should be prevented from moving through this Entity.
-	m	()V	h	func_70088_a	entityInit
 	m	()Z	s_	func_70041_e_	canTriggerWalking
 		c	returns if this entity triggers Block.onEntityWalking on the blocks they walk on. used for spiders and wolves to prevent them from trampling crops
 	m	()V	t_	func_70071_h_	onUpdate
@@ -29883,7 +29871,7 @@ c	qz	net/minecraft/src/EntityDragon	net/minecraft/entity/boss/EntityDragon
 	m	(II)V	c	func_70975_a	createEnderPortal
 		c	Creates the ender portal leading back to the normal world after defeating the enderdragon.
 	m	(Lmg;I)Z	e	func_82195_e	func_82195_e
-	m	()V	h	func_70969_j	entityInit
+	m	()V	h	func_70969_j	updateDragonEnderCrystal
 		c	Updates the state of the enderdragon's current endercrystal.
 	m	()V	i	func_70967_k	setNewTarget
 		c	Sets a new target for the flight AI. It can be a random coordinate or a nearby player.
@@ -30047,7 +30035,6 @@ c	rb	net/minecraft/src/EntityWither	net/minecraft/entity/boss/EntityWither
 	m	(Lml;)V	c	func_70690_d	addPotionEffect
 		c	adds a PotionEffect to the entity
 	m	(FF)V	e	func_180430_e	fall
-	m	()V	h	func_70088_a	entityInit
 	m	()Ljava/lang/String;	z	func_70639_aQ	getLivingSound
 		c	Returns the sound this mob makes while it's alive.
 c	rc	net/minecraft/src/EntityWitherAttackFilter	net/minecraft/EntityWitherAttackFilter
@@ -30071,7 +30058,6 @@ c	re	net/minecraft/src/EntityLightningBolt	net/minecraft/entity/effect/EntityLig
 		c	(abstract) Protected helper method to write subclass entity data to NBT.
 	m	()V	l_	func_70071_h_	onUpdate
 		c	Called to update the entity's position/logic.
-	m	()V	h	func_70088_a	entityInit
 	m	()V	t_	func_70071_h_	onUpdate
 		c	Called to update the entity's position/logic.
 c	rf	net/minecraft/src/EntityBoat	net/minecraft/entity/item/EntityBoat
@@ -30157,7 +30143,6 @@ c	rf	net/minecraft/src/EntityBoat	net/minecraft/entity/item/EntityBoat
 		c	Setups the entity to do the hurt animation. Only used by packets in multiplayer.
 	m	(Lsq;)Z	e	func_130002_c	interactFirst
 		c	First layer of player interaction
-	m	()V	h	func_70088_a	entityInit
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
 		p	1	arg0	x	x
@@ -30206,7 +30191,6 @@ c	rg	net/minecraft/src/EntityFallingSand	net/minecraft/EntityFallingSand
 	m	()Z	ad	func_70067_L	canBeCollidedWith
 		c	Returns true if other Entities should be prevented from moving through this Entity.
 	m	(FF)V	e	func_180430_e	fall
-	m	()V	h	func_70088_a	entityInit
 	m	()Z	s_	func_70041_e_	canTriggerWalking
 		c	returns if this entity triggers Block.onEntityWalking on the blocks they walk on. used for spiders and wolves to prevent them from trampling crops
 	m	()V	t_	func_70071_h_	onUpdate
@@ -30266,7 +30250,6 @@ c	rh	net/minecraft/src/EntityItem	net/minecraft/entity/item/EntityItem
 	m	(I)V	f	func_70081_e	dealFireDamage
 		c	Will deal the specified amount of damage to the entity if the entity isn't immune to fire damage. Args: amountDamage
 		p	1	arg0	amountDamage	amountDamage
-	m	()V	h	func_70088_a	entityInit
 	m	()Z	s_	func_70041_e_	canTriggerWalking
 		c	returns if this entity triggers Block.onEntityWalking on the blocks they walk on. used for spiders and wolves to prevent them from trampling crops
 	m	()V	t_	func_70071_h_	onUpdate
@@ -30672,7 +30655,6 @@ c	rr	net/minecraft/src/EntityTNTPrimed	net/minecraft/entity/item/EntityTNTPrimed
 	m	()F	aS	func_70047_e	getEyeHeight
 	m	()Z	ad	func_70067_L	canBeCollidedWith
 		c	Returns true if other Entities should be prevented from moving through this Entity.
-	m	()V	h	func_70088_a	entityInit
 	m	()Z	s_	func_70041_e_	canTriggerWalking
 		c	returns if this entity triggers Block.onEntityWalking on the blocks they walk on. used for spiders and wolves to prevent them from trampling crops
 	m	()V	t_	func_70071_h_	onUpdate
@@ -30724,7 +30706,6 @@ c	rs	net/minecraft/src/EntityBlaze	net/minecraft/entity/monster/EntityBlaze
 	m	()Ljava/lang/String;	bp	func_70673_aS	getDeathSound
 		c	Returns the sound this mob makes on death.
 	m	(FF)V	e	func_180430_e	fall
-	m	()V	h	func_70088_a	entityInit
 	m	()V	m	func_70636_d	onLivingUpdate
 		c	Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons use this to react to sunlight and start to burn.
 	m	()Z	n_	func_70814_o	isValidLightLevel
@@ -30794,7 +30775,6 @@ c	ru	net/minecraft/src/EntityCreeper	net/minecraft/entity/monster/EntityCreeper
 	m	()Ljava/lang/String;	bp	func_70673_aS	getDeathSound
 		c	Returns the sound this mob makes on death.
 	m	(FF)V	e	func_180430_e	fall
-	m	()V	h	func_70088_a	entityInit
 	m	(Lmp;)Z	r	func_70652_k	attackEntityAsMob
 	m	()V	t_	func_70071_h_	onUpdate
 		c	Called to update the entity's position/logic.
@@ -30858,7 +30838,6 @@ c	rv	net/minecraft/src/EntityEnderman	net/minecraft/entity/monster/EntityEnderma
 		c	Returns the sound this mob makes when it is hurt.
 	m	()Ljava/lang/String;	bp	func_70673_aS	getDeathSound
 		c	Returns the sound this mob makes on death.
-	m	()V	h	func_70088_a	entityInit
 	m	()V	m	func_70636_d	onLivingUpdate
 		c	Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons use this to react to sunlight and start to burn.
 	m	()Ljava/lang/String;	z	func_70639_aQ	getLivingSound
@@ -30927,7 +30906,6 @@ c	ry	net/minecraft/src/EntityGhast	net/minecraft/entity/monster/EntityGhast
 		c	Returns the sound this mob makes when it is hurt.
 	m	()Ljava/lang/String;	bp	func_70673_aS	getDeathSound
 		c	Returns the sound this mob makes on death.
-	m	()V	h	func_70088_a	entityInit
 	m	()V	t_	func_70071_h_	onUpdate
 		c	Called to update the entity's position/logic.
 	m	()Ljava/lang/String;	z	func_70639_aQ	getLivingSound
@@ -31273,7 +31251,6 @@ c	sf	net/minecraft/src/EntitySkeleton	net/minecraft/entity/monster/EntitySkeleto
 		c	Causes this Entity to drop a random item.
 	m	()Lno;	bz	func_70668_bt	getCreatureAttribute
 		c	Get this Entity's EnumCreatureAttribute
-	m	()V	h	func_70088_a	entityInit
 	m	(Lmp;)Z	r	func_70652_k	attackEntityAsMob
 	m	()Ljava/lang/String;	z	func_70639_aQ	getLivingSound
 		c	Returns the sound this mob makes while it's alive.
@@ -31349,7 +31326,6 @@ c	sg	net/minecraft/src/EntitySlime	net/minecraft/entity/monster/EntitySlime
 		c	Returns the sound this mob makes on death.
 	m	(Lsq;)V	d	func_70100_b_	onCollideWithPlayer
 		c	Called by a player entity when they collide with an entity
-	m	()V	h	func_70088_a	entityInit
 	m	(I)V	i	func_145781_i	onDataWatcherUpdate
 	m	(Lmp;)V	i	func_70108_f	applyEntityCollision
 		c	Applies a velocity to each of the entities pushing them away from each other. Args: entity
@@ -31415,7 +31391,6 @@ c	sh	net/minecraft/src/EntitySpider	net/minecraft/entity/monster/EntitySpider
 	m	()Lno;	bz	func_70668_bt	getCreatureAttribute
 		c	Get this Entity's EnumCreatureAttribute
 	m	(Lml;)Z	d	func_70687_e	isPotionApplicable
-	m	()V	h	func_70088_a	entityInit
 	m	()Z	k_	func_70617_f_	isOnLadder
 		c	returns true if this entity is by a ladder, false otherwise
 	m	()V	t_	func_70071_h_	onUpdate
@@ -31464,7 +31439,6 @@ c	si	net/minecraft/src/EntityWitch	net/minecraft/entity/monster/EntityWitch
 		c	Returns the sound this mob makes on death.
 	m	(Lmg;F)F	c	func_70672_c	applyPotionDamageCalculations
 		c	Reduces damage, depending on potions
-	m	()V	h	func_70088_a	entityInit
 	m	()V	m	func_70636_d	onLivingUpdate
 		c	Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons use this to react to sunlight and start to burn.
 	m	()Ljava/lang/String;	z	func_70639_aQ	getLivingSound
@@ -31569,7 +31543,6 @@ c	sj	net/minecraft/src/EntityZombie	net/minecraft/entity/monster/EntityZombie
 		c	Returns the current armor value as determined by a call to InventoryPlayer.getTotalArmorValue
 	m	()Lno;	bz	func_70668_bt	getCreatureAttribute
 		c	Get this Entity's EnumCreatureAttribute
-	m	()V	h	func_70088_a	entityInit
 	m	()Z	j_	func_70631_g_	isChild
 		c	If Animal, checks if the age timer is negative
 	m	()V	m	func_70636_d	onLivingUpdate
@@ -31701,7 +31674,6 @@ c	sm	net/minecraft/src/EntityVillager	net/minecraft/entity/passive/EntityVillage
 	m	(ILwm;)Z	d	func_174820_d	replaceItemInInventory
 	m	()Lnet/minecraft/class_1982;	f_	func_145748_c_	getDisplayName
 		c	Get the formatted ChatComponent that will be used for the sender's username in chat
-	m	()V	h	func_70088_a	entityInit
 	m	()V	n	func_175500_n	onGrowingAdult
 		c	This is called when Entity's growing age timer reaches 0 (negative values are considered as a child, positive as an adult)
 	m	()Lsq;	v_	func_70931_l_	getCustomer
@@ -32287,7 +32259,6 @@ c	ss	net/minecraft/src/EntityArrow	net/minecraft/entity/projectile/EntityArrow
 	m	()F	aS	func_70047_e	getEyeHeight
 	m	(Lsq;)V	d	func_70100_b_	onCollideWithPlayer
 		c	Called by a player entity when they collide with an entity
-	m	()V	h	func_70088_a	entityInit
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
 		p	1	arg0	x	x
@@ -32335,7 +32306,6 @@ c	st	net/minecraft/src/EntityEnderEye	net/minecraft/entity/item/EntityEnderEye
 		c	Called to update the entity's position/logic.
 	m	()Z	aD	func_70075_an	canAttackWithItem
 		c	If returns false, the item will not inflict any damage against entities.
-	m	()V	h	func_70088_a	entityInit
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
 		p	1	arg0	x	x
@@ -32383,7 +32353,6 @@ c	su	net/minecraft/src/EntityFireball	net/minecraft/entity/projectile/EntityFire
 	m	()Z	ad	func_70067_L	canBeCollidedWith
 		c	Returns true if other Entities should be prevented from moving through this Entity.
 	m	()F	ao	func_70111_Y	getCollisionBorderSize
-	m	()V	h	func_70088_a	entityInit
 	m	()V	t_	func_70071_h_	onUpdate
 		c	Called to update the entity's position/logic.
 c	sv	net/minecraft/src/EntityFireworkRocket	net/minecraft/entity/item/EntityFireworkRocket
@@ -32415,7 +32384,6 @@ c	sv	net/minecraft/src/EntityFireworkRocket	net/minecraft/entity/item/EntityFire
 		c	Called to update the entity's position/logic.
 	m	()Z	aD	func_70075_an	canAttackWithItem
 		c	If returns false, the item will not inflict any damage against entities.
-	m	()V	h	func_70088_a	entityInit
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
 		p	1	arg0	x	x
@@ -32479,7 +32447,6 @@ c	sw	net/minecraft/src/EntityFishHook	net/minecraft/entity/projectile/EntityFish
 	m	()V	J	func_70106_y	setDead
 		c	Will get destroyed next tick.
 	m	(DDDFFIZ)V	a	func_180426_a	setPositionAndRotation2
-	m	()V	h	func_70088_a	entityInit
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
 		p	1	arg0	x	x
@@ -32565,7 +32532,6 @@ c	tb	net/minecraft/src/EntityThrowable	net/minecraft/entity/projectile/EntityThr
 		p	3	arg2	z	z
 	m	()V	l_	func_70071_h_	onUpdate
 		c	Called to update the entity's position/logic.
-	m	()V	h	func_70088_a	entityInit
 	m	(DDD)V	i	func_70016_h	setVelocity
 		c	Sets the velocity to the args. Args: x, y, z
 		p	1	arg0	x	x
@@ -32638,7 +32604,6 @@ c	tg	net/minecraft/src/EntityWitherSkull	net/minecraft/entity/projectile/EntityW
 		c	Returns true if other Entities should be prevented from moving through this Entity.
 	m	()Z	at	func_70027_ad	isBurning
 		c	Returns true if the entity is on fire. Used by render to add the fire effect on rendering.
-	m	()V	h	func_70088_a	entityInit
 	m	()F	j	func_82341_c	getMotionFactor
 		c	Return the motion factor for this projectile. The factor is multiplied by the original motion.
 c	ti	net/minecraft/src/FoodStats	net/minecraft/util/FoodStats
